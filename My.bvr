@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bvr:BVRModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bvr="http:///bvr.ecore/2.0.0" name="HBS-SPL">
+  <packageElement xsi:type="bvr:ReplacementFragmentType" name="empty">
+    <replacementBoundaryElement xsi:type="bvr:ToReplacement" name="NULL" insideBoundaryElement="//@packageElement.0/@sourceObject.0" outsideBoundaryElement="//@packageElement.0/@sourceObject.0"/>
+    <sourceObject/>
+  </packageElement>
+  <variabilityModel xsi:type="bvr:Choice" name="HBS" target="//@variabilityModel/@ownedTargets.0" isImpliedByParent="true">
+    <member xsi:type="bvr:Choice" name="Design" target="//@variabilityModel/@ownedTargets.1" isImpliedByParent="true">
+      <member xsi:type="bvr:Choice" name="Brakes" target="//@variabilityModel/@ownedTargets.2" isImpliedByParent="true">
+        <groupMultiplicity upper="-1" lower="1"/>
+        <member xsi:type="bvr:Choice" name="BU1" target="//@variabilityModel/@ownedTargets.10">
+          <note name="comment" kind="comment" expr=""/>
+        </member>
+        <member xsi:type="bvr:Choice" name="BU2" target="//@variabilityModel/@ownedTargets.3">
+          <note name="comment" kind="comment" expr=""/>
+        </member>
+        <member xsi:type="bvr:Choice" name="BU3" target="//@variabilityModel/@ownedTargets.4">
+          <note name="comment" kind="comment" expr=""/>
+        </member>
+        <member xsi:type="bvr:Choice" name="BU4" target="//@variabilityModel/@ownedTargets.5">
+          <note name="comment" kind="comment" expr=""/>
+        </member>
+        <note name="comment" kind="comment" expr=""/>
+      </member>
+      <note name="comment" kind="comment" expr=""/>
+    </member>
+    <member xsi:type="bvr:Choice" name="ErrorBehavior" target="//@variabilityModel/@ownedTargets.15" isImpliedByParent="true">
+      <member xsi:type="bvr:Choice" name="CommBus" target="//@variabilityModel/@ownedTargets.16" isImpliedByParent="true">
+        <groupMultiplicity upper="1" lower="1"/>
+        <member xsi:type="bvr:Choice" name="CBTwoBrakes" target="//@variabilityModel/@ownedTargets.17">
+          <note name="comment" kind="comment" expr=""/>
+        </member>
+        <member xsi:type="bvr:Choice" name="CBFourBrakes" target="//@variabilityModel/@ownedTargets.18">
+          <note name="comment" kind="comment" expr=""/>
+        </member>
+        <note name="comment" kind="comment" expr=""/>
+      </member>
+      <note name="comment" kind="comment" expr=""/>
+    </member>
+    <member xsi:type="bvr:Choice" name="SafetyAnalysisScenarios" target="//@variabilityModel/@ownedTargets.19" isImpliedByParent="true">
+      <groupMultiplicity upper="1" lower="1"/>
+      <member xsi:type="bvr:Choice" name="4WB" target="//@variabilityModel/@ownedTargets.20">
+        <note name="comment" kind="comment" expr=""/>
+      </member>
+      <member xsi:type="bvr:Choice" name="FWB" target="//@variabilityModel/@ownedTargets.8">
+        <note name="comment" kind="comment" expr=""/>
+      </member>
+      <member xsi:type="bvr:Choice" name="RWB" target="//@variabilityModel/@ownedTargets.9">
+        <note name="comment" kind="comment" expr=""/>
+      </member>
+      <note name="comment" kind="comment" expr=""/>
+    </member>
+    <ownedTargets name="HBS"/>
+    <ownedTargets name="Design"/>
+    <ownedTargets name="Brakes"/>
+    <ownedTargets name="BU2"/>
+    <ownedTargets name="BU3"/>
+    <ownedTargets name="BU4"/>
+    <ownedTargets name="AnalysisContext"/>
+    <ownedTargets name="AWB"/>
+    <ownedTargets name="FWB"/>
+    <ownedTargets name="RWB"/>
+    <ownedTargets name="BU1"/>
+    <ownedTargets name="Choice11"/>
+    <ownedTargets name="Choice12"/>
+    <ownedTargets name="Choice13"/>
+    <ownedTargets name="Choice14"/>
+    <ownedTargets name="ErrorBehavior"/>
+    <ownedTargets name="CommBus"/>
+    <ownedTargets name="CBTwoBrakes"/>
+    <ownedTargets name="CBFourBrakes"/>
+    <ownedTargets name="SafetyAnalysisScenarios"/>
+    <ownedTargets name="4WB"/>
+    <ownedTargets name="Choice2"/>
+    <ownedTargets name="Choice3"/>
+    <note name="comment" kind="comment" expr=""/>
+  </variabilityModel>
+  <realizationModel xsi:type="bvr:PlacementFragment" name="CBusTwoBUIF">
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((InternalFault) 'EClassImpl').&lt;Transition>base_Transition" propertyName="base_Transition" insideBoundaryElement="//@realizationModel.0/@sourceObject.0" outsideBoundaryElement="//@realizationModel.0/@sourceObject.1"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((Region) Region1).&lt;Transition>transition" propertyName="transition" insideBoundaryElement="//@realizationModel.0/@sourceObject.0" outsideBoundaryElement="//@realizationModel.0/@sourceObject.2"/>
+    <placementBoundaryElement xsi:type="bvr:FromPlacement" name="((Transition) null).&lt;Vertex>source[1]={C1}" outsideBoundaryElement="//@realizationModel.0/@sourceObject.3" insideBoundaryElement="//@realizationModel.0/@sourceObject.0"/>
+    <placementBoundaryElement xsi:type="bvr:FromPlacement" name="((Transition) null).&lt;Vertex>target[1]={C2}" outsideBoundaryElement="//@realizationModel.0/@sourceObject.4" insideBoundaryElement="//@realizationModel.0/@sourceObject.0"/>
+    <placementBoundaryElement xsi:type="bvr:FromPlacement" name="((Transition) null).&lt;Region>container[1]={Region1}" outsideBoundaryElement="//@realizationModel.0/@sourceObject.2" insideBoundaryElement="//@realizationModel.0/@sourceObject.0"/>
+    <placementBoundaryElement xsi:type="bvr:FromPlacement" name="NULL" outsideBoundaryElement="//@realizationModel.0/@sourceObject.5" insideBoundaryElement="//@realizationModel.0/@sourceObject.5"/>
+    <sourceObject>
+      <MOFRef href="HBS%20(EDCC%202020).uml#_2gFW8mfUEeqI-ttVD_yLCw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(EDCC%202020).uml#_2gPH8WfUEeqI-ttVD_yLCw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(EDCC%202020).uml#_2gFW8WfUEeqI-ttVD_yLCw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(EDCC%202020).uml#_9Mb3MGf1EeqI-ttVD_yLCw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(EDCC%202020).uml#_2gFW-mfUEeqI-ttVD_yLCw"/>
+    </sourceObject>
+    <sourceObject/>
+  </realizationModel>
+  <realizationModel xsi:type="bvr:FragmentSubstitution" name="CBusTwoBUFS" bindingVSpec="//@variabilityModel/@member.1/@member.0/@member.0" placement="//@realizationModel.0" replacement="//@packageElement.0"/>
+</bvr:BVRModel>

@@ -1,0 +1,24 @@
+INFO:root:Generating expanded XML fei: C:/Users/Lucas/Documents/Mario2/HBS(EDCC2020-BASE)/NuSMV3-XSAP/Temp\expanded_model_HBS.xml
+Traceback (most recent call last):
+  File "C:\Users\Lucas\Documents\amass_P1\FBK_Tools\xSAP (OG Backup) - Copy\scripts\extend_model.py", line 230, in <module>
+    compile_fei(fei_in, out_fei_fname, args.path)
+  File "C:\Users\Lucas\Documents\amass_P1\FBK_Tools\xSAP (OG Backup) - Copy\scripts\extend_model.py", line 30, in compile_fei
+    lib_path or feicm.get_default_fault_lib_path())
+  File "/hardmnt/dusk0/home/cavada/Projects/ES-Tools/ESTools/scripts/out/build/ESTools/xSAP/win64/xSAP-bin/code/feic/feicm.py", line 7, in main
+  File "/hardmnt/dusk0/home/cavada/Projects/ES-Tools/ESTools/scripts/out/build/ESTools/xSAP/win64/xSAP-bin/code/feic/feicm.py", line 50, in generate_structure
+  File "/hardmnt/dusk0/home/cavada/Projects/ES-Tools/ESTools/scripts/out/build/ESTools/xSAP/win64/xSAP-bin/code/feic/fe/data_structure/model/fault_ext_info.py", line 101, in parse_from_feinfo
+  File "/hardmnt/dusk0/home/cavada/Projects/ES-Tools/ESTools/scripts/out/build/ESTools/xSAP/win64/xSAP-bin/code/feic/fe/data_structure/model/fault_ext_info.py", line 76, in fromXML
+  File "/hardmnt/dusk0/home/cavada/Projects/ES-Tools/ESTools/scripts/out/build/ESTools/xSAP/win64/xSAP-bin/code/feic/fe/data_structure/model/xmlBound.py", line 127, in _fromXMLSubElems
+  File "/hardmnt/dusk0/home/cavada/Projects/ES-Tools/ESTools/scripts/out/build/ESTools/xSAP/win64/xSAP-bin/code/feic/fe/data_structure/model/xmlBound.py", line 127, in <genexpr>
+  File "/hardmnt/dusk0/home/cavada/Projects/ES-Tools/ESTools/scripts/out/build/ESTools/xSAP/win64/xSAP-bin/code/feic/fe/data_structure/model/fault_ext_info.py", line 96, in generateSubelement
+  File "/hardmnt/dusk0/home/cavada/Projects/ES-Tools/ESTools/scripts/out/build/ESTools/xSAP/win64/xSAP-bin/code/feic/fe/data_structure/model/nominal_comp_ext.py", line 58, in fromXML
+  File "/hardmnt/dusk0/home/cavada/Projects/ES-Tools/ESTools/scripts/out/build/ESTools/xSAP/win64/xSAP-bin/code/feic/fe/data_structure/model/xmlBound.py", line 127, in _fromXMLSubElems
+  File "/hardmnt/dusk0/home/cavada/Projects/ES-Tools/ESTools/scripts/out/build/ESTools/xSAP/win64/xSAP-bin/code/feic/fe/data_structure/model/xmlBound.py", line 127, in <genexpr>
+  File "/hardmnt/dusk0/home/cavada/Projects/ES-Tools/ESTools/scripts/out/build/ESTools/xSAP/win64/xSAP-bin/code/feic/fe/data_structure/model/nominal_comp_ext.py", line 71, in generateSubelement
+  File "/hardmnt/dusk0/home/cavada/Projects/ES-Tools/ESTools/scripts/out/build/ESTools/xSAP/win64/xSAP-bin/code/feic/fe/data_structure/model/fault_model.py", line 103, in fromXML
+  File "/hardmnt/dusk0/home/cavada/Projects/ES-Tools/ESTools/scripts/out/build/ESTools/xSAP/win64/xSAP-bin/code/feic/fe/data_structure/model/xmlBound.py", line 127, in _fromXMLSubElems
+  File "/hardmnt/dusk0/home/cavada/Projects/ES-Tools/ESTools/scripts/out/build/ESTools/xSAP/win64/xSAP-bin/code/feic/fe/data_structure/model/xmlBound.py", line 127, in <genexpr>
+  File "/hardmnt/dusk0/home/cavada/Projects/ES-Tools/ESTools/scripts/out/build/ESTools/xSAP/win64/xSAP-bin/code/feic/fe/data_structure/model/fault_model.py", line 121, in generateSubelement
+  File "/hardmnt/dusk0/home/cavada/Projects/ES-Tools/ESTools/scripts/out/build/ESTools/xSAP/win64/xSAP-bin/code/feic/fe/data_structure/model/fault_mode.py", line 78, in fromXML
+  File "/hardmnt/dusk0/home/cavada/Projects/ES-Tools/ESTools/scripts/out/build/ESTools/xSAP/win64/xSAP-bin/code/feic/fe/data_structure/model/xmlBound.py", line 198, in get_mandatory_singleton_elem
+ValueError: Mandatory element not found in in path ./effects_model

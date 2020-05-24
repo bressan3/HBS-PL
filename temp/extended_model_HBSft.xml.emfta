@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ASCII"?>
+<emfta:FTAModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:emfta="http://cmu.edu/emfta" name="FTA model root">
+  <root name="Top_Level_Event" description="(((bu1.buState = omission &amp; bu2.buState = omission) &amp; bu3.buState = omission) &amp; bu4.buState = omission)">
+    <gate description="(((bu1.buState = omission &amp; bu2.buState = omission) &amp; bu3.buState = omission) &amp; bu4.buState = omission)" events="//@events.4"/>
+  </root>
+  <events name="E7" description="bu1.BUErrSM.mode_is_omissionError"/>
+  <events name="E3" description="bu2.BUErrSM.mode_is_omissionError"/>
+  <events name="E5" description="bu3.BUErrSM.mode_is_omissionError"/>
+  <events name="E1" description="bu4.BUErrSM.mode_is_omissionError"/>
+  <events name="fault_cfg_1" description="">
+    <gate type="AND" description="" events="//@events.0 //@events.1 //@events.2 //@events.3"/>
+  </events>
+</emfta:FTAModel>

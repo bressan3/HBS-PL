@@ -1,0 +1,32 @@
+
+FILE_NAME: model
+NET_NAME: HBS_instSpec
+
+
+Simulation parameters:
+
+  - Min number of replications  1000
+  - Max number of replications  1000000
+  - Confidence level  99.00%
+  - Half-lenght confidence interval  10.00%
+
+  - Random number generator seeds:  6657
+
+STUDY_NAME: DefaultStudy 
+
+Variables Setting:
+  Time = {8760.0}
+
+
+ VARIABLE CASE #0:
+
+
+ Computation time (real):	0 h : 0 m : 0 s.
+ CPU time (user):		0 h : 0 m : 0 s. 
+
+ Rew measure:
+
+ -> AWBOmissionAllBrakes  9.930000e-01	 [ 9.868645e-01 , 9.991355e-01 ]  (Half-lenght confidence interval = 0.62%) (Number of samples: 1000)
+
+ -> AWBValueAllBrakes  8.510000e-01	 [ 8.247950e-01 , 8.772050e-01 ]  (Half-lenght confidence interval = 3.08%) (Number of samples: 1000)
+

@@ -1,0 +1,2858 @@
+<NDFile-'1.2'>
+
+NET:"HBS_instSpec",2000,2000;
+COLORS:White,Black,Black,Black,Black,Black;
+
+VARIABLE:"Time","Real";
+
+STUDY:"DefaultStudy",1,"{8760.0}",0;
+
+PLACE:"HBS__mechPedal_doreset",1500,1500,0,0;
+PLACE:"HBS__elecPedal_doreset",1500,1500,0,0;
+PLACE:"HBS__commBus1_doreset",1500,1500,0,0;
+PLACE:"HBS__commBus2_doreset",1500,1500,0,0;
+PLACE:"HBS__bu1_doreset",1500,1500,0,0;
+PLACE:"HBS__bu3_doreset",1500,1500,0,0;
+PLACE:"HBS__bu2_doreset",1500,1500,0,0;
+PLACE:"HBS__bu4_doreset",1500,1500,0,0;
+PLACE:"HBS__mechPedal_HBS__mechPedal_ift_1",1500,1500,0,0;
+PLACE:"HBS__mechPedal_HBS__mechPedal_ift_1_tmp",1500,1500,0,0;
+PLACE:"HBS__mechPedal_HBS__mechPedal_ift_1_transient",1500,1500,0,0;
+PLACE:"HBS__elecPedal_HBS__elecPedal_ift_1",1500,1500,0,0;
+PLACE:"HBS__elecPedal_HBS__elecPedal_ift_1_tmp",1500,1500,0,0;
+PLACE:"HBS__elecPedal_HBS__elecPedal_ift_1_transient",1500,1500,0,0;
+PLACE:"HBS__commBus1_HBS__commBus1_ift_1",1500,1500,0,0;
+PLACE:"HBS__commBus1_HBS__commBus1_ift_1_tmp",1500,1500,0,0;
+PLACE:"HBS__commBus1_HBS__commBus1_ift_1_transient",1500,1500,0,0;
+PLACE:"HBS__commBus2_HBS__commBus2_ift_1",1500,1500,0,0;
+PLACE:"HBS__commBus2_HBS__commBus2_ift_1_tmp",1500,1500,0,0;
+PLACE:"HBS__commBus2_HBS__commBus2_ift_1_transient",1500,1500,0,0;
+PLACE:"HBS__bu1_HBS__bu1_ift_1",1500,1500,0,0;
+PLACE:"HBS__bu1_HBS__bu1_ift_1_tmp",1500,1500,0,0;
+PLACE:"HBS__bu1_HBS__bu1_ift_1_transient",1500,1500,0,0;
+PLACE:"HBS__bu3_HBS__bu3_ift_1",1500,1500,0,0;
+PLACE:"HBS__bu3_HBS__bu3_ift_1_tmp",1500,1500,0,0;
+PLACE:"HBS__bu3_HBS__bu3_ift_1_transient",1500,1500,0,0;
+PLACE:"HBS__bu2_HBS__bu2_ift_1",1500,1500,0,0;
+PLACE:"HBS__bu2_HBS__bu2_ift_1_tmp",1500,1500,0,0;
+PLACE:"HBS__bu2_HBS__bu2_ift_1_transient",1500,1500,0,0;
+PLACE:"HBS__bu4_HBS__bu4_ift_1",1500,1500,0,0;
+PLACE:"HBS__bu4_HBS__bu4_ift_1_tmp",1500,1500,0,0;
+PLACE:"HBS__bu4_HBS__bu4_ift_1_transient",1500,1500,0,0;
+PLACE:"HBS__mechPedal_HBS__mechPedal_valueError",1500,1500,0,0;
+PLACE:"HBS__mechPedal_HBS__mechPedal_valueError_detected",1500,1500,0,0;
+PLACE:"HBS__mechPedal_HBS__mechPedal_omissionError",1500,1500,0,0;
+PLACE:"HBS__mechPedal_HBS__mechPedal_omissionError_detected",1500,1500,0,0;
+PLACE:"HBS__mechPedal_HBS__mechPedal_Choice1",1500,1500,0,0;
+PLACE:"HBS__mechPedal_HBS__mechPedal_Choice1_detected",1500,1500,0,0;
+PLACE:"HBS__elecPedal_HBS__elecPedal_valueError",1500,1500,0,0;
+PLACE:"HBS__elecPedal_HBS__elecPedal_valueError_detected",1500,1500,0,0;
+PLACE:"HBS__elecPedal_HBS__elecPedal_omissionError",1500,1500,0,0;
+PLACE:"HBS__elecPedal_HBS__elecPedal_omissionError_detected",1500,1500,0,0;
+PLACE:"HBS__elecPedal_HBS__elecPedal_Choice1",1500,1500,0,0;
+PLACE:"HBS__elecPedal_HBS__elecPedal_Choice1_detected",1500,1500,0,0;
+PLACE:"HBS__elecPedal_HBS__elecPedal_Choice2",1500,1500,0,0;
+PLACE:"HBS__elecPedal_HBS__elecPedal_Choice2_detected",1500,1500,0,0;
+PLACE:"HBS__commBus1_HBS__commBus1_valueError",1500,1500,0,0;
+PLACE:"HBS__commBus1_HBS__commBus1_valueError_detected",1500,1500,0,0;
+PLACE:"HBS__commBus1_HBS__commBus1_omissionError",1500,1500,0,0;
+PLACE:"HBS__commBus1_HBS__commBus1_omissionError_detected",1500,1500,0,0;
+PLACE:"HBS__commBus1_HBS__commBus1_C2",1500,1500,0,0;
+PLACE:"HBS__commBus1_HBS__commBus1_C2_detected",1500,1500,0,0;
+PLACE:"HBS__commBus1_HBS__commBus1_C1",1500,1500,0,0;
+PLACE:"HBS__commBus1_HBS__commBus1_C1_detected",1500,1500,0,0;
+PLACE:"HBS__commBus2_HBS__commBus2_valueError",1500,1500,0,0;
+PLACE:"HBS__commBus2_HBS__commBus2_valueError_detected",1500,1500,0,0;
+PLACE:"HBS__commBus2_HBS__commBus2_omissionError",1500,1500,0,0;
+PLACE:"HBS__commBus2_HBS__commBus2_omissionError_detected",1500,1500,0,0;
+PLACE:"HBS__commBus2_HBS__commBus2_C2",1500,1500,0,0;
+PLACE:"HBS__commBus2_HBS__commBus2_C2_detected",1500,1500,0,0;
+PLACE:"HBS__commBus2_HBS__commBus2_C1",1500,1500,0,0;
+PLACE:"HBS__commBus2_HBS__commBus2_C1_detected",1500,1500,0,0;
+PLACE:"HBS__bu1_HBS__bu1_valueError",1500,1500,0,0;
+PLACE:"HBS__bu1_HBS__bu1_valueError_detected",1500,1500,0,0;
+PLACE:"HBS__bu1_HBS__bu1_omissionError",1500,1500,0,0;
+PLACE:"HBS__bu1_HBS__bu1_omissionError_detected",1500,1500,0,0;
+PLACE:"HBS__bu1_HBS__bu1_Choice1",1500,1500,0,0;
+PLACE:"HBS__bu1_HBS__bu1_Choice1_detected",1500,1500,0,0;
+PLACE:"HBS__bu1_HBS__bu1_Choice2",1500,1500,0,0;
+PLACE:"HBS__bu1_HBS__bu1_Choice2_detected",1500,1500,0,0;
+PLACE:"HBS__bu3_HBS__bu3_valueError",1500,1500,0,0;
+PLACE:"HBS__bu3_HBS__bu3_valueError_detected",1500,1500,0,0;
+PLACE:"HBS__bu3_HBS__bu3_omissionError",1500,1500,0,0;
+PLACE:"HBS__bu3_HBS__bu3_omissionError_detected",1500,1500,0,0;
+PLACE:"HBS__bu3_HBS__bu3_Choice1",1500,1500,0,0;
+PLACE:"HBS__bu3_HBS__bu3_Choice1_detected",1500,1500,0,0;
+PLACE:"HBS__bu3_HBS__bu3_Choice2",1500,1500,0,0;
+PLACE:"HBS__bu3_HBS__bu3_Choice2_detected",1500,1500,0,0;
+PLACE:"HBS__bu2_HBS__bu2_valueError",1500,1500,0,0;
+PLACE:"HBS__bu2_HBS__bu2_valueError_detected",1500,1500,0,0;
+PLACE:"HBS__bu2_HBS__bu2_omissionError",1500,1500,0,0;
+PLACE:"HBS__bu2_HBS__bu2_omissionError_detected",1500,1500,0,0;
+PLACE:"HBS__bu2_HBS__bu2_Choice1",1500,1500,0,0;
+PLACE:"HBS__bu2_HBS__bu2_Choice1_detected",1500,1500,0,0;
+PLACE:"HBS__bu2_HBS__bu2_Choice2",1500,1500,0,0;
+PLACE:"HBS__bu2_HBS__bu2_Choice2_detected",1500,1500,0,0;
+PLACE:"HBS__bu4_HBS__bu4_valueError",1500,1500,0,0;
+PLACE:"HBS__bu4_HBS__bu4_valueError_detected",1500,1500,0,0;
+PLACE:"HBS__bu4_HBS__bu4_omissionError",1500,1500,0,0;
+PLACE:"HBS__bu4_HBS__bu4_omissionError_detected",1500,1500,0,0;
+PLACE:"HBS__bu4_HBS__bu4_Choice1",1500,1500,0,0;
+PLACE:"HBS__bu4_HBS__bu4_Choice1_detected",1500,1500,0,0;
+PLACE:"HBS__bu4_HBS__bu4_Choice2",1500,1500,0,0;
+PLACE:"HBS__bu4_HBS__bu4_Choice2_detected",1500,1500,0,0;
+PLACE:"HBS__mechPedal_HBS__mechPedal_out1__value",1500,1500,0,0;
+PLACE:"HBS__mechPedal_HBS__mechPedal_out1__omission",1500,1500,0,0;
+PLACE:"HBS__elecPedal_HBS__elecPedal_out1__value",1500,1500,0,0;
+PLACE:"HBS__elecPedal_HBS__elecPedal_out2__value",1500,1500,0,0;
+PLACE:"HBS__elecPedal_HBS__elecPedal_out1__omission",1500,1500,0,0;
+PLACE:"HBS__elecPedal_HBS__elecPedal_out2__omission",1500,1500,0,0;
+PLACE:"HBS__commBus1_HBS__commBus1_out1__value",1500,1500,0,0;
+PLACE:"HBS__commBus1_HBS__commBus1_out1__omission",1500,1500,0,0;
+PLACE:"HBS__commBus2_HBS__commBus2_out1__value",1500,1500,0,0;
+PLACE:"HBS__commBus2_HBS__commBus2_out1__omission",1500,1500,0,0;
+PLACE:"HBS__bu1_HBS__bu1_torque__value",1500,1500,0,0;
+PLACE:"HBS__bu1_HBS__bu1_torque__omission",1500,1500,0,0;
+PLACE:"HBS__bu3_HBS__bu3_torque__value",1500,1500,0,0;
+PLACE:"HBS__bu3_HBS__bu3_torque__omission",1500,1500,0,0;
+PLACE:"HBS__bu2_HBS__bu2_torque__value",1500,1500,0,0;
+PLACE:"HBS__bu2_HBS__bu2_torque__omission",1500,1500,0,0;
+PLACE:"HBS__bu4_HBS__bu4_torque__value",1500,1500,0,0;
+PLACE:"HBS__bu4_HBS__bu4_torque__omission",1500,1500,0,0;
+PLACE:"HBS__mechPedal_HBS__mechPedal_fge_1_tmp",1500,1500,0,0;
+PLACE:"HBS__mechPedal_HBS__mechPedal_fge_1_blocker",1500,1500,0,0;
+PLACE:"HBS__elecPedal_HBS__elecPedal_fge_1_tmp",1500,1500,0,0;
+PLACE:"HBS__elecPedal_HBS__elecPedal_fge_1_blocker",1500,1500,0,0;
+PLACE:"HBS__commBus1_HBS__commBus1_fge_1_tmp",1500,1500,0,0;
+PLACE:"HBS__commBus1_HBS__commBus1_fge_1_blocker",1500,1500,0,0;
+PLACE:"HBS__commBus2_HBS__commBus2_fge_1_tmp",1500,1500,0,0;
+PLACE:"HBS__commBus2_HBS__commBus2_fge_1_blocker",1500,1500,0,0;
+PLACE:"HBS__bu1_HBS__bu1_fge_1_tmp",1500,1500,0,0;
+PLACE:"HBS__bu1_HBS__bu1_fge_1_blocker",1500,1500,0,0;
+PLACE:"HBS__bu3_HBS__bu3_fge_1_tmp",1500,1500,0,0;
+PLACE:"HBS__bu3_HBS__bu3_fge_1_blocker",1500,1500,0,0;
+PLACE:"HBS__bu2_HBS__bu2_fge_1_tmp",1500,1500,0,0;
+PLACE:"HBS__bu2_HBS__bu2_fge_1_blocker",1500,1500,0,0;
+PLACE:"HBS__bu4_HBS__bu4_fge_1_tmp",1500,1500,0,0;
+PLACE:"HBS__bu4_HBS__bu4_fge_1_blocker",1500,1500,0,0;
+PLACE:"HBS__mechPedal_HBS__mechPedal_epf_1_tmp",1500,1500,0,0;
+PLACE:"HBS__mechPedal_HBS__mechPedal_epf_1_blocker",1500,1500,0,0;
+PLACE:"HBS__mechPedal_valueError_sel_HBS__mechPedal_epf_1",1500,1500,0,0;
+PLACE:"HBS__mechPedal_HBS__mechPedal_epf_2_tmp",1500,1500,0,0;
+PLACE:"HBS__mechPedal_HBS__mechPedal_epf_2_blocker",1500,1500,0,0;
+PLACE:"HBS__mechPedal_omissionError_sel_HBS__mechPedal_epf_2",1500,1500,0,0;
+PLACE:"HBS__elecPedal_HBS__elecPedal_epf_1_tmp",1500,1500,0,0;
+PLACE:"HBS__elecPedal_HBS__elecPedal_epf_1_blocker",1500,1500,0,0;
+PLACE:"HBS__elecPedal_valueError_sel_HBS__elecPedal_epf_1",1500,1500,0,0;
+PLACE:"HBS__elecPedal_HBS__elecPedal_epf_2_tmp",1500,1500,0,0;
+PLACE:"HBS__elecPedal_HBS__elecPedal_epf_2_blocker",1500,1500,0,0;
+PLACE:"HBS__elecPedal_omissionError_sel_HBS__elecPedal_epf_2",1500,1500,0,0;
+PLACE:"HBS__commBus1_HBS__commBus1_epf_1_tmp",1500,1500,0,0;
+PLACE:"HBS__commBus1_HBS__commBus1_epf_1_blocker",1500,1500,0,0;
+PLACE:"HBS__commBus1_valueError_sel_HBS__commBus1_epf_1",1500,1500,0,0;
+PLACE:"HBS__commBus1_HBS__commBus1_epf_2_tmp",1500,1500,0,0;
+PLACE:"HBS__commBus1_HBS__commBus1_epf_2_blocker",1500,1500,0,0;
+PLACE:"HBS__commBus1_omissionError_sel_HBS__commBus1_epf_2",1500,1500,0,0;
+PLACE:"HBS__commBus2_HBS__commBus2_epf_1_tmp",1500,1500,0,0;
+PLACE:"HBS__commBus2_HBS__commBus2_epf_1_blocker",1500,1500,0,0;
+PLACE:"HBS__commBus2_valueError_sel_HBS__commBus2_epf_1",1500,1500,0,0;
+PLACE:"HBS__commBus2_HBS__commBus2_epf_2_tmp",1500,1500,0,0;
+PLACE:"HBS__commBus2_HBS__commBus2_epf_2_blocker",1500,1500,0,0;
+PLACE:"HBS__commBus2_omissionError_sel_HBS__commBus2_epf_2",1500,1500,0,0;
+PLACE:"HBS__bu1_HBS__bu1_epf_1_tmp",1500,1500,0,0;
+PLACE:"HBS__bu1_HBS__bu1_epf_1_blocker",1500,1500,0,0;
+PLACE:"HBS__bu1_valueError_sel_HBS__bu1_epf_1",1500,1500,0,0;
+PLACE:"HBS__bu1_HBS__bu1_epf_2_tmp",1500,1500,0,0;
+PLACE:"HBS__bu1_HBS__bu1_epf_2_blocker",1500,1500,0,0;
+PLACE:"HBS__bu1_omissionError_sel_HBS__bu1_epf_2",1500,1500,0,0;
+PLACE:"HBS__bu3_HBS__bu3_epf_1_tmp",1500,1500,0,0;
+PLACE:"HBS__bu3_HBS__bu3_epf_1_blocker",1500,1500,0,0;
+PLACE:"HBS__bu3_valueError_sel_HBS__bu3_epf_1",1500,1500,0,0;
+PLACE:"HBS__bu3_HBS__bu3_epf_2_tmp",1500,1500,0,0;
+PLACE:"HBS__bu3_HBS__bu3_epf_2_blocker",1500,1500,0,0;
+PLACE:"HBS__bu3_omissionError_sel_HBS__bu3_epf_2",1500,1500,0,0;
+PLACE:"HBS__bu2_HBS__bu2_epf_1_tmp",1500,1500,0,0;
+PLACE:"HBS__bu2_HBS__bu2_epf_1_blocker",1500,1500,0,0;
+PLACE:"HBS__bu2_valueError_sel_HBS__bu2_epf_1",1500,1500,0,0;
+PLACE:"HBS__bu2_HBS__bu2_epf_2_tmp",1500,1500,0,0;
+PLACE:"HBS__bu2_HBS__bu2_epf_2_blocker",1500,1500,0,0;
+PLACE:"HBS__bu2_omissionError_sel_HBS__bu2_epf_2",1500,1500,0,0;
+PLACE:"HBS__bu4_HBS__bu4_epf_1_tmp",1500,1500,0,0;
+PLACE:"HBS__bu4_HBS__bu4_epf_1_blocker",1500,1500,0,0;
+PLACE:"HBS__bu4_valueError_sel_HBS__bu4_epf_1",1500,1500,0,0;
+PLACE:"HBS__bu4_HBS__bu4_epf_2_tmp",1500,1500,0,0;
+PLACE:"HBS__bu4_HBS__bu4_epf_2_blocker",1500,1500,0,0;
+PLACE:"HBS__bu4_omissionError_sel_HBS__bu4_epf_2",1500,1500,0,0;
+PLACE:"HBS__mechPedal_HBS__mechPedal_intprop_2_tmp",1500,1500,0,0;
+PLACE:"HBS__mechPedal_HBS__mechPedal_intprop_2_blocker",1500,1500,0,0;
+PLACE:"HBS__mechPedal_Choice1_sel_HBS__mechPedal_intprop_2",1500,1500,0,0;
+PLACE:"HBS__mechPedal_HBS__mechPedal_intprop_3_tmp",1500,1500,0,0;
+PLACE:"HBS__mechPedal_HBS__mechPedal_intprop_3_blocker",1500,1500,0,0;
+PLACE:"HBS__mechPedal_Choice1_sel_HBS__mechPedal_intprop_3",1500,1500,0,0;
+PLACE:"HBS__elecPedal_HBS__elecPedal_intprop_2_tmp",1500,1500,0,0;
+PLACE:"HBS__elecPedal_HBS__elecPedal_intprop_2_blocker",1500,1500,0,0;
+PLACE:"HBS__elecPedal_Choice1_sel_HBS__elecPedal_intprop_2",1500,1500,0,0;
+PLACE:"HBS__elecPedal_HBS__elecPedal_intprop_3_tmp",1500,1500,0,0;
+PLACE:"HBS__elecPedal_HBS__elecPedal_intprop_3_blocker",1500,1500,0,0;
+PLACE:"HBS__elecPedal_Choice1_sel_HBS__elecPedal_intprop_3",1500,1500,0,0;
+PLACE:"HBS__elecPedal_HBS__elecPedal_intprop_4_tmp",1500,1500,0,0;
+PLACE:"HBS__elecPedal_HBS__elecPedal_intprop_4_blocker",1500,1500,0,0;
+PLACE:"HBS__elecPedal_Choice2_sel_HBS__elecPedal_intprop_4",1500,1500,0,0;
+PLACE:"HBS__elecPedal_HBS__elecPedal_intprop_5_tmp",1500,1500,0,0;
+PLACE:"HBS__elecPedal_HBS__elecPedal_intprop_5_blocker",1500,1500,0,0;
+PLACE:"HBS__elecPedal_Choice2_sel_HBS__elecPedal_intprop_5",1500,1500,0,0;
+PLACE:"HBS__commBus1_HBS__commBus1_intprop_2_tmp",1500,1500,0,0;
+PLACE:"HBS__commBus1_HBS__commBus1_intprop_2_blocker",1500,1500,0,0;
+PLACE:"HBS__commBus1_C2_sel_HBS__commBus1_intprop_2",1500,1500,0,0;
+PLACE:"HBS__commBus1_HBS__commBus1_intprop_3_tmp",1500,1500,0,0;
+PLACE:"HBS__commBus1_HBS__commBus1_intprop_3_blocker",1500,1500,0,0;
+PLACE:"HBS__commBus1_C2_sel_HBS__commBus1_intprop_3",1500,1500,0,0;
+PLACE:"HBS__commBus1_HBS__commBus1_intprop_4_tmp",1500,1500,0,0;
+PLACE:"HBS__commBus1_HBS__commBus1_intprop_4_blocker",1500,1500,0,0;
+PLACE:"HBS__commBus1_C1_sel_HBS__commBus1_intprop_4",1500,1500,0,0;
+PLACE:"HBS__commBus1_HBS__commBus1_intprop_5_tmp",1500,1500,0,0;
+PLACE:"HBS__commBus1_HBS__commBus1_intprop_5_blocker",1500,1500,0,0;
+PLACE:"HBS__commBus1_C1_sel_HBS__commBus1_intprop_5",1500,1500,0,0;
+PLACE:"HBS__commBus2_HBS__commBus2_intprop_2_tmp",1500,1500,0,0;
+PLACE:"HBS__commBus2_HBS__commBus2_intprop_2_blocker",1500,1500,0,0;
+PLACE:"HBS__commBus2_C2_sel_HBS__commBus2_intprop_2",1500,1500,0,0;
+PLACE:"HBS__commBus2_HBS__commBus2_intprop_3_tmp",1500,1500,0,0;
+PLACE:"HBS__commBus2_HBS__commBus2_intprop_3_blocker",1500,1500,0,0;
+PLACE:"HBS__commBus2_C2_sel_HBS__commBus2_intprop_3",1500,1500,0,0;
+PLACE:"HBS__commBus2_HBS__commBus2_intprop_4_tmp",1500,1500,0,0;
+PLACE:"HBS__commBus2_HBS__commBus2_intprop_4_blocker",1500,1500,0,0;
+PLACE:"HBS__commBus2_C1_sel_HBS__commBus2_intprop_4",1500,1500,0,0;
+PLACE:"HBS__commBus2_HBS__commBus2_intprop_5_tmp",1500,1500,0,0;
+PLACE:"HBS__commBus2_HBS__commBus2_intprop_5_blocker",1500,1500,0,0;
+PLACE:"HBS__commBus2_C1_sel_HBS__commBus2_intprop_5",1500,1500,0,0;
+PLACE:"HBS__bu1_HBS__bu1_intprop_2_tmp",1500,1500,0,0;
+PLACE:"HBS__bu1_HBS__bu1_intprop_2_blocker",1500,1500,0,0;
+PLACE:"HBS__bu1_Choice1_sel_HBS__bu1_intprop_2",1500,1500,0,0;
+PLACE:"HBS__bu1_HBS__bu1_intprop_3_tmp",1500,1500,0,0;
+PLACE:"HBS__bu1_HBS__bu1_intprop_3_blocker",1500,1500,0,0;
+PLACE:"HBS__bu1_Choice1_sel_HBS__bu1_intprop_3",1500,1500,0,0;
+PLACE:"HBS__bu1_HBS__bu1_intprop_4_tmp",1500,1500,0,0;
+PLACE:"HBS__bu1_HBS__bu1_intprop_4_blocker",1500,1500,0,0;
+PLACE:"HBS__bu1_Choice2_sel_HBS__bu1_intprop_4",1500,1500,0,0;
+PLACE:"HBS__bu1_HBS__bu1_intprop_5_tmp",1500,1500,0,0;
+PLACE:"HBS__bu1_HBS__bu1_intprop_5_blocker",1500,1500,0,0;
+PLACE:"HBS__bu1_Choice2_sel_HBS__bu1_intprop_5",1500,1500,0,0;
+PLACE:"HBS__bu3_HBS__bu3_intprop_2_tmp",1500,1500,0,0;
+PLACE:"HBS__bu3_HBS__bu3_intprop_2_blocker",1500,1500,0,0;
+PLACE:"HBS__bu3_Choice1_sel_HBS__bu3_intprop_2",1500,1500,0,0;
+PLACE:"HBS__bu3_HBS__bu3_intprop_3_tmp",1500,1500,0,0;
+PLACE:"HBS__bu3_HBS__bu3_intprop_3_blocker",1500,1500,0,0;
+PLACE:"HBS__bu3_Choice1_sel_HBS__bu3_intprop_3",1500,1500,0,0;
+PLACE:"HBS__bu3_HBS__bu3_intprop_4_tmp",1500,1500,0,0;
+PLACE:"HBS__bu3_HBS__bu3_intprop_4_blocker",1500,1500,0,0;
+PLACE:"HBS__bu3_Choice2_sel_HBS__bu3_intprop_4",1500,1500,0,0;
+PLACE:"HBS__bu3_HBS__bu3_intprop_5_tmp",1500,1500,0,0;
+PLACE:"HBS__bu3_HBS__bu3_intprop_5_blocker",1500,1500,0,0;
+PLACE:"HBS__bu3_Choice2_sel_HBS__bu3_intprop_5",1500,1500,0,0;
+PLACE:"HBS__bu2_HBS__bu2_intprop_2_tmp",1500,1500,0,0;
+PLACE:"HBS__bu2_HBS__bu2_intprop_2_blocker",1500,1500,0,0;
+PLACE:"HBS__bu2_Choice1_sel_HBS__bu2_intprop_2",1500,1500,0,0;
+PLACE:"HBS__bu2_HBS__bu2_intprop_3_tmp",1500,1500,0,0;
+PLACE:"HBS__bu2_HBS__bu2_intprop_3_blocker",1500,1500,0,0;
+PLACE:"HBS__bu2_Choice1_sel_HBS__bu2_intprop_3",1500,1500,0,0;
+PLACE:"HBS__bu2_HBS__bu2_intprop_4_tmp",1500,1500,0,0;
+PLACE:"HBS__bu2_HBS__bu2_intprop_4_blocker",1500,1500,0,0;
+PLACE:"HBS__bu2_Choice2_sel_HBS__bu2_intprop_4",1500,1500,0,0;
+PLACE:"HBS__bu2_HBS__bu2_intprop_5_tmp",1500,1500,0,0;
+PLACE:"HBS__bu2_HBS__bu2_intprop_5_blocker",1500,1500,0,0;
+PLACE:"HBS__bu2_Choice2_sel_HBS__bu2_intprop_5",1500,1500,0,0;
+PLACE:"HBS__bu4_HBS__bu4_intprop_2_tmp",1500,1500,0,0;
+PLACE:"HBS__bu4_HBS__bu4_intprop_2_blocker",1500,1500,0,0;
+PLACE:"HBS__bu4_Choice1_sel_HBS__bu4_intprop_2",1500,1500,0,0;
+PLACE:"HBS__bu4_HBS__bu4_intprop_3_tmp",1500,1500,0,0;
+PLACE:"HBS__bu4_HBS__bu4_intprop_3_blocker",1500,1500,0,0;
+PLACE:"HBS__bu4_Choice1_sel_HBS__bu4_intprop_3",1500,1500,0,0;
+PLACE:"HBS__bu4_HBS__bu4_intprop_4_tmp",1500,1500,0,0;
+PLACE:"HBS__bu4_HBS__bu4_intprop_4_blocker",1500,1500,0,0;
+PLACE:"HBS__bu4_Choice2_sel_HBS__bu4_intprop_4",1500,1500,0,0;
+PLACE:"HBS__bu4_HBS__bu4_intprop_5_tmp",1500,1500,0,0;
+PLACE:"HBS__bu4_HBS__bu4_intprop_5_blocker",1500,1500,0,0;
+PLACE:"HBS__bu4_Choice2_sel_HBS__bu4_intprop_5",1500,1500,0,0;
+PLACE:"AWBOmissionAllBrakes_memory_pl",1500,1500,0,0;
+PLACE:"AWBValueAllBrakes_memory_pl",1500,1500,0,0;
+PLACE:"stopper1",1500,1500,1,0;
+PLACE:"stopper2",1500,1500,1,0;
+PLACE:"stopper3",1500,1500,1,0;
+PLACE:"stopper4",1500,1500,1,0;
+PLACE:"stopper5",1500,1500,1,0;
+PLACE:"stopper6",1500,1500,1,0;
+PLACE:"stopper7",1500,1500,1,0;
+PLACE:"stopper8",1500,1500,1,0;
+PLACE:"stopper9",1500,1500,1,0;
+PLACE:"stopper10",1500,1500,1,0;
+PLACE:"stopper11",1500,1500,1,0;
+PLACE:"stopper12",1500,1500,1,0;
+PLACE:"stopper13",1500,1500,1,0;
+PLACE:"stopper14",1500,1500,1,0;
+PLACE:"stopper15",1500,1500,1,0;
+
+TRANS:"HBS__mechPedal_reset",1500,1500,V,Immediate,6,1,'TRUE', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__elecPedal_reset",1500,1500,V,Immediate,6,1,'((TRUE)AND((((TRUE)AND(MARK(HBS__mechPedal_HBS__mechPedal_out1__value)=0.0))AND(MARK(HBS__mechPedal_HBS__mechPedal_out1__omission)=0.0))OR(MARK(HBS__mechPedal_doreset)>0.0)))AND((((TRUE)AND(MARK(HBS__mechPedal_HBS__mechPedal_out1__value)=0.0))AND(MARK(HBS__mechPedal_HBS__mechPedal_out1__omission)=0.0))OR(MARK(HBS__mechPedal_doreset)>0.0))', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__commBus1_reset",1500,1500,V,Immediate,6,1,'((((TRUE)AND((((((TRUE)AND(MARK(HBS__elecPedal_HBS__elecPedal_out1__value)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out1__omission)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__value)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__omission)=0.0))OR(MARK(HBS__elecPedal_doreset)>0.0)))AND((((((TRUE)AND(MARK(HBS__elecPedal_HBS__elecPedal_out1__value)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out1__omission)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__value)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__omission)=0.0))OR(MARK(HBS__elecPedal_doreset)>0.0)))AND((((((TRUE)AND(MARK(HBS__elecPedal_HBS__elecPedal_out1__value)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out1__omission)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__value)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__omission)=0.0))OR(MARK(HBS__elecPedal_doreset)>0.0)))AND((((((TRUE)AND(MARK(HBS__elecPedal_HBS__elecPedal_out1__value)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out1__omission)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__value)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__omission)=0.0))OR(MARK(HBS__elecPedal_doreset)>0.0))', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__commBus2_reset",1500,1500,V,Immediate,6,1,'((((TRUE)AND((((((TRUE)AND(MARK(HBS__elecPedal_HBS__elecPedal_out1__value)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out1__omission)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__value)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__omission)=0.0))OR(MARK(HBS__elecPedal_doreset)>0.0)))AND((((((TRUE)AND(MARK(HBS__elecPedal_HBS__elecPedal_out1__value)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out1__omission)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__value)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__omission)=0.0))OR(MARK(HBS__elecPedal_doreset)>0.0)))AND((((((TRUE)AND(MARK(HBS__elecPedal_HBS__elecPedal_out1__value)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out1__omission)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__value)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__omission)=0.0))OR(MARK(HBS__elecPedal_doreset)>0.0)))AND((((((TRUE)AND(MARK(HBS__elecPedal_HBS__elecPedal_out1__value)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out1__omission)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__value)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__omission)=0.0))OR(MARK(HBS__elecPedal_doreset)>0.0))', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu1_reset",1500,1500,V,Immediate,6,1,'((((TRUE)AND((((TRUE)AND(MARK(HBS__commBus1_HBS__commBus1_out1__value)=0.0))AND(MARK(HBS__commBus1_HBS__commBus1_out1__omission)=0.0))OR(MARK(HBS__commBus1_doreset)>0.0)))AND((((TRUE)AND(MARK(HBS__commBus1_HBS__commBus1_out1__value)=0.0))AND(MARK(HBS__commBus1_HBS__commBus1_out1__omission)=0.0))OR(MARK(HBS__commBus1_doreset)>0.0)))AND((((TRUE)AND(MARK(HBS__commBus2_HBS__commBus2_out1__value)=0.0))AND(MARK(HBS__commBus2_HBS__commBus2_out1__omission)=0.0))OR(MARK(HBS__commBus2_doreset)>0.0)))AND((((TRUE)AND(MARK(HBS__commBus2_HBS__commBus2_out1__value)=0.0))AND(MARK(HBS__commBus2_HBS__commBus2_out1__omission)=0.0))OR(MARK(HBS__commBus2_doreset)>0.0))', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu3_reset",1500,1500,V,Immediate,6,1,'((((TRUE)AND((((TRUE)AND(MARK(HBS__commBus1_HBS__commBus1_out1__value)=0.0))AND(MARK(HBS__commBus1_HBS__commBus1_out1__omission)=0.0))OR(MARK(HBS__commBus1_doreset)>0.0)))AND((((TRUE)AND(MARK(HBS__commBus1_HBS__commBus1_out1__value)=0.0))AND(MARK(HBS__commBus1_HBS__commBus1_out1__omission)=0.0))OR(MARK(HBS__commBus1_doreset)>0.0)))AND((((TRUE)AND(MARK(HBS__commBus2_HBS__commBus2_out1__value)=0.0))AND(MARK(HBS__commBus2_HBS__commBus2_out1__omission)=0.0))OR(MARK(HBS__commBus2_doreset)>0.0)))AND((((TRUE)AND(MARK(HBS__commBus2_HBS__commBus2_out1__value)=0.0))AND(MARK(HBS__commBus2_HBS__commBus2_out1__omission)=0.0))OR(MARK(HBS__commBus2_doreset)>0.0))', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu2_reset",1500,1500,V,Immediate,6,1,'((((TRUE)AND((((TRUE)AND(MARK(HBS__commBus1_HBS__commBus1_out1__value)=0.0))AND(MARK(HBS__commBus1_HBS__commBus1_out1__omission)=0.0))OR(MARK(HBS__commBus1_doreset)>0.0)))AND((((TRUE)AND(MARK(HBS__commBus1_HBS__commBus1_out1__value)=0.0))AND(MARK(HBS__commBus1_HBS__commBus1_out1__omission)=0.0))OR(MARK(HBS__commBus1_doreset)>0.0)))AND((((TRUE)AND(MARK(HBS__commBus2_HBS__commBus2_out1__value)=0.0))AND(MARK(HBS__commBus2_HBS__commBus2_out1__omission)=0.0))OR(MARK(HBS__commBus2_doreset)>0.0)))AND((((TRUE)AND(MARK(HBS__commBus2_HBS__commBus2_out1__value)=0.0))AND(MARK(HBS__commBus2_HBS__commBus2_out1__omission)=0.0))OR(MARK(HBS__commBus2_doreset)>0.0))', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu4_reset",1500,1500,V,Immediate,6,1,'((((TRUE)AND((((TRUE)AND(MARK(HBS__commBus1_HBS__commBus1_out1__value)=0.0))AND(MARK(HBS__commBus1_HBS__commBus1_out1__omission)=0.0))OR(MARK(HBS__commBus1_doreset)>0.0)))AND((((TRUE)AND(MARK(HBS__commBus1_HBS__commBus1_out1__value)=0.0))AND(MARK(HBS__commBus1_HBS__commBus1_out1__omission)=0.0))OR(MARK(HBS__commBus1_doreset)>0.0)))AND((((TRUE)AND(MARK(HBS__commBus2_HBS__commBus2_out1__value)=0.0))AND(MARK(HBS__commBus2_HBS__commBus2_out1__omission)=0.0))OR(MARK(HBS__commBus2_doreset)>0.0)))AND((((TRUE)AND(MARK(HBS__commBus2_HBS__commBus2_out1__value)=0.0))AND(MARK(HBS__commBus2_HBS__commBus2_out1__omission)=0.0))OR(MARK(HBS__commBus2_doreset)>0.0))', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__mechPedal_ift_1_FO",1500,1500,V,Timed,1,1,'MARK(HBS__mechPedal_HBS__mechPedal_ift_1)=0.0', '1.0E-6',
+(
+  1.000000e+00
+);
+TRANS:"HBS__mechPedal_ift_1_TD",1500,1500,V,Immediate,4,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__mechPedal_HBS__mechPedal_ift_1_caseperm",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__mechPedal_HBS__mechPedal_ift_1_casetrans",1500,1500,V,Immediate,7,1,'', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__elecPedal_ift_1_FO",1500,1500,V,Timed,1,1,'MARK(HBS__elecPedal_HBS__elecPedal_ift_1)=0.0', '5.0E-6',
+(
+  1.000000e+00
+);
+TRANS:"HBS__elecPedal_ift_1_TD",1500,1500,V,Immediate,4,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__elecPedal_HBS__elecPedal_ift_1_caseperm",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__elecPedal_HBS__elecPedal_ift_1_casetrans",1500,1500,V,Immediate,7,1,'', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__commBus1_ift_1_FO",1500,1500,V,Timed,1,1,'MARK(HBS__commBus1_HBS__commBus1_ift_1)=0.0', '5.0E-10',
+(
+  1.000000e+00
+);
+TRANS:"HBS__commBus1_ift_1_TD",1500,1500,V,Immediate,4,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__commBus1_HBS__commBus1_ift_1_caseperm",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__commBus1_HBS__commBus1_ift_1_casetrans",1500,1500,V,Immediate,7,1,'', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__commBus2_ift_1_FO",1500,1500,V,Timed,1,1,'MARK(HBS__commBus2_HBS__commBus2_ift_1)=0.0', '5.0E-10',
+(
+  1.000000e+00
+);
+TRANS:"HBS__commBus2_ift_1_TD",1500,1500,V,Immediate,4,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__commBus2_HBS__commBus2_ift_1_caseperm",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__commBus2_HBS__commBus2_ift_1_casetrans",1500,1500,V,Immediate,7,1,'', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__bu1_ift_1_FO",1500,1500,V,Timed,1,1,'MARK(HBS__bu1_HBS__bu1_ift_1)=0.0', '5.0E-6',
+(
+  1.000000e+00
+);
+TRANS:"HBS__bu1_ift_1_TD",1500,1500,V,Immediate,4,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu1_HBS__bu1_ift_1_caseperm",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu1_HBS__bu1_ift_1_casetrans",1500,1500,V,Immediate,7,1,'', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__bu3_ift_1_FO",1500,1500,V,Timed,1,1,'MARK(HBS__bu3_HBS__bu3_ift_1)=0.0', '5.0E-6',
+(
+  1.000000e+00
+);
+TRANS:"HBS__bu3_ift_1_TD",1500,1500,V,Immediate,4,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu3_HBS__bu3_ift_1_caseperm",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu3_HBS__bu3_ift_1_casetrans",1500,1500,V,Immediate,7,1,'', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__bu2_ift_1_FO",1500,1500,V,Timed,1,1,'MARK(HBS__bu2_HBS__bu2_ift_1)=0.0', '5.0E-6',
+(
+  1.000000e+00
+);
+TRANS:"HBS__bu2_ift_1_TD",1500,1500,V,Immediate,4,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu2_HBS__bu2_ift_1_caseperm",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu2_HBS__bu2_ift_1_casetrans",1500,1500,V,Immediate,7,1,'', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__bu4_ift_1_FO",1500,1500,V,Timed,1,1,'MARK(HBS__bu4_HBS__bu4_ift_1)=0.0', '5.0E-6',
+(
+  1.000000e+00
+);
+TRANS:"HBS__bu4_ift_1_TD",1500,1500,V,Immediate,4,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu4_HBS__bu4_ift_1_caseperm",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu4_HBS__bu4_ift_1_casetrans",1500,1500,V,Immediate,7,1,'', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__mechPedal_HBS__mechPedal_fge_1",1500,1500,V,Immediate,5,1,'((MARK(HBS__mechPedal_HBS__mechPedal_ift_1)>0.0)AND((MARK(HBS__mechPedal_HBS__mechPedal_fge_1_tmp)=0.0)AND((MARK(HBS__mechPedal_HBS__mechPedal_out1__value)=0.0)AND(MARK(HBS__mechPedal_HBS__mechPedal_out1__omission)=0.0))))AND(MARK(HBS__mechPedal_HBS__mechPedal_Choice1)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__mechPedal_HBS__mechPedal_fge_1_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__mechPedal_HBS__mechPedal_fge_1_caseskip",1500,1500,V,Immediate,7,1,'FALSE', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__elecPedal_HBS__elecPedal_fge_1",1500,1500,V,Immediate,5,1,'((MARK(HBS__elecPedal_HBS__elecPedal_ift_1)>0.0)AND((MARK(HBS__elecPedal_HBS__elecPedal_fge_1_tmp)=0.0)AND((((MARK(HBS__elecPedal_HBS__elecPedal_out1__value)=0.0)AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__value)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out1__omission)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__omission)=0.0))))AND(MARK(HBS__elecPedal_HBS__elecPedal_Choice1)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__elecPedal_HBS__elecPedal_fge_1_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__elecPedal_HBS__elecPedal_fge_1_caseskip",1500,1500,V,Immediate,7,1,'FALSE', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__commBus1_HBS__commBus1_fge_1",1500,1500,V,Immediate,5,1,'((MARK(HBS__commBus1_HBS__commBus1_ift_1)>0.0)AND((MARK(HBS__commBus1_HBS__commBus1_fge_1_tmp)=0.0)AND((MARK(HBS__commBus1_HBS__commBus1_out1__value)=0.0)AND(MARK(HBS__commBus1_HBS__commBus1_out1__omission)=0.0))))AND(MARK(HBS__commBus1_HBS__commBus1_C2)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__commBus1_HBS__commBus1_fge_1_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__commBus1_HBS__commBus1_fge_1_caseskip",1500,1500,V,Immediate,7,1,'FALSE', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__commBus2_HBS__commBus2_fge_1",1500,1500,V,Immediate,5,1,'((MARK(HBS__commBus2_HBS__commBus2_ift_1)>0.0)AND((MARK(HBS__commBus2_HBS__commBus2_fge_1_tmp)=0.0)AND((MARK(HBS__commBus2_HBS__commBus2_out1__value)=0.0)AND(MARK(HBS__commBus2_HBS__commBus2_out1__omission)=0.0))))AND(MARK(HBS__commBus2_HBS__commBus2_C2)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__commBus2_HBS__commBus2_fge_1_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__commBus2_HBS__commBus2_fge_1_caseskip",1500,1500,V,Immediate,7,1,'FALSE', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__bu1_HBS__bu1_fge_1",1500,1500,V,Immediate,5,1,'((MARK(HBS__bu1_HBS__bu1_ift_1)>0.0)AND((MARK(HBS__bu1_HBS__bu1_fge_1_tmp)=0.0)AND((MARK(HBS__bu1_HBS__bu1_torque__value)=0.0)AND(MARK(HBS__bu1_HBS__bu1_torque__omission)=0.0))))AND(MARK(HBS__bu1_HBS__bu1_Choice1)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu1_HBS__bu1_fge_1_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu1_HBS__bu1_fge_1_caseskip",1500,1500,V,Immediate,7,1,'FALSE', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__bu3_HBS__bu3_fge_1",1500,1500,V,Immediate,5,1,'((MARK(HBS__bu3_HBS__bu3_ift_1)>0.0)AND((MARK(HBS__bu3_HBS__bu3_fge_1_tmp)=0.0)AND((MARK(HBS__bu3_HBS__bu3_torque__value)=0.0)AND(MARK(HBS__bu3_HBS__bu3_torque__omission)=0.0))))AND(MARK(HBS__bu3_HBS__bu3_Choice1)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu3_HBS__bu3_fge_1_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu3_HBS__bu3_fge_1_caseskip",1500,1500,V,Immediate,7,1,'FALSE', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__bu2_HBS__bu2_fge_1",1500,1500,V,Immediate,5,1,'((MARK(HBS__bu2_HBS__bu2_ift_1)>0.0)AND((MARK(HBS__bu2_HBS__bu2_fge_1_tmp)=0.0)AND((MARK(HBS__bu2_HBS__bu2_torque__value)=0.0)AND(MARK(HBS__bu2_HBS__bu2_torque__omission)=0.0))))AND(MARK(HBS__bu2_HBS__bu2_Choice1)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu2_HBS__bu2_fge_1_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu2_HBS__bu2_fge_1_caseskip",1500,1500,V,Immediate,7,1,'FALSE', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__bu4_HBS__bu4_fge_1",1500,1500,V,Immediate,5,1,'((MARK(HBS__bu4_HBS__bu4_ift_1)>0.0)AND((MARK(HBS__bu4_HBS__bu4_fge_1_tmp)=0.0)AND((MARK(HBS__bu4_HBS__bu4_torque__value)=0.0)AND(MARK(HBS__bu4_HBS__bu4_torque__omission)=0.0))))AND(MARK(HBS__bu4_HBS__bu4_Choice1)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu4_HBS__bu4_fge_1_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu4_HBS__bu4_fge_1_caseskip",1500,1500,V,Immediate,7,1,'FALSE', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__mechPedal_HBS__mechPedal_epf_1",1500,1500,V,Immediate,5,1,'((MARK(HBS__mechPedal_HBS__mechPedal_valueError)>0.0)AND((MARK(HBS__mechPedal_HBS__mechPedal_epf_1_tmp)=0.0)AND((MARK(HBS__mechPedal_HBS__mechPedal_out1__value)=0.0)AND(MARK(HBS__mechPedal_HBS__mechPedal_out1__omission)=0.0))))AND(MARK(HBS__mechPedal_HBS__mechPedal_out1__value)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__mechPedal_HBS__mechPedal_epf_1_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__mechPedal_HBS__mechPedal_epf_1_caseskip",1500,1500,V,Immediate,7,1,'', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__mechPedal_valueError_choice_HBS__mechPedal_epf_1",1500,1500,V,Immediate,7,1,'((MARK(HBS__mechPedal_HBS__mechPedal_valueError)>0.0)AND((MARK(HBS__mechPedal_HBS__mechPedal_epf_1_tmp)=0.0)AND((MARK(HBS__mechPedal_HBS__mechPedal_out1__value)=0.0)AND(MARK(HBS__mechPedal_HBS__mechPedal_out1__omission)=0.0))))AND(MARK(HBS__mechPedal_HBS__mechPedal_out1__value)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__mechPedal_HBS__mechPedal_epf_2",1500,1500,V,Immediate,5,1,'((MARK(HBS__mechPedal_HBS__mechPedal_omissionError)>0.0)AND((MARK(HBS__mechPedal_HBS__mechPedal_epf_2_tmp)=0.0)AND((MARK(HBS__mechPedal_HBS__mechPedal_out1__value)=0.0)AND(MARK(HBS__mechPedal_HBS__mechPedal_out1__omission)=0.0))))AND(MARK(HBS__mechPedal_HBS__mechPedal_out1__omission)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__mechPedal_HBS__mechPedal_epf_2_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__mechPedal_HBS__mechPedal_epf_2_caseskip",1500,1500,V,Immediate,7,1,'', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__mechPedal_omissionError_choice_HBS__mechPedal_epf_2",1500,1500,V,Immediate,7,1,'((MARK(HBS__mechPedal_HBS__mechPedal_omissionError)>0.0)AND((MARK(HBS__mechPedal_HBS__mechPedal_epf_2_tmp)=0.0)AND((MARK(HBS__mechPedal_HBS__mechPedal_out1__value)=0.0)AND(MARK(HBS__mechPedal_HBS__mechPedal_out1__omission)=0.0))))AND(MARK(HBS__mechPedal_HBS__mechPedal_out1__omission)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__elecPedal_HBS__elecPedal_epf_1",1500,1500,V,Immediate,5,1,'((MARK(HBS__elecPedal_HBS__elecPedal_valueError)>0.0)AND((MARK(HBS__elecPedal_HBS__elecPedal_epf_1_tmp)=0.0)AND((((MARK(HBS__elecPedal_HBS__elecPedal_out1__value)=0.0)AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__value)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out1__omission)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__omission)=0.0))))AND((MARK(HBS__elecPedal_HBS__elecPedal_out2__value)=0.0)OR(MARK(HBS__elecPedal_HBS__elecPedal_out1__value)=0.0))', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__elecPedal_HBS__elecPedal_epf_1_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__elecPedal_HBS__elecPedal_epf_1_caseskip",1500,1500,V,Immediate,7,1,'', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__elecPedal_valueError_choice_HBS__elecPedal_epf_1",1500,1500,V,Immediate,7,1,'((MARK(HBS__elecPedal_HBS__elecPedal_valueError)>0.0)AND((MARK(HBS__elecPedal_HBS__elecPedal_epf_1_tmp)=0.0)AND((((MARK(HBS__elecPedal_HBS__elecPedal_out1__value)=0.0)AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__value)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out1__omission)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__omission)=0.0))))AND((MARK(HBS__elecPedal_HBS__elecPedal_out2__value)=0.0)OR(MARK(HBS__elecPedal_HBS__elecPedal_out1__value)=0.0))', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__elecPedal_HBS__elecPedal_epf_2",1500,1500,V,Immediate,5,1,'((MARK(HBS__elecPedal_HBS__elecPedal_omissionError)>0.0)AND((MARK(HBS__elecPedal_HBS__elecPedal_epf_2_tmp)=0.0)AND((((MARK(HBS__elecPedal_HBS__elecPedal_out1__value)=0.0)AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__value)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out1__omission)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__omission)=0.0))))AND((MARK(HBS__elecPedal_HBS__elecPedal_out2__omission)=0.0)OR(MARK(HBS__elecPedal_HBS__elecPedal_out1__omission)=0.0))', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__elecPedal_HBS__elecPedal_epf_2_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__elecPedal_HBS__elecPedal_epf_2_caseskip",1500,1500,V,Immediate,7,1,'', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__elecPedal_omissionError_choice_HBS__elecPedal_epf_2",1500,1500,V,Immediate,7,1,'((MARK(HBS__elecPedal_HBS__elecPedal_omissionError)>0.0)AND((MARK(HBS__elecPedal_HBS__elecPedal_epf_2_tmp)=0.0)AND((((MARK(HBS__elecPedal_HBS__elecPedal_out1__value)=0.0)AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__value)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out1__omission)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__omission)=0.0))))AND((MARK(HBS__elecPedal_HBS__elecPedal_out2__omission)=0.0)OR(MARK(HBS__elecPedal_HBS__elecPedal_out1__omission)=0.0))', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__commBus1_HBS__commBus1_epf_1",1500,1500,V,Immediate,5,1,'((MARK(HBS__commBus1_HBS__commBus1_valueError)>0.0)AND((MARK(HBS__commBus1_HBS__commBus1_epf_1_tmp)=0.0)AND((MARK(HBS__commBus1_HBS__commBus1_out1__value)=0.0)AND(MARK(HBS__commBus1_HBS__commBus1_out1__omission)=0.0))))AND(MARK(HBS__commBus1_HBS__commBus1_out1__value)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__commBus1_HBS__commBus1_epf_1_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__commBus1_HBS__commBus1_epf_1_caseskip",1500,1500,V,Immediate,7,1,'', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__commBus1_valueError_choice_HBS__commBus1_epf_1",1500,1500,V,Immediate,7,1,'((MARK(HBS__commBus1_HBS__commBus1_valueError)>0.0)AND((MARK(HBS__commBus1_HBS__commBus1_epf_1_tmp)=0.0)AND((MARK(HBS__commBus1_HBS__commBus1_out1__value)=0.0)AND(MARK(HBS__commBus1_HBS__commBus1_out1__omission)=0.0))))AND(MARK(HBS__commBus1_HBS__commBus1_out1__value)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__commBus1_HBS__commBus1_epf_2",1500,1500,V,Immediate,5,1,'((MARK(HBS__commBus1_HBS__commBus1_omissionError)>0.0)AND((MARK(HBS__commBus1_HBS__commBus1_epf_2_tmp)=0.0)AND((MARK(HBS__commBus1_HBS__commBus1_out1__value)=0.0)AND(MARK(HBS__commBus1_HBS__commBus1_out1__omission)=0.0))))AND(MARK(HBS__commBus1_HBS__commBus1_out1__omission)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__commBus1_HBS__commBus1_epf_2_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__commBus1_HBS__commBus1_epf_2_caseskip",1500,1500,V,Immediate,7,1,'', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__commBus1_omissionError_choice_HBS__commBus1_epf_2",1500,1500,V,Immediate,7,1,'((MARK(HBS__commBus1_HBS__commBus1_omissionError)>0.0)AND((MARK(HBS__commBus1_HBS__commBus1_epf_2_tmp)=0.0)AND((MARK(HBS__commBus1_HBS__commBus1_out1__value)=0.0)AND(MARK(HBS__commBus1_HBS__commBus1_out1__omission)=0.0))))AND(MARK(HBS__commBus1_HBS__commBus1_out1__omission)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__commBus2_HBS__commBus2_epf_1",1500,1500,V,Immediate,5,1,'((MARK(HBS__commBus2_HBS__commBus2_valueError)>0.0)AND((MARK(HBS__commBus2_HBS__commBus2_epf_1_tmp)=0.0)AND((MARK(HBS__commBus2_HBS__commBus2_out1__value)=0.0)AND(MARK(HBS__commBus2_HBS__commBus2_out1__omission)=0.0))))AND(MARK(HBS__commBus2_HBS__commBus2_out1__value)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__commBus2_HBS__commBus2_epf_1_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__commBus2_HBS__commBus2_epf_1_caseskip",1500,1500,V,Immediate,7,1,'', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__commBus2_valueError_choice_HBS__commBus2_epf_1",1500,1500,V,Immediate,7,1,'((MARK(HBS__commBus2_HBS__commBus2_valueError)>0.0)AND((MARK(HBS__commBus2_HBS__commBus2_epf_1_tmp)=0.0)AND((MARK(HBS__commBus2_HBS__commBus2_out1__value)=0.0)AND(MARK(HBS__commBus2_HBS__commBus2_out1__omission)=0.0))))AND(MARK(HBS__commBus2_HBS__commBus2_out1__value)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__commBus2_HBS__commBus2_epf_2",1500,1500,V,Immediate,5,1,'((MARK(HBS__commBus2_HBS__commBus2_omissionError)>0.0)AND((MARK(HBS__commBus2_HBS__commBus2_epf_2_tmp)=0.0)AND((MARK(HBS__commBus2_HBS__commBus2_out1__value)=0.0)AND(MARK(HBS__commBus2_HBS__commBus2_out1__omission)=0.0))))AND(MARK(HBS__commBus2_HBS__commBus2_out1__omission)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__commBus2_HBS__commBus2_epf_2_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__commBus2_HBS__commBus2_epf_2_caseskip",1500,1500,V,Immediate,7,1,'', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__commBus2_omissionError_choice_HBS__commBus2_epf_2",1500,1500,V,Immediate,7,1,'((MARK(HBS__commBus2_HBS__commBus2_omissionError)>0.0)AND((MARK(HBS__commBus2_HBS__commBus2_epf_2_tmp)=0.0)AND((MARK(HBS__commBus2_HBS__commBus2_out1__value)=0.0)AND(MARK(HBS__commBus2_HBS__commBus2_out1__omission)=0.0))))AND(MARK(HBS__commBus2_HBS__commBus2_out1__omission)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu1_HBS__bu1_epf_1",1500,1500,V,Immediate,5,1,'((MARK(HBS__bu1_HBS__bu1_valueError)>0.0)AND((MARK(HBS__bu1_HBS__bu1_epf_1_tmp)=0.0)AND((MARK(HBS__bu1_HBS__bu1_torque__value)=0.0)AND(MARK(HBS__bu1_HBS__bu1_torque__omission)=0.0))))AND(MARK(HBS__bu1_HBS__bu1_torque__value)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu1_HBS__bu1_epf_1_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu1_HBS__bu1_epf_1_caseskip",1500,1500,V,Immediate,7,1,'', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__bu1_valueError_choice_HBS__bu1_epf_1",1500,1500,V,Immediate,7,1,'((MARK(HBS__bu1_HBS__bu1_valueError)>0.0)AND((MARK(HBS__bu1_HBS__bu1_epf_1_tmp)=0.0)AND((MARK(HBS__bu1_HBS__bu1_torque__value)=0.0)AND(MARK(HBS__bu1_HBS__bu1_torque__omission)=0.0))))AND(MARK(HBS__bu1_HBS__bu1_torque__value)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu1_HBS__bu1_epf_2",1500,1500,V,Immediate,5,1,'((MARK(HBS__bu1_HBS__bu1_omissionError)>0.0)AND((MARK(HBS__bu1_HBS__bu1_epf_2_tmp)=0.0)AND((MARK(HBS__bu1_HBS__bu1_torque__value)=0.0)AND(MARK(HBS__bu1_HBS__bu1_torque__omission)=0.0))))AND(MARK(HBS__bu1_HBS__bu1_torque__omission)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu1_HBS__bu1_epf_2_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu1_HBS__bu1_epf_2_caseskip",1500,1500,V,Immediate,7,1,'', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__bu1_omissionError_choice_HBS__bu1_epf_2",1500,1500,V,Immediate,7,1,'((MARK(HBS__bu1_HBS__bu1_omissionError)>0.0)AND((MARK(HBS__bu1_HBS__bu1_epf_2_tmp)=0.0)AND((MARK(HBS__bu1_HBS__bu1_torque__value)=0.0)AND(MARK(HBS__bu1_HBS__bu1_torque__omission)=0.0))))AND(MARK(HBS__bu1_HBS__bu1_torque__omission)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu3_HBS__bu3_epf_1",1500,1500,V,Immediate,5,1,'((MARK(HBS__bu3_HBS__bu3_valueError)>0.0)AND((MARK(HBS__bu3_HBS__bu3_epf_1_tmp)=0.0)AND((MARK(HBS__bu3_HBS__bu3_torque__value)=0.0)AND(MARK(HBS__bu3_HBS__bu3_torque__omission)=0.0))))AND(MARK(HBS__bu3_HBS__bu3_torque__value)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu3_HBS__bu3_epf_1_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu3_HBS__bu3_epf_1_caseskip",1500,1500,V,Immediate,7,1,'', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__bu3_valueError_choice_HBS__bu3_epf_1",1500,1500,V,Immediate,7,1,'((MARK(HBS__bu3_HBS__bu3_valueError)>0.0)AND((MARK(HBS__bu3_HBS__bu3_epf_1_tmp)=0.0)AND((MARK(HBS__bu3_HBS__bu3_torque__value)=0.0)AND(MARK(HBS__bu3_HBS__bu3_torque__omission)=0.0))))AND(MARK(HBS__bu3_HBS__bu3_torque__value)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu3_HBS__bu3_epf_2",1500,1500,V,Immediate,5,1,'((MARK(HBS__bu3_HBS__bu3_omissionError)>0.0)AND((MARK(HBS__bu3_HBS__bu3_epf_2_tmp)=0.0)AND((MARK(HBS__bu3_HBS__bu3_torque__value)=0.0)AND(MARK(HBS__bu3_HBS__bu3_torque__omission)=0.0))))AND(MARK(HBS__bu3_HBS__bu3_torque__omission)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu3_HBS__bu3_epf_2_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu3_HBS__bu3_epf_2_caseskip",1500,1500,V,Immediate,7,1,'', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__bu3_omissionError_choice_HBS__bu3_epf_2",1500,1500,V,Immediate,7,1,'((MARK(HBS__bu3_HBS__bu3_omissionError)>0.0)AND((MARK(HBS__bu3_HBS__bu3_epf_2_tmp)=0.0)AND((MARK(HBS__bu3_HBS__bu3_torque__value)=0.0)AND(MARK(HBS__bu3_HBS__bu3_torque__omission)=0.0))))AND(MARK(HBS__bu3_HBS__bu3_torque__omission)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu2_HBS__bu2_epf_1",1500,1500,V,Immediate,5,1,'((MARK(HBS__bu2_HBS__bu2_valueError)>0.0)AND((MARK(HBS__bu2_HBS__bu2_epf_1_tmp)=0.0)AND((MARK(HBS__bu2_HBS__bu2_torque__value)=0.0)AND(MARK(HBS__bu2_HBS__bu2_torque__omission)=0.0))))AND(MARK(HBS__bu2_HBS__bu2_torque__value)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu2_HBS__bu2_epf_1_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu2_HBS__bu2_epf_1_caseskip",1500,1500,V,Immediate,7,1,'', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__bu2_valueError_choice_HBS__bu2_epf_1",1500,1500,V,Immediate,7,1,'((MARK(HBS__bu2_HBS__bu2_valueError)>0.0)AND((MARK(HBS__bu2_HBS__bu2_epf_1_tmp)=0.0)AND((MARK(HBS__bu2_HBS__bu2_torque__value)=0.0)AND(MARK(HBS__bu2_HBS__bu2_torque__omission)=0.0))))AND(MARK(HBS__bu2_HBS__bu2_torque__value)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu2_HBS__bu2_epf_2",1500,1500,V,Immediate,5,1,'((MARK(HBS__bu2_HBS__bu2_omissionError)>0.0)AND((MARK(HBS__bu2_HBS__bu2_epf_2_tmp)=0.0)AND((MARK(HBS__bu2_HBS__bu2_torque__value)=0.0)AND(MARK(HBS__bu2_HBS__bu2_torque__omission)=0.0))))AND(MARK(HBS__bu2_HBS__bu2_torque__omission)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu2_HBS__bu2_epf_2_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu2_HBS__bu2_epf_2_caseskip",1500,1500,V,Immediate,7,1,'', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__bu2_omissionError_choice_HBS__bu2_epf_2",1500,1500,V,Immediate,7,1,'((MARK(HBS__bu2_HBS__bu2_omissionError)>0.0)AND((MARK(HBS__bu2_HBS__bu2_epf_2_tmp)=0.0)AND((MARK(HBS__bu2_HBS__bu2_torque__value)=0.0)AND(MARK(HBS__bu2_HBS__bu2_torque__omission)=0.0))))AND(MARK(HBS__bu2_HBS__bu2_torque__omission)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu4_HBS__bu4_epf_1",1500,1500,V,Immediate,5,1,'((MARK(HBS__bu4_HBS__bu4_valueError)>0.0)AND((MARK(HBS__bu4_HBS__bu4_epf_1_tmp)=0.0)AND((MARK(HBS__bu4_HBS__bu4_torque__value)=0.0)AND(MARK(HBS__bu4_HBS__bu4_torque__omission)=0.0))))AND(MARK(HBS__bu4_HBS__bu4_torque__value)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu4_HBS__bu4_epf_1_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu4_HBS__bu4_epf_1_caseskip",1500,1500,V,Immediate,7,1,'', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__bu4_valueError_choice_HBS__bu4_epf_1",1500,1500,V,Immediate,7,1,'((MARK(HBS__bu4_HBS__bu4_valueError)>0.0)AND((MARK(HBS__bu4_HBS__bu4_epf_1_tmp)=0.0)AND((MARK(HBS__bu4_HBS__bu4_torque__value)=0.0)AND(MARK(HBS__bu4_HBS__bu4_torque__omission)=0.0))))AND(MARK(HBS__bu4_HBS__bu4_torque__value)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu4_HBS__bu4_epf_2",1500,1500,V,Immediate,5,1,'((MARK(HBS__bu4_HBS__bu4_omissionError)>0.0)AND((MARK(HBS__bu4_HBS__bu4_epf_2_tmp)=0.0)AND((MARK(HBS__bu4_HBS__bu4_torque__value)=0.0)AND(MARK(HBS__bu4_HBS__bu4_torque__omission)=0.0))))AND(MARK(HBS__bu4_HBS__bu4_torque__omission)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu4_HBS__bu4_epf_2_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu4_HBS__bu4_epf_2_caseskip",1500,1500,V,Immediate,7,1,'', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__bu4_omissionError_choice_HBS__bu4_epf_2",1500,1500,V,Immediate,7,1,'((MARK(HBS__bu4_HBS__bu4_omissionError)>0.0)AND((MARK(HBS__bu4_HBS__bu4_epf_2_tmp)=0.0)AND((MARK(HBS__bu4_HBS__bu4_torque__value)=0.0)AND(MARK(HBS__bu4_HBS__bu4_torque__omission)=0.0))))AND(MARK(HBS__bu4_HBS__bu4_torque__omission)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__mechPedal_HBS__mechPedal_intprop_2",1500,1500,V,Immediate,5,1,'((MARK(HBS__mechPedal_HBS__mechPedal_Choice1)>0.0)AND((MARK(HBS__mechPedal_HBS__mechPedal_intprop_2_tmp)=0.0)AND((MARK(HBS__mechPedal_HBS__mechPedal_out1__value)=0.0)AND(MARK(HBS__mechPedal_HBS__mechPedal_out1__omission)=0.0))))AND(MARK(HBS__mechPedal_HBS__mechPedal_valueError)=0.0)', '0.9',
+ (
+0.9
+  );
+TRANS:"HBS__mechPedal_HBS__mechPedal_intprop_2_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__mechPedal_HBS__mechPedal_intprop_2_caseskip",1500,1500,V,Immediate,7,1,'FALSE', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__mechPedal_Choice1_choice_HBS__mechPedal_intprop_2",1500,1500,V,Immediate,7,1,'((MARK(HBS__mechPedal_HBS__mechPedal_Choice1)>0.0)AND((MARK(HBS__mechPedal_HBS__mechPedal_intprop_2_tmp)=0.0)AND((MARK(HBS__mechPedal_HBS__mechPedal_out1__value)=0.0)AND(MARK(HBS__mechPedal_HBS__mechPedal_out1__omission)=0.0))))AND(MARK(HBS__mechPedal_HBS__mechPedal_valueError)=0.0)', '0.9',
+ (
+0.9
+  );
+TRANS:"HBS__mechPedal_HBS__mechPedal_intprop_3",1500,1500,V,Immediate,5,1,'((MARK(HBS__mechPedal_HBS__mechPedal_Choice1)>0.0)AND((MARK(HBS__mechPedal_HBS__mechPedal_intprop_3_tmp)=0.0)AND((MARK(HBS__mechPedal_HBS__mechPedal_out1__value)=0.0)AND(MARK(HBS__mechPedal_HBS__mechPedal_out1__omission)=0.0))))AND(MARK(HBS__mechPedal_HBS__mechPedal_omissionError)=0.0)', '0.1',
+ (
+0.1
+  );
+TRANS:"HBS__mechPedal_HBS__mechPedal_intprop_3_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__mechPedal_HBS__mechPedal_intprop_3_caseskip",1500,1500,V,Immediate,7,1,'FALSE', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__mechPedal_Choice1_choice_HBS__mechPedal_intprop_3",1500,1500,V,Immediate,7,1,'((MARK(HBS__mechPedal_HBS__mechPedal_Choice1)>0.0)AND((MARK(HBS__mechPedal_HBS__mechPedal_intprop_3_tmp)=0.0)AND((MARK(HBS__mechPedal_HBS__mechPedal_out1__value)=0.0)AND(MARK(HBS__mechPedal_HBS__mechPedal_out1__omission)=0.0))))AND(MARK(HBS__mechPedal_HBS__mechPedal_omissionError)=0.0)', '0.1',
+ (
+0.1
+  );
+TRANS:"HBS__elecPedal_HBS__elecPedal_intprop_2",1500,1500,V,Immediate,5,1,'((MARK(HBS__elecPedal_HBS__elecPedal_Choice1)>0.0)AND((MARK(HBS__elecPedal_HBS__elecPedal_intprop_2_tmp)=0.0)AND((((MARK(HBS__elecPedal_HBS__elecPedal_out1__value)=0.0)AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__value)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out1__omission)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__omission)=0.0))))AND(MARK(HBS__elecPedal_HBS__elecPedal_valueError)=0.0)', '0.95',
+ (
+0.95
+  );
+TRANS:"HBS__elecPedal_HBS__elecPedal_intprop_2_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__elecPedal_HBS__elecPedal_intprop_2_caseskip",1500,1500,V,Immediate,7,1,'FALSE', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__elecPedal_Choice1_choice_HBS__elecPedal_intprop_2",1500,1500,V,Immediate,7,1,'((MARK(HBS__elecPedal_HBS__elecPedal_Choice1)>0.0)AND((MARK(HBS__elecPedal_HBS__elecPedal_intprop_2_tmp)=0.0)AND((((MARK(HBS__elecPedal_HBS__elecPedal_out1__value)=0.0)AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__value)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out1__omission)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__omission)=0.0))))AND(MARK(HBS__elecPedal_HBS__elecPedal_valueError)=0.0)', '0.95',
+ (
+0.95
+  );
+TRANS:"HBS__elecPedal_HBS__elecPedal_intprop_3",1500,1500,V,Immediate,5,1,'((MARK(HBS__elecPedal_HBS__elecPedal_Choice1)>0.0)AND((MARK(HBS__elecPedal_HBS__elecPedal_intprop_3_tmp)=0.0)AND((((MARK(HBS__elecPedal_HBS__elecPedal_out1__value)=0.0)AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__value)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out1__omission)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__omission)=0.0))))AND(MARK(HBS__elecPedal_HBS__elecPedal_omissionError)=0.0)', '0.05',
+ (
+0.05
+  );
+TRANS:"HBS__elecPedal_HBS__elecPedal_intprop_3_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__elecPedal_HBS__elecPedal_intprop_3_caseskip",1500,1500,V,Immediate,7,1,'FALSE', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__elecPedal_Choice1_choice_HBS__elecPedal_intprop_3",1500,1500,V,Immediate,7,1,'((MARK(HBS__elecPedal_HBS__elecPedal_Choice1)>0.0)AND((MARK(HBS__elecPedal_HBS__elecPedal_intprop_3_tmp)=0.0)AND((((MARK(HBS__elecPedal_HBS__elecPedal_out1__value)=0.0)AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__value)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out1__omission)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__omission)=0.0))))AND(MARK(HBS__elecPedal_HBS__elecPedal_omissionError)=0.0)', '0.05',
+ (
+0.05
+  );
+TRANS:"HBS__elecPedal_HBS__elecPedal_intprop_4",1500,1500,V,Immediate,5,1,'((MARK(HBS__mechPedal_HBS__mechPedal_out1__value)>0.0)AND((MARK(HBS__elecPedal_HBS__elecPedal_Choice2)>0.0)AND((MARK(HBS__elecPedal_HBS__elecPedal_intprop_4_tmp)=0.0)AND((((MARK(HBS__elecPedal_HBS__elecPedal_out1__value)=0.0)AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__value)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out1__omission)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__omission)=0.0)))))AND(MARK(HBS__elecPedal_HBS__elecPedal_valueError)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__elecPedal_HBS__elecPedal_intprop_4_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__elecPedal_HBS__elecPedal_intprop_4_caseskip",1500,1500,V,Immediate,7,1,'FALSE', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__elecPedal_Choice2_choice_HBS__elecPedal_intprop_4",1500,1500,V,Immediate,7,1,'((MARK(HBS__mechPedal_HBS__mechPedal_out1__value)>0.0)AND((MARK(HBS__elecPedal_HBS__elecPedal_Choice2)>0.0)AND((MARK(HBS__elecPedal_HBS__elecPedal_intprop_4_tmp)=0.0)AND((((MARK(HBS__elecPedal_HBS__elecPedal_out1__value)=0.0)AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__value)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out1__omission)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__omission)=0.0)))))AND(MARK(HBS__elecPedal_HBS__elecPedal_valueError)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__elecPedal_HBS__elecPedal_intprop_5",1500,1500,V,Immediate,5,1,'((MARK(HBS__mechPedal_HBS__mechPedal_out1__omission)>0.0)AND((MARK(HBS__elecPedal_HBS__elecPedal_Choice2)>0.0)AND((MARK(HBS__elecPedal_HBS__elecPedal_intprop_5_tmp)=0.0)AND((((MARK(HBS__elecPedal_HBS__elecPedal_out1__value)=0.0)AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__value)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out1__omission)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__omission)=0.0)))))AND(MARK(HBS__elecPedal_HBS__elecPedal_omissionError)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__elecPedal_HBS__elecPedal_intprop_5_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__elecPedal_HBS__elecPedal_intprop_5_caseskip",1500,1500,V,Immediate,7,1,'FALSE', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__elecPedal_Choice2_choice_HBS__elecPedal_intprop_5",1500,1500,V,Immediate,7,1,'((MARK(HBS__mechPedal_HBS__mechPedal_out1__omission)>0.0)AND((MARK(HBS__elecPedal_HBS__elecPedal_Choice2)>0.0)AND((MARK(HBS__elecPedal_HBS__elecPedal_intprop_5_tmp)=0.0)AND((((MARK(HBS__elecPedal_HBS__elecPedal_out1__value)=0.0)AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__value)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out1__omission)=0.0))AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__omission)=0.0)))))AND(MARK(HBS__elecPedal_HBS__elecPedal_omissionError)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__commBus1_HBS__commBus1_intprop_2",1500,1500,V,Immediate,5,1,'((MARK(HBS__commBus1_HBS__commBus1_C2)>0.0)AND((MARK(HBS__commBus1_HBS__commBus1_intprop_2_tmp)=0.0)AND((MARK(HBS__commBus1_HBS__commBus1_out1__value)=0.0)AND(MARK(HBS__commBus1_HBS__commBus1_out1__omission)=0.0))))AND(MARK(HBS__commBus1_HBS__commBus1_valueError)=0.0)', '0.95',
+ (
+0.95
+  );
+TRANS:"HBS__commBus1_HBS__commBus1_intprop_2_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__commBus1_HBS__commBus1_intprop_2_caseskip",1500,1500,V,Immediate,7,1,'FALSE', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__commBus1_C2_choice_HBS__commBus1_intprop_2",1500,1500,V,Immediate,7,1,'((MARK(HBS__commBus1_HBS__commBus1_C2)>0.0)AND((MARK(HBS__commBus1_HBS__commBus1_intprop_2_tmp)=0.0)AND((MARK(HBS__commBus1_HBS__commBus1_out1__value)=0.0)AND(MARK(HBS__commBus1_HBS__commBus1_out1__omission)=0.0))))AND(MARK(HBS__commBus1_HBS__commBus1_valueError)=0.0)', '0.95',
+ (
+0.95
+  );
+TRANS:"HBS__commBus1_HBS__commBus1_intprop_3",1500,1500,V,Immediate,5,1,'((MARK(HBS__commBus1_HBS__commBus1_C2)>0.0)AND((MARK(HBS__commBus1_HBS__commBus1_intprop_3_tmp)=0.0)AND((MARK(HBS__commBus1_HBS__commBus1_out1__value)=0.0)AND(MARK(HBS__commBus1_HBS__commBus1_out1__omission)=0.0))))AND(MARK(HBS__commBus1_HBS__commBus1_omissionError)=0.0)', '0.05',
+ (
+0.05
+  );
+TRANS:"HBS__commBus1_HBS__commBus1_intprop_3_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__commBus1_HBS__commBus1_intprop_3_caseskip",1500,1500,V,Immediate,7,1,'FALSE', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__commBus1_C2_choice_HBS__commBus1_intprop_3",1500,1500,V,Immediate,7,1,'((MARK(HBS__commBus1_HBS__commBus1_C2)>0.0)AND((MARK(HBS__commBus1_HBS__commBus1_intprop_3_tmp)=0.0)AND((MARK(HBS__commBus1_HBS__commBus1_out1__value)=0.0)AND(MARK(HBS__commBus1_HBS__commBus1_out1__omission)=0.0))))AND(MARK(HBS__commBus1_HBS__commBus1_omissionError)=0.0)', '0.05',
+ (
+0.05
+  );
+TRANS:"HBS__commBus1_HBS__commBus1_intprop_4",1500,1500,V,Immediate,5,1,'(((MARK(HBS__elecPedal_HBS__elecPedal_out1__value)>0.0)AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__value)>0.0))AND((MARK(HBS__commBus1_HBS__commBus1_C1)>0.0)AND((MARK(HBS__commBus1_HBS__commBus1_intprop_4_tmp)=0.0)AND((MARK(HBS__commBus1_HBS__commBus1_out1__value)=0.0)AND(MARK(HBS__commBus1_HBS__commBus1_out1__omission)=0.0)))))AND(MARK(HBS__commBus1_HBS__commBus1_valueError)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__commBus1_HBS__commBus1_intprop_4_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__commBus1_HBS__commBus1_intprop_4_caseskip",1500,1500,V,Immediate,7,1,'FALSE', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__commBus1_C1_choice_HBS__commBus1_intprop_4",1500,1500,V,Immediate,7,1,'(((MARK(HBS__elecPedal_HBS__elecPedal_out1__value)>0.0)AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__value)>0.0))AND((MARK(HBS__commBus1_HBS__commBus1_C1)>0.0)AND((MARK(HBS__commBus1_HBS__commBus1_intprop_4_tmp)=0.0)AND((MARK(HBS__commBus1_HBS__commBus1_out1__value)=0.0)AND(MARK(HBS__commBus1_HBS__commBus1_out1__omission)=0.0)))))AND(MARK(HBS__commBus1_HBS__commBus1_valueError)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__commBus1_HBS__commBus1_intprop_5",1500,1500,V,Immediate,5,1,'(((MARK(HBS__elecPedal_HBS__elecPedal_out1__value)>0.0)AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__value)>0.0))AND((MARK(HBS__commBus1_HBS__commBus1_C1)>0.0)AND((MARK(HBS__commBus1_HBS__commBus1_intprop_5_tmp)=0.0)AND((MARK(HBS__commBus1_HBS__commBus1_out1__value)=0.0)AND(MARK(HBS__commBus1_HBS__commBus1_out1__omission)=0.0)))))AND(MARK(HBS__commBus1_HBS__commBus1_omissionError)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__commBus1_HBS__commBus1_intprop_5_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__commBus1_HBS__commBus1_intprop_5_caseskip",1500,1500,V,Immediate,7,1,'FALSE', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__commBus1_C1_choice_HBS__commBus1_intprop_5",1500,1500,V,Immediate,7,1,'(((MARK(HBS__elecPedal_HBS__elecPedal_out1__value)>0.0)AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__value)>0.0))AND((MARK(HBS__commBus1_HBS__commBus1_C1)>0.0)AND((MARK(HBS__commBus1_HBS__commBus1_intprop_5_tmp)=0.0)AND((MARK(HBS__commBus1_HBS__commBus1_out1__value)=0.0)AND(MARK(HBS__commBus1_HBS__commBus1_out1__omission)=0.0)))))AND(MARK(HBS__commBus1_HBS__commBus1_omissionError)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__commBus2_HBS__commBus2_intprop_2",1500,1500,V,Immediate,5,1,'((MARK(HBS__commBus2_HBS__commBus2_C2)>0.0)AND((MARK(HBS__commBus2_HBS__commBus2_intprop_2_tmp)=0.0)AND((MARK(HBS__commBus2_HBS__commBus2_out1__value)=0.0)AND(MARK(HBS__commBus2_HBS__commBus2_out1__omission)=0.0))))AND(MARK(HBS__commBus2_HBS__commBus2_valueError)=0.0)', '0.95',
+ (
+0.95
+  );
+TRANS:"HBS__commBus2_HBS__commBus2_intprop_2_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__commBus2_HBS__commBus2_intprop_2_caseskip",1500,1500,V,Immediate,7,1,'FALSE', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__commBus2_C2_choice_HBS__commBus2_intprop_2",1500,1500,V,Immediate,7,1,'((MARK(HBS__commBus2_HBS__commBus2_C2)>0.0)AND((MARK(HBS__commBus2_HBS__commBus2_intprop_2_tmp)=0.0)AND((MARK(HBS__commBus2_HBS__commBus2_out1__value)=0.0)AND(MARK(HBS__commBus2_HBS__commBus2_out1__omission)=0.0))))AND(MARK(HBS__commBus2_HBS__commBus2_valueError)=0.0)', '0.95',
+ (
+0.95
+  );
+TRANS:"HBS__commBus2_HBS__commBus2_intprop_3",1500,1500,V,Immediate,5,1,'((MARK(HBS__commBus2_HBS__commBus2_C2)>0.0)AND((MARK(HBS__commBus2_HBS__commBus2_intprop_3_tmp)=0.0)AND((MARK(HBS__commBus2_HBS__commBus2_out1__value)=0.0)AND(MARK(HBS__commBus2_HBS__commBus2_out1__omission)=0.0))))AND(MARK(HBS__commBus2_HBS__commBus2_omissionError)=0.0)', '0.05',
+ (
+0.05
+  );
+TRANS:"HBS__commBus2_HBS__commBus2_intprop_3_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__commBus2_HBS__commBus2_intprop_3_caseskip",1500,1500,V,Immediate,7,1,'FALSE', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__commBus2_C2_choice_HBS__commBus2_intprop_3",1500,1500,V,Immediate,7,1,'((MARK(HBS__commBus2_HBS__commBus2_C2)>0.0)AND((MARK(HBS__commBus2_HBS__commBus2_intprop_3_tmp)=0.0)AND((MARK(HBS__commBus2_HBS__commBus2_out1__value)=0.0)AND(MARK(HBS__commBus2_HBS__commBus2_out1__omission)=0.0))))AND(MARK(HBS__commBus2_HBS__commBus2_omissionError)=0.0)', '0.05',
+ (
+0.05
+  );
+TRANS:"HBS__commBus2_HBS__commBus2_intprop_4",1500,1500,V,Immediate,5,1,'(((MARK(HBS__elecPedal_HBS__elecPedal_out1__value)>0.0)AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__value)>0.0))AND((MARK(HBS__commBus2_HBS__commBus2_C1)>0.0)AND((MARK(HBS__commBus2_HBS__commBus2_intprop_4_tmp)=0.0)AND((MARK(HBS__commBus2_HBS__commBus2_out1__value)=0.0)AND(MARK(HBS__commBus2_HBS__commBus2_out1__omission)=0.0)))))AND(MARK(HBS__commBus2_HBS__commBus2_valueError)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__commBus2_HBS__commBus2_intprop_4_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__commBus2_HBS__commBus2_intprop_4_caseskip",1500,1500,V,Immediate,7,1,'FALSE', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__commBus2_C1_choice_HBS__commBus2_intprop_4",1500,1500,V,Immediate,7,1,'(((MARK(HBS__elecPedal_HBS__elecPedal_out1__value)>0.0)AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__value)>0.0))AND((MARK(HBS__commBus2_HBS__commBus2_C1)>0.0)AND((MARK(HBS__commBus2_HBS__commBus2_intprop_4_tmp)=0.0)AND((MARK(HBS__commBus2_HBS__commBus2_out1__value)=0.0)AND(MARK(HBS__commBus2_HBS__commBus2_out1__omission)=0.0)))))AND(MARK(HBS__commBus2_HBS__commBus2_valueError)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__commBus2_HBS__commBus2_intprop_5",1500,1500,V,Immediate,5,1,'(((MARK(HBS__elecPedal_HBS__elecPedal_out1__value)>0.0)AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__value)>0.0))AND((MARK(HBS__commBus2_HBS__commBus2_C1)>0.0)AND((MARK(HBS__commBus2_HBS__commBus2_intprop_5_tmp)=0.0)AND((MARK(HBS__commBus2_HBS__commBus2_out1__value)=0.0)AND(MARK(HBS__commBus2_HBS__commBus2_out1__omission)=0.0)))))AND(MARK(HBS__commBus2_HBS__commBus2_omissionError)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__commBus2_HBS__commBus2_intprop_5_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__commBus2_HBS__commBus2_intprop_5_caseskip",1500,1500,V,Immediate,7,1,'FALSE', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__commBus2_C1_choice_HBS__commBus2_intprop_5",1500,1500,V,Immediate,7,1,'(((MARK(HBS__elecPedal_HBS__elecPedal_out1__value)>0.0)AND(MARK(HBS__elecPedal_HBS__elecPedal_out2__value)>0.0))AND((MARK(HBS__commBus2_HBS__commBus2_C1)>0.0)AND((MARK(HBS__commBus2_HBS__commBus2_intprop_5_tmp)=0.0)AND((MARK(HBS__commBus2_HBS__commBus2_out1__value)=0.0)AND(MARK(HBS__commBus2_HBS__commBus2_out1__omission)=0.0)))))AND(MARK(HBS__commBus2_HBS__commBus2_omissionError)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu1_HBS__bu1_intprop_2",1500,1500,V,Immediate,5,1,'((MARK(HBS__bu1_HBS__bu1_Choice1)>0.0)AND((MARK(HBS__bu1_HBS__bu1_intprop_2_tmp)=0.0)AND((MARK(HBS__bu1_HBS__bu1_torque__value)=0.0)AND(MARK(HBS__bu1_HBS__bu1_torque__omission)=0.0))))AND(MARK(HBS__bu1_HBS__bu1_valueError)=0.0)', '0.95',
+ (
+0.95
+  );
+TRANS:"HBS__bu1_HBS__bu1_intprop_2_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu1_HBS__bu1_intprop_2_caseskip",1500,1500,V,Immediate,7,1,'FALSE', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__bu1_Choice1_choice_HBS__bu1_intprop_2",1500,1500,V,Immediate,7,1,'((MARK(HBS__bu1_HBS__bu1_Choice1)>0.0)AND((MARK(HBS__bu1_HBS__bu1_intprop_2_tmp)=0.0)AND((MARK(HBS__bu1_HBS__bu1_torque__value)=0.0)AND(MARK(HBS__bu1_HBS__bu1_torque__omission)=0.0))))AND(MARK(HBS__bu1_HBS__bu1_valueError)=0.0)', '0.95',
+ (
+0.95
+  );
+TRANS:"HBS__bu1_HBS__bu1_intprop_3",1500,1500,V,Immediate,5,1,'((MARK(HBS__bu1_HBS__bu1_Choice1)>0.0)AND((MARK(HBS__bu1_HBS__bu1_intprop_3_tmp)=0.0)AND((MARK(HBS__bu1_HBS__bu1_torque__value)=0.0)AND(MARK(HBS__bu1_HBS__bu1_torque__omission)=0.0))))AND(MARK(HBS__bu1_HBS__bu1_omissionError)=0.0)', '0.05',
+ (
+0.05
+  );
+TRANS:"HBS__bu1_HBS__bu1_intprop_3_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu1_HBS__bu1_intprop_3_caseskip",1500,1500,V,Immediate,7,1,'FALSE', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__bu1_Choice1_choice_HBS__bu1_intprop_3",1500,1500,V,Immediate,7,1,'((MARK(HBS__bu1_HBS__bu1_Choice1)>0.0)AND((MARK(HBS__bu1_HBS__bu1_intprop_3_tmp)=0.0)AND((MARK(HBS__bu1_HBS__bu1_torque__value)=0.0)AND(MARK(HBS__bu1_HBS__bu1_torque__omission)=0.0))))AND(MARK(HBS__bu1_HBS__bu1_omissionError)=0.0)', '0.05',
+ (
+0.05
+  );
+TRANS:"HBS__bu1_HBS__bu1_intprop_4",1500,1500,V,Immediate,5,1,'(((MARK(HBS__commBus1_HBS__commBus1_out1__value)>0.0)AND(MARK(HBS__commBus2_HBS__commBus2_out1__value)>0.0))AND((MARK(HBS__bu1_HBS__bu1_Choice2)>0.0)AND((MARK(HBS__bu1_HBS__bu1_intprop_4_tmp)=0.0)AND((MARK(HBS__bu1_HBS__bu1_torque__value)=0.0)AND(MARK(HBS__bu1_HBS__bu1_torque__omission)=0.0)))))AND(MARK(HBS__bu1_HBS__bu1_valueError)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu1_HBS__bu1_intprop_4_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu1_HBS__bu1_intprop_4_caseskip",1500,1500,V,Immediate,7,1,'FALSE', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__bu1_Choice2_choice_HBS__bu1_intprop_4",1500,1500,V,Immediate,7,1,'(((MARK(HBS__commBus1_HBS__commBus1_out1__value)>0.0)AND(MARK(HBS__commBus2_HBS__commBus2_out1__value)>0.0))AND((MARK(HBS__bu1_HBS__bu1_Choice2)>0.0)AND((MARK(HBS__bu1_HBS__bu1_intprop_4_tmp)=0.0)AND((MARK(HBS__bu1_HBS__bu1_torque__value)=0.0)AND(MARK(HBS__bu1_HBS__bu1_torque__omission)=0.0)))))AND(MARK(HBS__bu1_HBS__bu1_valueError)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu1_HBS__bu1_intprop_5",1500,1500,V,Immediate,5,1,'(((MARK(HBS__commBus1_HBS__commBus1_out1__omission)>0.0)AND(MARK(HBS__commBus2_HBS__commBus2_out1__omission)>0.0))AND((MARK(HBS__bu1_HBS__bu1_Choice2)>0.0)AND((MARK(HBS__bu1_HBS__bu1_intprop_5_tmp)=0.0)AND((MARK(HBS__bu1_HBS__bu1_torque__value)=0.0)AND(MARK(HBS__bu1_HBS__bu1_torque__omission)=0.0)))))AND(MARK(HBS__bu1_HBS__bu1_omissionError)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu1_HBS__bu1_intprop_5_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu1_HBS__bu1_intprop_5_caseskip",1500,1500,V,Immediate,7,1,'FALSE', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__bu1_Choice2_choice_HBS__bu1_intprop_5",1500,1500,V,Immediate,7,1,'(((MARK(HBS__commBus1_HBS__commBus1_out1__omission)>0.0)AND(MARK(HBS__commBus2_HBS__commBus2_out1__omission)>0.0))AND((MARK(HBS__bu1_HBS__bu1_Choice2)>0.0)AND((MARK(HBS__bu1_HBS__bu1_intprop_5_tmp)=0.0)AND((MARK(HBS__bu1_HBS__bu1_torque__value)=0.0)AND(MARK(HBS__bu1_HBS__bu1_torque__omission)=0.0)))))AND(MARK(HBS__bu1_HBS__bu1_omissionError)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu3_HBS__bu3_intprop_2",1500,1500,V,Immediate,5,1,'((MARK(HBS__bu3_HBS__bu3_Choice1)>0.0)AND((MARK(HBS__bu3_HBS__bu3_intprop_2_tmp)=0.0)AND((MARK(HBS__bu3_HBS__bu3_torque__value)=0.0)AND(MARK(HBS__bu3_HBS__bu3_torque__omission)=0.0))))AND(MARK(HBS__bu3_HBS__bu3_valueError)=0.0)', '0.95',
+ (
+0.95
+  );
+TRANS:"HBS__bu3_HBS__bu3_intprop_2_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu3_HBS__bu3_intprop_2_caseskip",1500,1500,V,Immediate,7,1,'FALSE', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__bu3_Choice1_choice_HBS__bu3_intprop_2",1500,1500,V,Immediate,7,1,'((MARK(HBS__bu3_HBS__bu3_Choice1)>0.0)AND((MARK(HBS__bu3_HBS__bu3_intprop_2_tmp)=0.0)AND((MARK(HBS__bu3_HBS__bu3_torque__value)=0.0)AND(MARK(HBS__bu3_HBS__bu3_torque__omission)=0.0))))AND(MARK(HBS__bu3_HBS__bu3_valueError)=0.0)', '0.95',
+ (
+0.95
+  );
+TRANS:"HBS__bu3_HBS__bu3_intprop_3",1500,1500,V,Immediate,5,1,'((MARK(HBS__bu3_HBS__bu3_Choice1)>0.0)AND((MARK(HBS__bu3_HBS__bu3_intprop_3_tmp)=0.0)AND((MARK(HBS__bu3_HBS__bu3_torque__value)=0.0)AND(MARK(HBS__bu3_HBS__bu3_torque__omission)=0.0))))AND(MARK(HBS__bu3_HBS__bu3_omissionError)=0.0)', '0.05',
+ (
+0.05
+  );
+TRANS:"HBS__bu3_HBS__bu3_intprop_3_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu3_HBS__bu3_intprop_3_caseskip",1500,1500,V,Immediate,7,1,'FALSE', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__bu3_Choice1_choice_HBS__bu3_intprop_3",1500,1500,V,Immediate,7,1,'((MARK(HBS__bu3_HBS__bu3_Choice1)>0.0)AND((MARK(HBS__bu3_HBS__bu3_intprop_3_tmp)=0.0)AND((MARK(HBS__bu3_HBS__bu3_torque__value)=0.0)AND(MARK(HBS__bu3_HBS__bu3_torque__omission)=0.0))))AND(MARK(HBS__bu3_HBS__bu3_omissionError)=0.0)', '0.05',
+ (
+0.05
+  );
+TRANS:"HBS__bu3_HBS__bu3_intprop_4",1500,1500,V,Immediate,5,1,'(((MARK(HBS__commBus1_HBS__commBus1_out1__value)>0.0)AND(MARK(HBS__commBus2_HBS__commBus2_out1__value)>0.0))AND((MARK(HBS__bu3_HBS__bu3_Choice2)>0.0)AND((MARK(HBS__bu3_HBS__bu3_intprop_4_tmp)=0.0)AND((MARK(HBS__bu3_HBS__bu3_torque__value)=0.0)AND(MARK(HBS__bu3_HBS__bu3_torque__omission)=0.0)))))AND(MARK(HBS__bu3_HBS__bu3_valueError)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu3_HBS__bu3_intprop_4_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu3_HBS__bu3_intprop_4_caseskip",1500,1500,V,Immediate,7,1,'FALSE', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__bu3_Choice2_choice_HBS__bu3_intprop_4",1500,1500,V,Immediate,7,1,'(((MARK(HBS__commBus1_HBS__commBus1_out1__value)>0.0)AND(MARK(HBS__commBus2_HBS__commBus2_out1__value)>0.0))AND((MARK(HBS__bu3_HBS__bu3_Choice2)>0.0)AND((MARK(HBS__bu3_HBS__bu3_intprop_4_tmp)=0.0)AND((MARK(HBS__bu3_HBS__bu3_torque__value)=0.0)AND(MARK(HBS__bu3_HBS__bu3_torque__omission)=0.0)))))AND(MARK(HBS__bu3_HBS__bu3_valueError)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu3_HBS__bu3_intprop_5",1500,1500,V,Immediate,5,1,'(((MARK(HBS__commBus1_HBS__commBus1_out1__omission)>0.0)AND(MARK(HBS__commBus2_HBS__commBus2_out1__omission)>0.0))AND((MARK(HBS__bu3_HBS__bu3_Choice2)>0.0)AND((MARK(HBS__bu3_HBS__bu3_intprop_5_tmp)=0.0)AND((MARK(HBS__bu3_HBS__bu3_torque__value)=0.0)AND(MARK(HBS__bu3_HBS__bu3_torque__omission)=0.0)))))AND(MARK(HBS__bu3_HBS__bu3_omissionError)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu3_HBS__bu3_intprop_5_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu3_HBS__bu3_intprop_5_caseskip",1500,1500,V,Immediate,7,1,'FALSE', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__bu3_Choice2_choice_HBS__bu3_intprop_5",1500,1500,V,Immediate,7,1,'(((MARK(HBS__commBus1_HBS__commBus1_out1__omission)>0.0)AND(MARK(HBS__commBus2_HBS__commBus2_out1__omission)>0.0))AND((MARK(HBS__bu3_HBS__bu3_Choice2)>0.0)AND((MARK(HBS__bu3_HBS__bu3_intprop_5_tmp)=0.0)AND((MARK(HBS__bu3_HBS__bu3_torque__value)=0.0)AND(MARK(HBS__bu3_HBS__bu3_torque__omission)=0.0)))))AND(MARK(HBS__bu3_HBS__bu3_omissionError)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu2_HBS__bu2_intprop_2",1500,1500,V,Immediate,5,1,'((MARK(HBS__bu2_HBS__bu2_Choice1)>0.0)AND((MARK(HBS__bu2_HBS__bu2_intprop_2_tmp)=0.0)AND((MARK(HBS__bu2_HBS__bu2_torque__value)=0.0)AND(MARK(HBS__bu2_HBS__bu2_torque__omission)=0.0))))AND(MARK(HBS__bu2_HBS__bu2_valueError)=0.0)', '0.95',
+ (
+0.95
+  );
+TRANS:"HBS__bu2_HBS__bu2_intprop_2_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu2_HBS__bu2_intprop_2_caseskip",1500,1500,V,Immediate,7,1,'FALSE', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__bu2_Choice1_choice_HBS__bu2_intprop_2",1500,1500,V,Immediate,7,1,'((MARK(HBS__bu2_HBS__bu2_Choice1)>0.0)AND((MARK(HBS__bu2_HBS__bu2_intprop_2_tmp)=0.0)AND((MARK(HBS__bu2_HBS__bu2_torque__value)=0.0)AND(MARK(HBS__bu2_HBS__bu2_torque__omission)=0.0))))AND(MARK(HBS__bu2_HBS__bu2_valueError)=0.0)', '0.95',
+ (
+0.95
+  );
+TRANS:"HBS__bu2_HBS__bu2_intprop_3",1500,1500,V,Immediate,5,1,'((MARK(HBS__bu2_HBS__bu2_Choice1)>0.0)AND((MARK(HBS__bu2_HBS__bu2_intprop_3_tmp)=0.0)AND((MARK(HBS__bu2_HBS__bu2_torque__value)=0.0)AND(MARK(HBS__bu2_HBS__bu2_torque__omission)=0.0))))AND(MARK(HBS__bu2_HBS__bu2_omissionError)=0.0)', '0.05',
+ (
+0.05
+  );
+TRANS:"HBS__bu2_HBS__bu2_intprop_3_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu2_HBS__bu2_intprop_3_caseskip",1500,1500,V,Immediate,7,1,'FALSE', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__bu2_Choice1_choice_HBS__bu2_intprop_3",1500,1500,V,Immediate,7,1,'((MARK(HBS__bu2_HBS__bu2_Choice1)>0.0)AND((MARK(HBS__bu2_HBS__bu2_intprop_3_tmp)=0.0)AND((MARK(HBS__bu2_HBS__bu2_torque__value)=0.0)AND(MARK(HBS__bu2_HBS__bu2_torque__omission)=0.0))))AND(MARK(HBS__bu2_HBS__bu2_omissionError)=0.0)', '0.05',
+ (
+0.05
+  );
+TRANS:"HBS__bu2_HBS__bu2_intprop_4",1500,1500,V,Immediate,5,1,'(((MARK(HBS__commBus1_HBS__commBus1_out1__value)>0.0)AND(MARK(HBS__commBus2_HBS__commBus2_out1__value)>0.0))AND((MARK(HBS__bu2_HBS__bu2_Choice2)>0.0)AND((MARK(HBS__bu2_HBS__bu2_intprop_4_tmp)=0.0)AND((MARK(HBS__bu2_HBS__bu2_torque__value)=0.0)AND(MARK(HBS__bu2_HBS__bu2_torque__omission)=0.0)))))AND(MARK(HBS__bu2_HBS__bu2_valueError)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu2_HBS__bu2_intprop_4_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu2_HBS__bu2_intprop_4_caseskip",1500,1500,V,Immediate,7,1,'FALSE', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__bu2_Choice2_choice_HBS__bu2_intprop_4",1500,1500,V,Immediate,7,1,'(((MARK(HBS__commBus1_HBS__commBus1_out1__value)>0.0)AND(MARK(HBS__commBus2_HBS__commBus2_out1__value)>0.0))AND((MARK(HBS__bu2_HBS__bu2_Choice2)>0.0)AND((MARK(HBS__bu2_HBS__bu2_intprop_4_tmp)=0.0)AND((MARK(HBS__bu2_HBS__bu2_torque__value)=0.0)AND(MARK(HBS__bu2_HBS__bu2_torque__omission)=0.0)))))AND(MARK(HBS__bu2_HBS__bu2_valueError)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu2_HBS__bu2_intprop_5",1500,1500,V,Immediate,5,1,'(((MARK(HBS__commBus1_HBS__commBus1_out1__omission)>0.0)AND(MARK(HBS__commBus2_HBS__commBus2_out1__omission)>0.0))AND((MARK(HBS__bu2_HBS__bu2_Choice2)>0.0)AND((MARK(HBS__bu2_HBS__bu2_intprop_5_tmp)=0.0)AND((MARK(HBS__bu2_HBS__bu2_torque__value)=0.0)AND(MARK(HBS__bu2_HBS__bu2_torque__omission)=0.0)))))AND(MARK(HBS__bu2_HBS__bu2_omissionError)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu2_HBS__bu2_intprop_5_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu2_HBS__bu2_intprop_5_caseskip",1500,1500,V,Immediate,7,1,'FALSE', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__bu2_Choice2_choice_HBS__bu2_intprop_5",1500,1500,V,Immediate,7,1,'(((MARK(HBS__commBus1_HBS__commBus1_out1__omission)>0.0)AND(MARK(HBS__commBus2_HBS__commBus2_out1__omission)>0.0))AND((MARK(HBS__bu2_HBS__bu2_Choice2)>0.0)AND((MARK(HBS__bu2_HBS__bu2_intprop_5_tmp)=0.0)AND((MARK(HBS__bu2_HBS__bu2_torque__value)=0.0)AND(MARK(HBS__bu2_HBS__bu2_torque__omission)=0.0)))))AND(MARK(HBS__bu2_HBS__bu2_omissionError)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu4_HBS__bu4_intprop_2",1500,1500,V,Immediate,5,1,'((MARK(HBS__bu4_HBS__bu4_Choice1)>0.0)AND((MARK(HBS__bu4_HBS__bu4_intprop_2_tmp)=0.0)AND((MARK(HBS__bu4_HBS__bu4_torque__value)=0.0)AND(MARK(HBS__bu4_HBS__bu4_torque__omission)=0.0))))AND(MARK(HBS__bu4_HBS__bu4_valueError)=0.0)', '0.95',
+ (
+0.95
+  );
+TRANS:"HBS__bu4_HBS__bu4_intprop_2_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu4_HBS__bu4_intprop_2_caseskip",1500,1500,V,Immediate,7,1,'FALSE', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__bu4_Choice1_choice_HBS__bu4_intprop_2",1500,1500,V,Immediate,7,1,'((MARK(HBS__bu4_HBS__bu4_Choice1)>0.0)AND((MARK(HBS__bu4_HBS__bu4_intprop_2_tmp)=0.0)AND((MARK(HBS__bu4_HBS__bu4_torque__value)=0.0)AND(MARK(HBS__bu4_HBS__bu4_torque__omission)=0.0))))AND(MARK(HBS__bu4_HBS__bu4_valueError)=0.0)', '0.95',
+ (
+0.95
+  );
+TRANS:"HBS__bu4_HBS__bu4_intprop_3",1500,1500,V,Immediate,5,1,'((MARK(HBS__bu4_HBS__bu4_Choice1)>0.0)AND((MARK(HBS__bu4_HBS__bu4_intprop_3_tmp)=0.0)AND((MARK(HBS__bu4_HBS__bu4_torque__value)=0.0)AND(MARK(HBS__bu4_HBS__bu4_torque__omission)=0.0))))AND(MARK(HBS__bu4_HBS__bu4_omissionError)=0.0)', '0.05',
+ (
+0.05
+  );
+TRANS:"HBS__bu4_HBS__bu4_intprop_3_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu4_HBS__bu4_intprop_3_caseskip",1500,1500,V,Immediate,7,1,'FALSE', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__bu4_Choice1_choice_HBS__bu4_intprop_3",1500,1500,V,Immediate,7,1,'((MARK(HBS__bu4_HBS__bu4_Choice1)>0.0)AND((MARK(HBS__bu4_HBS__bu4_intprop_3_tmp)=0.0)AND((MARK(HBS__bu4_HBS__bu4_torque__value)=0.0)AND(MARK(HBS__bu4_HBS__bu4_torque__omission)=0.0))))AND(MARK(HBS__bu4_HBS__bu4_omissionError)=0.0)', '0.05',
+ (
+0.05
+  );
+TRANS:"HBS__bu4_HBS__bu4_intprop_4",1500,1500,V,Immediate,5,1,'(((MARK(HBS__commBus1_HBS__commBus1_out1__value)>0.0)AND(MARK(HBS__commBus2_HBS__commBus2_out1__value)>0.0))AND((MARK(HBS__bu4_HBS__bu4_Choice2)>0.0)AND((MARK(HBS__bu4_HBS__bu4_intprop_4_tmp)=0.0)AND((MARK(HBS__bu4_HBS__bu4_torque__value)=0.0)AND(MARK(HBS__bu4_HBS__bu4_torque__omission)=0.0)))))AND(MARK(HBS__bu4_HBS__bu4_valueError)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu4_HBS__bu4_intprop_4_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu4_HBS__bu4_intprop_4_caseskip",1500,1500,V,Immediate,7,1,'FALSE', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__bu4_Choice2_choice_HBS__bu4_intprop_4",1500,1500,V,Immediate,7,1,'(((MARK(HBS__commBus1_HBS__commBus1_out1__value)>0.0)AND(MARK(HBS__commBus2_HBS__commBus2_out1__value)>0.0))AND((MARK(HBS__bu4_HBS__bu4_Choice2)>0.0)AND((MARK(HBS__bu4_HBS__bu4_intprop_4_tmp)=0.0)AND((MARK(HBS__bu4_HBS__bu4_torque__value)=0.0)AND(MARK(HBS__bu4_HBS__bu4_torque__omission)=0.0)))))AND(MARK(HBS__bu4_HBS__bu4_valueError)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu4_HBS__bu4_intprop_5",1500,1500,V,Immediate,5,1,'(((MARK(HBS__commBus1_HBS__commBus1_out1__omission)>0.0)AND(MARK(HBS__commBus2_HBS__commBus2_out1__omission)>0.0))AND((MARK(HBS__bu4_HBS__bu4_Choice2)>0.0)AND((MARK(HBS__bu4_HBS__bu4_intprop_5_tmp)=0.0)AND((MARK(HBS__bu4_HBS__bu4_torque__value)=0.0)AND(MARK(HBS__bu4_HBS__bu4_torque__omission)=0.0)))))AND(MARK(HBS__bu4_HBS__bu4_omissionError)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu4_HBS__bu4_intprop_5_caseprop",1500,1500,V,Immediate,7,1,'', '1.0',
+ (
+1.0
+  );
+TRANS:"HBS__bu4_HBS__bu4_intprop_5_caseskip",1500,1500,V,Immediate,7,1,'FALSE', '0.0',
+ (
+0.0
+  );
+TRANS:"HBS__bu4_Choice2_choice_HBS__bu4_intprop_5",1500,1500,V,Immediate,7,1,'(((MARK(HBS__commBus1_HBS__commBus1_out1__omission)>0.0)AND(MARK(HBS__commBus2_HBS__commBus2_out1__omission)>0.0))AND((MARK(HBS__bu4_HBS__bu4_Choice2)>0.0)AND((MARK(HBS__bu4_HBS__bu4_intprop_5_tmp)=0.0)AND((MARK(HBS__bu4_HBS__bu4_torque__value)=0.0)AND(MARK(HBS__bu4_HBS__bu4_torque__omission)=0.0)))))AND(MARK(HBS__bu4_HBS__bu4_omissionError)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"AWBOmissionAllBrakes_memory_tr",1500,1500,V,Immediate,8,1,'((MARK(HBS__bu4_HBS__bu4_torque__omission)>0.0)OR((MARK(HBS__bu1_HBS__bu1_torque__omission)>0.0)OR((MARK(HBS__bu3_HBS__bu3_torque__omission)>0.0)OR(MARK(HBS__bu2_HBS__bu2_torque__omission)>0.0))))AND(MARK(AWBOmissionAllBrakes_memory_pl)=0.0)', '1.0',
+ (
+1.0
+  );
+TRANS:"AWBValueAllBrakes_memory_tr",1500,1500,V,Immediate,8,1,'((MARK(HBS__bu2_HBS__bu2_torque__value)>0.0)OR((MARK(HBS__bu3_HBS__bu3_torque__value)>0.0)OR((MARK(HBS__bu1_HBS__bu1_torque__value)>0.0)OR(MARK(HBS__bu4_HBS__bu4_torque__value)>0.0))))AND(MARK(AWBValueAllBrakes_memory_pl)=0.0)', '1.0',
+ (
+1.0
+  );
+
+IARC:"HBS__mechPedal_doreset","HBS__mechPedal_reset",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_doreset","HBS__elecPedal_reset",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_doreset","HBS__commBus1_reset",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_doreset","HBS__commBus2_reset",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_doreset","HBS__bu1_reset",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_doreset","HBS__bu3_reset",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_doreset","HBS__bu2_reset",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_doreset","HBS__bu4_reset",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__mechPedal_HBS__mechPedal_ift_1_tmp","HBS__mechPedal_ift_1_FO",1,1,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__mechPedal_HBS__mechPedal_ift_1_transient","HBS__mechPedal_ift_1_TD",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__mechPedal_HBS__mechPedal_ift_1","HBS__mechPedal_ift_1_TD",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__mechPedal_HBS__mechPedal_ift_1_tmp","HBS__mechPedal_HBS__mechPedal_ift_1_caseperm",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__mechPedal_HBS__mechPedal_ift_1","HBS__mechPedal_HBS__mechPedal_ift_1_caseperm",1,1,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__mechPedal_HBS__mechPedal_ift_1_tmp","HBS__mechPedal_HBS__mechPedal_ift_1_casetrans",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__mechPedal_HBS__mechPedal_ift_1","HBS__mechPedal_HBS__mechPedal_ift_1_casetrans",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__mechPedal_HBS__mechPedal_ift_1_transient","HBS__mechPedal_HBS__mechPedal_ift_1_casetrans",1,1,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__mechPedal_HBS__mechPedal_ift_1","HBS__mechPedal_reset",1,0,'MARK(HBS__mechPedal_HBS__mechPedal_ift_1)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__mechPedal_HBS__mechPedal_ift_1_transient","HBS__mechPedal_reset",1,0,'MARK(HBS__mechPedal_HBS__mechPedal_ift_1_transient)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__mechPedal_HBS__mechPedal_ift_1_tmp","HBS__mechPedal_reset",1,0,'MARK(HBS__mechPedal_HBS__mechPedal_ift_1_tmp)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_HBS__elecPedal_ift_1_tmp","HBS__elecPedal_ift_1_FO",1,1,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_ift_1_transient","HBS__elecPedal_ift_1_TD",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_ift_1","HBS__elecPedal_ift_1_TD",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_ift_1_tmp","HBS__elecPedal_HBS__elecPedal_ift_1_caseperm",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_HBS__elecPedal_ift_1","HBS__elecPedal_HBS__elecPedal_ift_1_caseperm",1,1,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_ift_1_tmp","HBS__elecPedal_HBS__elecPedal_ift_1_casetrans",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_HBS__elecPedal_ift_1","HBS__elecPedal_HBS__elecPedal_ift_1_casetrans",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_HBS__elecPedal_ift_1_transient","HBS__elecPedal_HBS__elecPedal_ift_1_casetrans",1,1,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_ift_1","HBS__elecPedal_reset",1,0,'MARK(HBS__elecPedal_HBS__elecPedal_ift_1)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_ift_1_transient","HBS__elecPedal_reset",1,0,'MARK(HBS__elecPedal_HBS__elecPedal_ift_1_transient)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_ift_1_tmp","HBS__elecPedal_reset",1,0,'MARK(HBS__elecPedal_HBS__elecPedal_ift_1_tmp)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_HBS__commBus1_ift_1_tmp","HBS__commBus1_ift_1_FO",1,1,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_ift_1_transient","HBS__commBus1_ift_1_TD",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_ift_1","HBS__commBus1_ift_1_TD",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_ift_1_tmp","HBS__commBus1_HBS__commBus1_ift_1_caseperm",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_HBS__commBus1_ift_1","HBS__commBus1_HBS__commBus1_ift_1_caseperm",1,1,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_ift_1_tmp","HBS__commBus1_HBS__commBus1_ift_1_casetrans",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_HBS__commBus1_ift_1","HBS__commBus1_HBS__commBus1_ift_1_casetrans",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_HBS__commBus1_ift_1_transient","HBS__commBus1_HBS__commBus1_ift_1_casetrans",1,1,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_ift_1","HBS__commBus1_reset",1,0,'MARK(HBS__commBus1_HBS__commBus1_ift_1)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_ift_1_transient","HBS__commBus1_reset",1,0,'MARK(HBS__commBus1_HBS__commBus1_ift_1_transient)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_ift_1_tmp","HBS__commBus1_reset",1,0,'MARK(HBS__commBus1_HBS__commBus1_ift_1_tmp)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_HBS__commBus2_ift_1_tmp","HBS__commBus2_ift_1_FO",1,1,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_ift_1_transient","HBS__commBus2_ift_1_TD",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_ift_1","HBS__commBus2_ift_1_TD",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_ift_1_tmp","HBS__commBus2_HBS__commBus2_ift_1_caseperm",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_HBS__commBus2_ift_1","HBS__commBus2_HBS__commBus2_ift_1_caseperm",1,1,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_ift_1_tmp","HBS__commBus2_HBS__commBus2_ift_1_casetrans",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_HBS__commBus2_ift_1","HBS__commBus2_HBS__commBus2_ift_1_casetrans",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_HBS__commBus2_ift_1_transient","HBS__commBus2_HBS__commBus2_ift_1_casetrans",1,1,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_ift_1","HBS__commBus2_reset",1,0,'MARK(HBS__commBus2_HBS__commBus2_ift_1)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_ift_1_transient","HBS__commBus2_reset",1,0,'MARK(HBS__commBus2_HBS__commBus2_ift_1_transient)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_ift_1_tmp","HBS__commBus2_reset",1,0,'MARK(HBS__commBus2_HBS__commBus2_ift_1_tmp)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_HBS__bu1_ift_1_tmp","HBS__bu1_ift_1_FO",1,1,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_ift_1_transient","HBS__bu1_ift_1_TD",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_ift_1","HBS__bu1_ift_1_TD",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_ift_1_tmp","HBS__bu1_HBS__bu1_ift_1_caseperm",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_HBS__bu1_ift_1","HBS__bu1_HBS__bu1_ift_1_caseperm",1,1,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_ift_1_tmp","HBS__bu1_HBS__bu1_ift_1_casetrans",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_HBS__bu1_ift_1","HBS__bu1_HBS__bu1_ift_1_casetrans",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_HBS__bu1_ift_1_transient","HBS__bu1_HBS__bu1_ift_1_casetrans",1,1,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_ift_1","HBS__bu1_reset",1,0,'MARK(HBS__bu1_HBS__bu1_ift_1)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_ift_1_transient","HBS__bu1_reset",1,0,'MARK(HBS__bu1_HBS__bu1_ift_1_transient)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_ift_1_tmp","HBS__bu1_reset",1,0,'MARK(HBS__bu1_HBS__bu1_ift_1_tmp)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_HBS__bu3_ift_1_tmp","HBS__bu3_ift_1_FO",1,1,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_ift_1_transient","HBS__bu3_ift_1_TD",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_ift_1","HBS__bu3_ift_1_TD",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_ift_1_tmp","HBS__bu3_HBS__bu3_ift_1_caseperm",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_HBS__bu3_ift_1","HBS__bu3_HBS__bu3_ift_1_caseperm",1,1,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_ift_1_tmp","HBS__bu3_HBS__bu3_ift_1_casetrans",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_HBS__bu3_ift_1","HBS__bu3_HBS__bu3_ift_1_casetrans",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_HBS__bu3_ift_1_transient","HBS__bu3_HBS__bu3_ift_1_casetrans",1,1,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_ift_1","HBS__bu3_reset",1,0,'MARK(HBS__bu3_HBS__bu3_ift_1)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_ift_1_transient","HBS__bu3_reset",1,0,'MARK(HBS__bu3_HBS__bu3_ift_1_transient)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_ift_1_tmp","HBS__bu3_reset",1,0,'MARK(HBS__bu3_HBS__bu3_ift_1_tmp)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_HBS__bu2_ift_1_tmp","HBS__bu2_ift_1_FO",1,1,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_ift_1_transient","HBS__bu2_ift_1_TD",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_ift_1","HBS__bu2_ift_1_TD",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_ift_1_tmp","HBS__bu2_HBS__bu2_ift_1_caseperm",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_HBS__bu2_ift_1","HBS__bu2_HBS__bu2_ift_1_caseperm",1,1,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_ift_1_tmp","HBS__bu2_HBS__bu2_ift_1_casetrans",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_HBS__bu2_ift_1","HBS__bu2_HBS__bu2_ift_1_casetrans",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_HBS__bu2_ift_1_transient","HBS__bu2_HBS__bu2_ift_1_casetrans",1,1,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_ift_1","HBS__bu2_reset",1,0,'MARK(HBS__bu2_HBS__bu2_ift_1)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_ift_1_transient","HBS__bu2_reset",1,0,'MARK(HBS__bu2_HBS__bu2_ift_1_transient)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_ift_1_tmp","HBS__bu2_reset",1,0,'MARK(HBS__bu2_HBS__bu2_ift_1_tmp)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_HBS__bu4_ift_1_tmp","HBS__bu4_ift_1_FO",1,1,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_ift_1_transient","HBS__bu4_ift_1_TD",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_ift_1","HBS__bu4_ift_1_TD",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_ift_1_tmp","HBS__bu4_HBS__bu4_ift_1_caseperm",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_HBS__bu4_ift_1","HBS__bu4_HBS__bu4_ift_1_caseperm",1,1,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_ift_1_tmp","HBS__bu4_HBS__bu4_ift_1_casetrans",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_HBS__bu4_ift_1","HBS__bu4_HBS__bu4_ift_1_casetrans",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_HBS__bu4_ift_1_transient","HBS__bu4_HBS__bu4_ift_1_casetrans",1,1,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_ift_1","HBS__bu4_reset",1,0,'MARK(HBS__bu4_HBS__bu4_ift_1)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_ift_1_transient","HBS__bu4_reset",1,0,'MARK(HBS__bu4_HBS__bu4_ift_1_transient)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_ift_1_tmp","HBS__bu4_reset",1,0,'MARK(HBS__bu4_HBS__bu4_ift_1_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__mechPedal_HBS__mechPedal_valueError","HBS__mechPedal_reset",1,0,'MARK(HBS__mechPedal_HBS__mechPedal_valueError)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__mechPedal_HBS__mechPedal_valueError_detected","HBS__mechPedal_reset",1,0,'MARK(HBS__mechPedal_HBS__mechPedal_valueError_detected)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__mechPedal_HBS__mechPedal_omissionError","HBS__mechPedal_reset",1,0,'MARK(HBS__mechPedal_HBS__mechPedal_omissionError)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__mechPedal_HBS__mechPedal_omissionError_detected","HBS__mechPedal_reset",1,0,'MARK(HBS__mechPedal_HBS__mechPedal_omissionError_detected)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__mechPedal_HBS__mechPedal_Choice1","HBS__mechPedal_reset",1,0,'MARK(HBS__mechPedal_HBS__mechPedal_Choice1)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__mechPedal_HBS__mechPedal_Choice1_detected","HBS__mechPedal_reset",1,0,'MARK(HBS__mechPedal_HBS__mechPedal_Choice1_detected)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_valueError","HBS__elecPedal_reset",1,0,'MARK(HBS__elecPedal_HBS__elecPedal_valueError)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_valueError_detected","HBS__elecPedal_reset",1,0,'MARK(HBS__elecPedal_HBS__elecPedal_valueError_detected)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_omissionError","HBS__elecPedal_reset",1,0,'MARK(HBS__elecPedal_HBS__elecPedal_omissionError)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_omissionError_detected","HBS__elecPedal_reset",1,0,'MARK(HBS__elecPedal_HBS__elecPedal_omissionError_detected)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_Choice1","HBS__elecPedal_reset",1,0,'MARK(HBS__elecPedal_HBS__elecPedal_Choice1)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_Choice1_detected","HBS__elecPedal_reset",1,0,'MARK(HBS__elecPedal_HBS__elecPedal_Choice1_detected)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_Choice2","HBS__elecPedal_reset",1,0,'MARK(HBS__elecPedal_HBS__elecPedal_Choice2)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_Choice2_detected","HBS__elecPedal_reset",1,0,'MARK(HBS__elecPedal_HBS__elecPedal_Choice2_detected)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_valueError","HBS__commBus1_reset",1,0,'MARK(HBS__commBus1_HBS__commBus1_valueError)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_valueError_detected","HBS__commBus1_reset",1,0,'MARK(HBS__commBus1_HBS__commBus1_valueError_detected)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_omissionError","HBS__commBus1_reset",1,0,'MARK(HBS__commBus1_HBS__commBus1_omissionError)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_omissionError_detected","HBS__commBus1_reset",1,0,'MARK(HBS__commBus1_HBS__commBus1_omissionError_detected)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_C2","HBS__commBus1_reset",1,0,'MARK(HBS__commBus1_HBS__commBus1_C2)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_C2_detected","HBS__commBus1_reset",1,0,'MARK(HBS__commBus1_HBS__commBus1_C2_detected)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_C1","HBS__commBus1_reset",1,0,'MARK(HBS__commBus1_HBS__commBus1_C1)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_C1_detected","HBS__commBus1_reset",1,0,'MARK(HBS__commBus1_HBS__commBus1_C1_detected)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_valueError","HBS__commBus2_reset",1,0,'MARK(HBS__commBus2_HBS__commBus2_valueError)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_valueError_detected","HBS__commBus2_reset",1,0,'MARK(HBS__commBus2_HBS__commBus2_valueError_detected)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_omissionError","HBS__commBus2_reset",1,0,'MARK(HBS__commBus2_HBS__commBus2_omissionError)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_omissionError_detected","HBS__commBus2_reset",1,0,'MARK(HBS__commBus2_HBS__commBus2_omissionError_detected)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_C2","HBS__commBus2_reset",1,0,'MARK(HBS__commBus2_HBS__commBus2_C2)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_C2_detected","HBS__commBus2_reset",1,0,'MARK(HBS__commBus2_HBS__commBus2_C2_detected)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_C1","HBS__commBus2_reset",1,0,'MARK(HBS__commBus2_HBS__commBus2_C1)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_C1_detected","HBS__commBus2_reset",1,0,'MARK(HBS__commBus2_HBS__commBus2_C1_detected)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_valueError","HBS__bu1_reset",1,0,'MARK(HBS__bu1_HBS__bu1_valueError)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_valueError_detected","HBS__bu1_reset",1,0,'MARK(HBS__bu1_HBS__bu1_valueError_detected)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_omissionError","HBS__bu1_reset",1,0,'MARK(HBS__bu1_HBS__bu1_omissionError)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_omissionError_detected","HBS__bu1_reset",1,0,'MARK(HBS__bu1_HBS__bu1_omissionError_detected)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_Choice1","HBS__bu1_reset",1,0,'MARK(HBS__bu1_HBS__bu1_Choice1)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_Choice1_detected","HBS__bu1_reset",1,0,'MARK(HBS__bu1_HBS__bu1_Choice1_detected)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_Choice2","HBS__bu1_reset",1,0,'MARK(HBS__bu1_HBS__bu1_Choice2)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_Choice2_detected","HBS__bu1_reset",1,0,'MARK(HBS__bu1_HBS__bu1_Choice2_detected)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_valueError","HBS__bu3_reset",1,0,'MARK(HBS__bu3_HBS__bu3_valueError)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_valueError_detected","HBS__bu3_reset",1,0,'MARK(HBS__bu3_HBS__bu3_valueError_detected)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_omissionError","HBS__bu3_reset",1,0,'MARK(HBS__bu3_HBS__bu3_omissionError)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_omissionError_detected","HBS__bu3_reset",1,0,'MARK(HBS__bu3_HBS__bu3_omissionError_detected)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_Choice1","HBS__bu3_reset",1,0,'MARK(HBS__bu3_HBS__bu3_Choice1)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_Choice1_detected","HBS__bu3_reset",1,0,'MARK(HBS__bu3_HBS__bu3_Choice1_detected)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_Choice2","HBS__bu3_reset",1,0,'MARK(HBS__bu3_HBS__bu3_Choice2)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_Choice2_detected","HBS__bu3_reset",1,0,'MARK(HBS__bu3_HBS__bu3_Choice2_detected)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_valueError","HBS__bu2_reset",1,0,'MARK(HBS__bu2_HBS__bu2_valueError)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_valueError_detected","HBS__bu2_reset",1,0,'MARK(HBS__bu2_HBS__bu2_valueError_detected)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_omissionError","HBS__bu2_reset",1,0,'MARK(HBS__bu2_HBS__bu2_omissionError)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_omissionError_detected","HBS__bu2_reset",1,0,'MARK(HBS__bu2_HBS__bu2_omissionError_detected)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_Choice1","HBS__bu2_reset",1,0,'MARK(HBS__bu2_HBS__bu2_Choice1)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_Choice1_detected","HBS__bu2_reset",1,0,'MARK(HBS__bu2_HBS__bu2_Choice1_detected)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_Choice2","HBS__bu2_reset",1,0,'MARK(HBS__bu2_HBS__bu2_Choice2)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_Choice2_detected","HBS__bu2_reset",1,0,'MARK(HBS__bu2_HBS__bu2_Choice2_detected)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_valueError","HBS__bu4_reset",1,0,'MARK(HBS__bu4_HBS__bu4_valueError)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_valueError_detected","HBS__bu4_reset",1,0,'MARK(HBS__bu4_HBS__bu4_valueError_detected)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_omissionError","HBS__bu4_reset",1,0,'MARK(HBS__bu4_HBS__bu4_omissionError)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_omissionError_detected","HBS__bu4_reset",1,0,'MARK(HBS__bu4_HBS__bu4_omissionError_detected)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_Choice1","HBS__bu4_reset",1,0,'MARK(HBS__bu4_HBS__bu4_Choice1)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_Choice1_detected","HBS__bu4_reset",1,0,'MARK(HBS__bu4_HBS__bu4_Choice1_detected)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_Choice2","HBS__bu4_reset",1,0,'MARK(HBS__bu4_HBS__bu4_Choice2)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_Choice2_detected","HBS__bu4_reset",1,0,'MARK(HBS__bu4_HBS__bu4_Choice2_detected)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__mechPedal_HBS__mechPedal_out1__value","HBS__mechPedal_reset",1,0,'MARK(HBS__mechPedal_HBS__mechPedal_out1__value)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__mechPedal_HBS__mechPedal_out1__omission","HBS__mechPedal_reset",1,0,'MARK(HBS__mechPedal_HBS__mechPedal_out1__omission)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_out1__value","HBS__elecPedal_reset",1,0,'MARK(HBS__elecPedal_HBS__elecPedal_out1__value)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_out2__value","HBS__elecPedal_reset",1,0,'MARK(HBS__elecPedal_HBS__elecPedal_out2__value)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_out1__omission","HBS__elecPedal_reset",1,0,'MARK(HBS__elecPedal_HBS__elecPedal_out1__omission)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_out2__omission","HBS__elecPedal_reset",1,0,'MARK(HBS__elecPedal_HBS__elecPedal_out2__omission)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_out1__value","HBS__commBus1_reset",1,0,'MARK(HBS__commBus1_HBS__commBus1_out1__value)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_out1__omission","HBS__commBus1_reset",1,0,'MARK(HBS__commBus1_HBS__commBus1_out1__omission)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_out1__value","HBS__commBus2_reset",1,0,'MARK(HBS__commBus2_HBS__commBus2_out1__value)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_out1__omission","HBS__commBus2_reset",1,0,'MARK(HBS__commBus2_HBS__commBus2_out1__omission)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_torque__value","HBS__bu1_reset",1,0,'MARK(HBS__bu1_HBS__bu1_torque__value)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_torque__omission","HBS__bu1_reset",1,0,'MARK(HBS__bu1_HBS__bu1_torque__omission)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_torque__value","HBS__bu3_reset",1,0,'MARK(HBS__bu3_HBS__bu3_torque__value)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_torque__omission","HBS__bu3_reset",1,0,'MARK(HBS__bu3_HBS__bu3_torque__omission)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_torque__value","HBS__bu2_reset",1,0,'MARK(HBS__bu2_HBS__bu2_torque__value)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_torque__omission","HBS__bu2_reset",1,0,'MARK(HBS__bu2_HBS__bu2_torque__omission)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_torque__value","HBS__bu4_reset",1,0,'MARK(HBS__bu4_HBS__bu4_torque__value)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_torque__omission","HBS__bu4_reset",1,0,'MARK(HBS__bu4_HBS__bu4_torque__omission)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__mechPedal_HBS__mechPedal_fge_1_tmp","HBS__mechPedal_HBS__mechPedal_fge_1",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__mechPedal_HBS__mechPedal_fge_1_blocker","HBS__mechPedal_HBS__mechPedal_fge_1",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__mechPedal_HBS__mechPedal_fge_1_blocker","HBS__mechPedal_HBS__mechPedal_fge_1",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__mechPedal_HBS__mechPedal_fge_1_tmp","HBS__mechPedal_HBS__mechPedal_fge_1_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__mechPedal_HBS__mechPedal_fge_1_tmp","HBS__mechPedal_HBS__mechPedal_fge_1_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__mechPedal_HBS__mechPedal_fge_1_tmp","HBS__mechPedal_reset",1,0,'MARK(HBS__mechPedal_HBS__mechPedal_fge_1_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__mechPedal_HBS__mechPedal_fge_1_blocker","HBS__mechPedal_reset",1,0,'MARK(HBS__mechPedal_HBS__mechPedal_fge_1_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__mechPedal_HBS__mechPedal_Choice1","HBS__mechPedal_HBS__mechPedal_fge_1_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_HBS__elecPedal_fge_1_tmp","HBS__elecPedal_HBS__elecPedal_fge_1",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_HBS__elecPedal_fge_1_blocker","HBS__elecPedal_HBS__elecPedal_fge_1",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_HBS__elecPedal_fge_1_blocker","HBS__elecPedal_HBS__elecPedal_fge_1",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_fge_1_tmp","HBS__elecPedal_HBS__elecPedal_fge_1_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_fge_1_tmp","HBS__elecPedal_HBS__elecPedal_fge_1_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_fge_1_tmp","HBS__elecPedal_reset",1,0,'MARK(HBS__elecPedal_HBS__elecPedal_fge_1_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_fge_1_blocker","HBS__elecPedal_reset",1,0,'MARK(HBS__elecPedal_HBS__elecPedal_fge_1_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_HBS__elecPedal_Choice1","HBS__elecPedal_HBS__elecPedal_fge_1_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_HBS__commBus1_fge_1_tmp","HBS__commBus1_HBS__commBus1_fge_1",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_HBS__commBus1_fge_1_blocker","HBS__commBus1_HBS__commBus1_fge_1",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_HBS__commBus1_fge_1_blocker","HBS__commBus1_HBS__commBus1_fge_1",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_fge_1_tmp","HBS__commBus1_HBS__commBus1_fge_1_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_fge_1_tmp","HBS__commBus1_HBS__commBus1_fge_1_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_fge_1_tmp","HBS__commBus1_reset",1,0,'MARK(HBS__commBus1_HBS__commBus1_fge_1_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_fge_1_blocker","HBS__commBus1_reset",1,0,'MARK(HBS__commBus1_HBS__commBus1_fge_1_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_HBS__commBus1_C2","HBS__commBus1_HBS__commBus1_fge_1_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_HBS__commBus2_fge_1_tmp","HBS__commBus2_HBS__commBus2_fge_1",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_HBS__commBus2_fge_1_blocker","HBS__commBus2_HBS__commBus2_fge_1",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_HBS__commBus2_fge_1_blocker","HBS__commBus2_HBS__commBus2_fge_1",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_fge_1_tmp","HBS__commBus2_HBS__commBus2_fge_1_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_fge_1_tmp","HBS__commBus2_HBS__commBus2_fge_1_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_fge_1_tmp","HBS__commBus2_reset",1,0,'MARK(HBS__commBus2_HBS__commBus2_fge_1_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_fge_1_blocker","HBS__commBus2_reset",1,0,'MARK(HBS__commBus2_HBS__commBus2_fge_1_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_HBS__commBus2_C2","HBS__commBus2_HBS__commBus2_fge_1_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_HBS__bu1_fge_1_tmp","HBS__bu1_HBS__bu1_fge_1",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_HBS__bu1_fge_1_blocker","HBS__bu1_HBS__bu1_fge_1",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_HBS__bu1_fge_1_blocker","HBS__bu1_HBS__bu1_fge_1",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_fge_1_tmp","HBS__bu1_HBS__bu1_fge_1_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_fge_1_tmp","HBS__bu1_HBS__bu1_fge_1_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_fge_1_tmp","HBS__bu1_reset",1,0,'MARK(HBS__bu1_HBS__bu1_fge_1_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_fge_1_blocker","HBS__bu1_reset",1,0,'MARK(HBS__bu1_HBS__bu1_fge_1_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_HBS__bu1_Choice1","HBS__bu1_HBS__bu1_fge_1_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_HBS__bu3_fge_1_tmp","HBS__bu3_HBS__bu3_fge_1",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_HBS__bu3_fge_1_blocker","HBS__bu3_HBS__bu3_fge_1",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_HBS__bu3_fge_1_blocker","HBS__bu3_HBS__bu3_fge_1",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_fge_1_tmp","HBS__bu3_HBS__bu3_fge_1_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_fge_1_tmp","HBS__bu3_HBS__bu3_fge_1_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_fge_1_tmp","HBS__bu3_reset",1,0,'MARK(HBS__bu3_HBS__bu3_fge_1_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_fge_1_blocker","HBS__bu3_reset",1,0,'MARK(HBS__bu3_HBS__bu3_fge_1_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_HBS__bu3_Choice1","HBS__bu3_HBS__bu3_fge_1_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_HBS__bu2_fge_1_tmp","HBS__bu2_HBS__bu2_fge_1",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_HBS__bu2_fge_1_blocker","HBS__bu2_HBS__bu2_fge_1",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_HBS__bu2_fge_1_blocker","HBS__bu2_HBS__bu2_fge_1",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_fge_1_tmp","HBS__bu2_HBS__bu2_fge_1_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_fge_1_tmp","HBS__bu2_HBS__bu2_fge_1_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_fge_1_tmp","HBS__bu2_reset",1,0,'MARK(HBS__bu2_HBS__bu2_fge_1_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_fge_1_blocker","HBS__bu2_reset",1,0,'MARK(HBS__bu2_HBS__bu2_fge_1_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_HBS__bu2_Choice1","HBS__bu2_HBS__bu2_fge_1_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_HBS__bu4_fge_1_tmp","HBS__bu4_HBS__bu4_fge_1",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_HBS__bu4_fge_1_blocker","HBS__bu4_HBS__bu4_fge_1",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_HBS__bu4_fge_1_blocker","HBS__bu4_HBS__bu4_fge_1",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_fge_1_tmp","HBS__bu4_HBS__bu4_fge_1_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_fge_1_tmp","HBS__bu4_HBS__bu4_fge_1_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_fge_1_tmp","HBS__bu4_reset",1,0,'MARK(HBS__bu4_HBS__bu4_fge_1_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_fge_1_blocker","HBS__bu4_reset",1,0,'MARK(HBS__bu4_HBS__bu4_fge_1_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_HBS__bu4_Choice1","HBS__bu4_HBS__bu4_fge_1_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__mechPedal_HBS__mechPedal_epf_1_tmp","HBS__mechPedal_HBS__mechPedal_epf_1",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__mechPedal_HBS__mechPedal_epf_1_blocker","HBS__mechPedal_HBS__mechPedal_epf_1",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__mechPedal_HBS__mechPedal_epf_1_blocker","HBS__mechPedal_HBS__mechPedal_epf_1",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__mechPedal_HBS__mechPedal_epf_1_tmp","HBS__mechPedal_HBS__mechPedal_epf_1_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__mechPedal_HBS__mechPedal_epf_1_tmp","HBS__mechPedal_HBS__mechPedal_epf_1_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__mechPedal_HBS__mechPedal_epf_1_tmp","HBS__mechPedal_reset",1,0,'MARK(HBS__mechPedal_HBS__mechPedal_epf_1_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__mechPedal_HBS__mechPedal_epf_1_blocker","HBS__mechPedal_reset",1,0,'MARK(HBS__mechPedal_HBS__mechPedal_epf_1_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__mechPedal_HBS__mechPedal_out1__value","HBS__mechPedal_HBS__mechPedal_epf_1_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__mechPedal_valueError_sel_HBS__mechPedal_epf_1","HBS__mechPedal_valueError_choice_HBS__mechPedal_epf_1",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__mechPedal_valueError_sel_HBS__mechPedal_epf_1","HBS__mechPedal_valueError_choice_HBS__mechPedal_epf_1",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__mechPedal_valueError_sel_HBS__mechPedal_epf_1","HBS__mechPedal_HBS__mechPedal_epf_1",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__mechPedal_HBS__mechPedal_epf_2_tmp","HBS__mechPedal_HBS__mechPedal_epf_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__mechPedal_HBS__mechPedal_epf_2_blocker","HBS__mechPedal_HBS__mechPedal_epf_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__mechPedal_HBS__mechPedal_epf_2_blocker","HBS__mechPedal_HBS__mechPedal_epf_2",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__mechPedal_HBS__mechPedal_epf_2_tmp","HBS__mechPedal_HBS__mechPedal_epf_2_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__mechPedal_HBS__mechPedal_epf_2_tmp","HBS__mechPedal_HBS__mechPedal_epf_2_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__mechPedal_HBS__mechPedal_epf_2_tmp","HBS__mechPedal_reset",1,0,'MARK(HBS__mechPedal_HBS__mechPedal_epf_2_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__mechPedal_HBS__mechPedal_epf_2_blocker","HBS__mechPedal_reset",1,0,'MARK(HBS__mechPedal_HBS__mechPedal_epf_2_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__mechPedal_HBS__mechPedal_out1__omission","HBS__mechPedal_HBS__mechPedal_epf_2_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__mechPedal_omissionError_sel_HBS__mechPedal_epf_2","HBS__mechPedal_omissionError_choice_HBS__mechPedal_epf_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__mechPedal_omissionError_sel_HBS__mechPedal_epf_2","HBS__mechPedal_omissionError_choice_HBS__mechPedal_epf_2",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__mechPedal_omissionError_sel_HBS__mechPedal_epf_2","HBS__mechPedal_HBS__mechPedal_epf_2",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_HBS__elecPedal_epf_1_tmp","HBS__elecPedal_HBS__elecPedal_epf_1",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_HBS__elecPedal_epf_1_blocker","HBS__elecPedal_HBS__elecPedal_epf_1",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_HBS__elecPedal_epf_1_blocker","HBS__elecPedal_HBS__elecPedal_epf_1",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_epf_1_tmp","HBS__elecPedal_HBS__elecPedal_epf_1_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_epf_1_tmp","HBS__elecPedal_HBS__elecPedal_epf_1_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_epf_1_tmp","HBS__elecPedal_reset",1,0,'MARK(HBS__elecPedal_HBS__elecPedal_epf_1_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_epf_1_blocker","HBS__elecPedal_reset",1,0,'MARK(HBS__elecPedal_HBS__elecPedal_epf_1_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_HBS__elecPedal_out1__value","HBS__elecPedal_HBS__elecPedal_epf_1_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_HBS__elecPedal_out2__value","HBS__elecPedal_HBS__elecPedal_epf_1_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_valueError_sel_HBS__elecPedal_epf_1","HBS__elecPedal_valueError_choice_HBS__elecPedal_epf_1",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_valueError_sel_HBS__elecPedal_epf_1","HBS__elecPedal_valueError_choice_HBS__elecPedal_epf_1",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_valueError_sel_HBS__elecPedal_epf_1","HBS__elecPedal_HBS__elecPedal_epf_1",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_HBS__elecPedal_epf_2_tmp","HBS__elecPedal_HBS__elecPedal_epf_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_HBS__elecPedal_epf_2_blocker","HBS__elecPedal_HBS__elecPedal_epf_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_HBS__elecPedal_epf_2_blocker","HBS__elecPedal_HBS__elecPedal_epf_2",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_epf_2_tmp","HBS__elecPedal_HBS__elecPedal_epf_2_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_epf_2_tmp","HBS__elecPedal_HBS__elecPedal_epf_2_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_epf_2_tmp","HBS__elecPedal_reset",1,0,'MARK(HBS__elecPedal_HBS__elecPedal_epf_2_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_epf_2_blocker","HBS__elecPedal_reset",1,0,'MARK(HBS__elecPedal_HBS__elecPedal_epf_2_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_HBS__elecPedal_out1__omission","HBS__elecPedal_HBS__elecPedal_epf_2_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_HBS__elecPedal_out2__omission","HBS__elecPedal_HBS__elecPedal_epf_2_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_omissionError_sel_HBS__elecPedal_epf_2","HBS__elecPedal_omissionError_choice_HBS__elecPedal_epf_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_omissionError_sel_HBS__elecPedal_epf_2","HBS__elecPedal_omissionError_choice_HBS__elecPedal_epf_2",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_omissionError_sel_HBS__elecPedal_epf_2","HBS__elecPedal_HBS__elecPedal_epf_2",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_HBS__commBus1_epf_1_tmp","HBS__commBus1_HBS__commBus1_epf_1",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_HBS__commBus1_epf_1_blocker","HBS__commBus1_HBS__commBus1_epf_1",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_HBS__commBus1_epf_1_blocker","HBS__commBus1_HBS__commBus1_epf_1",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_epf_1_tmp","HBS__commBus1_HBS__commBus1_epf_1_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_epf_1_tmp","HBS__commBus1_HBS__commBus1_epf_1_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_epf_1_tmp","HBS__commBus1_reset",1,0,'MARK(HBS__commBus1_HBS__commBus1_epf_1_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_epf_1_blocker","HBS__commBus1_reset",1,0,'MARK(HBS__commBus1_HBS__commBus1_epf_1_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_HBS__commBus1_out1__value","HBS__commBus1_HBS__commBus1_epf_1_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_valueError_sel_HBS__commBus1_epf_1","HBS__commBus1_valueError_choice_HBS__commBus1_epf_1",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_valueError_sel_HBS__commBus1_epf_1","HBS__commBus1_valueError_choice_HBS__commBus1_epf_1",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_valueError_sel_HBS__commBus1_epf_1","HBS__commBus1_HBS__commBus1_epf_1",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_HBS__commBus1_epf_2_tmp","HBS__commBus1_HBS__commBus1_epf_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_HBS__commBus1_epf_2_blocker","HBS__commBus1_HBS__commBus1_epf_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_HBS__commBus1_epf_2_blocker","HBS__commBus1_HBS__commBus1_epf_2",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_epf_2_tmp","HBS__commBus1_HBS__commBus1_epf_2_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_epf_2_tmp","HBS__commBus1_HBS__commBus1_epf_2_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_epf_2_tmp","HBS__commBus1_reset",1,0,'MARK(HBS__commBus1_HBS__commBus1_epf_2_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_epf_2_blocker","HBS__commBus1_reset",1,0,'MARK(HBS__commBus1_HBS__commBus1_epf_2_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_HBS__commBus1_out1__omission","HBS__commBus1_HBS__commBus1_epf_2_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_omissionError_sel_HBS__commBus1_epf_2","HBS__commBus1_omissionError_choice_HBS__commBus1_epf_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_omissionError_sel_HBS__commBus1_epf_2","HBS__commBus1_omissionError_choice_HBS__commBus1_epf_2",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_omissionError_sel_HBS__commBus1_epf_2","HBS__commBus1_HBS__commBus1_epf_2",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_HBS__commBus2_epf_1_tmp","HBS__commBus2_HBS__commBus2_epf_1",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_HBS__commBus2_epf_1_blocker","HBS__commBus2_HBS__commBus2_epf_1",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_HBS__commBus2_epf_1_blocker","HBS__commBus2_HBS__commBus2_epf_1",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_epf_1_tmp","HBS__commBus2_HBS__commBus2_epf_1_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_epf_1_tmp","HBS__commBus2_HBS__commBus2_epf_1_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_epf_1_tmp","HBS__commBus2_reset",1,0,'MARK(HBS__commBus2_HBS__commBus2_epf_1_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_epf_1_blocker","HBS__commBus2_reset",1,0,'MARK(HBS__commBus2_HBS__commBus2_epf_1_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_HBS__commBus2_out1__value","HBS__commBus2_HBS__commBus2_epf_1_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_valueError_sel_HBS__commBus2_epf_1","HBS__commBus2_valueError_choice_HBS__commBus2_epf_1",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_valueError_sel_HBS__commBus2_epf_1","HBS__commBus2_valueError_choice_HBS__commBus2_epf_1",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_valueError_sel_HBS__commBus2_epf_1","HBS__commBus2_HBS__commBus2_epf_1",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_HBS__commBus2_epf_2_tmp","HBS__commBus2_HBS__commBus2_epf_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_HBS__commBus2_epf_2_blocker","HBS__commBus2_HBS__commBus2_epf_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_HBS__commBus2_epf_2_blocker","HBS__commBus2_HBS__commBus2_epf_2",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_epf_2_tmp","HBS__commBus2_HBS__commBus2_epf_2_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_epf_2_tmp","HBS__commBus2_HBS__commBus2_epf_2_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_epf_2_tmp","HBS__commBus2_reset",1,0,'MARK(HBS__commBus2_HBS__commBus2_epf_2_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_epf_2_blocker","HBS__commBus2_reset",1,0,'MARK(HBS__commBus2_HBS__commBus2_epf_2_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_HBS__commBus2_out1__omission","HBS__commBus2_HBS__commBus2_epf_2_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_omissionError_sel_HBS__commBus2_epf_2","HBS__commBus2_omissionError_choice_HBS__commBus2_epf_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_omissionError_sel_HBS__commBus2_epf_2","HBS__commBus2_omissionError_choice_HBS__commBus2_epf_2",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_omissionError_sel_HBS__commBus2_epf_2","HBS__commBus2_HBS__commBus2_epf_2",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_HBS__bu1_epf_1_tmp","HBS__bu1_HBS__bu1_epf_1",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_HBS__bu1_epf_1_blocker","HBS__bu1_HBS__bu1_epf_1",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_HBS__bu1_epf_1_blocker","HBS__bu1_HBS__bu1_epf_1",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_epf_1_tmp","HBS__bu1_HBS__bu1_epf_1_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_epf_1_tmp","HBS__bu1_HBS__bu1_epf_1_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_epf_1_tmp","HBS__bu1_reset",1,0,'MARK(HBS__bu1_HBS__bu1_epf_1_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_epf_1_blocker","HBS__bu1_reset",1,0,'MARK(HBS__bu1_HBS__bu1_epf_1_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_HBS__bu1_torque__value","HBS__bu1_HBS__bu1_epf_1_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_valueError_sel_HBS__bu1_epf_1","HBS__bu1_valueError_choice_HBS__bu1_epf_1",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_valueError_sel_HBS__bu1_epf_1","HBS__bu1_valueError_choice_HBS__bu1_epf_1",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_valueError_sel_HBS__bu1_epf_1","HBS__bu1_HBS__bu1_epf_1",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_HBS__bu1_epf_2_tmp","HBS__bu1_HBS__bu1_epf_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_HBS__bu1_epf_2_blocker","HBS__bu1_HBS__bu1_epf_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_HBS__bu1_epf_2_blocker","HBS__bu1_HBS__bu1_epf_2",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_epf_2_tmp","HBS__bu1_HBS__bu1_epf_2_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_epf_2_tmp","HBS__bu1_HBS__bu1_epf_2_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_epf_2_tmp","HBS__bu1_reset",1,0,'MARK(HBS__bu1_HBS__bu1_epf_2_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_epf_2_blocker","HBS__bu1_reset",1,0,'MARK(HBS__bu1_HBS__bu1_epf_2_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_HBS__bu1_torque__omission","HBS__bu1_HBS__bu1_epf_2_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_omissionError_sel_HBS__bu1_epf_2","HBS__bu1_omissionError_choice_HBS__bu1_epf_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_omissionError_sel_HBS__bu1_epf_2","HBS__bu1_omissionError_choice_HBS__bu1_epf_2",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_omissionError_sel_HBS__bu1_epf_2","HBS__bu1_HBS__bu1_epf_2",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_HBS__bu3_epf_1_tmp","HBS__bu3_HBS__bu3_epf_1",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_HBS__bu3_epf_1_blocker","HBS__bu3_HBS__bu3_epf_1",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_HBS__bu3_epf_1_blocker","HBS__bu3_HBS__bu3_epf_1",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_epf_1_tmp","HBS__bu3_HBS__bu3_epf_1_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_epf_1_tmp","HBS__bu3_HBS__bu3_epf_1_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_epf_1_tmp","HBS__bu3_reset",1,0,'MARK(HBS__bu3_HBS__bu3_epf_1_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_epf_1_blocker","HBS__bu3_reset",1,0,'MARK(HBS__bu3_HBS__bu3_epf_1_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_HBS__bu3_torque__value","HBS__bu3_HBS__bu3_epf_1_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_valueError_sel_HBS__bu3_epf_1","HBS__bu3_valueError_choice_HBS__bu3_epf_1",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_valueError_sel_HBS__bu3_epf_1","HBS__bu3_valueError_choice_HBS__bu3_epf_1",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_valueError_sel_HBS__bu3_epf_1","HBS__bu3_HBS__bu3_epf_1",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_HBS__bu3_epf_2_tmp","HBS__bu3_HBS__bu3_epf_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_HBS__bu3_epf_2_blocker","HBS__bu3_HBS__bu3_epf_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_HBS__bu3_epf_2_blocker","HBS__bu3_HBS__bu3_epf_2",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_epf_2_tmp","HBS__bu3_HBS__bu3_epf_2_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_epf_2_tmp","HBS__bu3_HBS__bu3_epf_2_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_epf_2_tmp","HBS__bu3_reset",1,0,'MARK(HBS__bu3_HBS__bu3_epf_2_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_epf_2_blocker","HBS__bu3_reset",1,0,'MARK(HBS__bu3_HBS__bu3_epf_2_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_HBS__bu3_torque__omission","HBS__bu3_HBS__bu3_epf_2_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_omissionError_sel_HBS__bu3_epf_2","HBS__bu3_omissionError_choice_HBS__bu3_epf_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_omissionError_sel_HBS__bu3_epf_2","HBS__bu3_omissionError_choice_HBS__bu3_epf_2",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_omissionError_sel_HBS__bu3_epf_2","HBS__bu3_HBS__bu3_epf_2",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_HBS__bu2_epf_1_tmp","HBS__bu2_HBS__bu2_epf_1",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_HBS__bu2_epf_1_blocker","HBS__bu2_HBS__bu2_epf_1",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_HBS__bu2_epf_1_blocker","HBS__bu2_HBS__bu2_epf_1",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_epf_1_tmp","HBS__bu2_HBS__bu2_epf_1_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_epf_1_tmp","HBS__bu2_HBS__bu2_epf_1_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_epf_1_tmp","HBS__bu2_reset",1,0,'MARK(HBS__bu2_HBS__bu2_epf_1_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_epf_1_blocker","HBS__bu2_reset",1,0,'MARK(HBS__bu2_HBS__bu2_epf_1_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_HBS__bu2_torque__value","HBS__bu2_HBS__bu2_epf_1_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_valueError_sel_HBS__bu2_epf_1","HBS__bu2_valueError_choice_HBS__bu2_epf_1",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_valueError_sel_HBS__bu2_epf_1","HBS__bu2_valueError_choice_HBS__bu2_epf_1",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_valueError_sel_HBS__bu2_epf_1","HBS__bu2_HBS__bu2_epf_1",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_HBS__bu2_epf_2_tmp","HBS__bu2_HBS__bu2_epf_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_HBS__bu2_epf_2_blocker","HBS__bu2_HBS__bu2_epf_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_HBS__bu2_epf_2_blocker","HBS__bu2_HBS__bu2_epf_2",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_epf_2_tmp","HBS__bu2_HBS__bu2_epf_2_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_epf_2_tmp","HBS__bu2_HBS__bu2_epf_2_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_epf_2_tmp","HBS__bu2_reset",1,0,'MARK(HBS__bu2_HBS__bu2_epf_2_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_epf_2_blocker","HBS__bu2_reset",1,0,'MARK(HBS__bu2_HBS__bu2_epf_2_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_HBS__bu2_torque__omission","HBS__bu2_HBS__bu2_epf_2_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_omissionError_sel_HBS__bu2_epf_2","HBS__bu2_omissionError_choice_HBS__bu2_epf_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_omissionError_sel_HBS__bu2_epf_2","HBS__bu2_omissionError_choice_HBS__bu2_epf_2",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_omissionError_sel_HBS__bu2_epf_2","HBS__bu2_HBS__bu2_epf_2",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_HBS__bu4_epf_1_tmp","HBS__bu4_HBS__bu4_epf_1",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_HBS__bu4_epf_1_blocker","HBS__bu4_HBS__bu4_epf_1",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_HBS__bu4_epf_1_blocker","HBS__bu4_HBS__bu4_epf_1",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_epf_1_tmp","HBS__bu4_HBS__bu4_epf_1_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_epf_1_tmp","HBS__bu4_HBS__bu4_epf_1_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_epf_1_tmp","HBS__bu4_reset",1,0,'MARK(HBS__bu4_HBS__bu4_epf_1_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_epf_1_blocker","HBS__bu4_reset",1,0,'MARK(HBS__bu4_HBS__bu4_epf_1_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_HBS__bu4_torque__value","HBS__bu4_HBS__bu4_epf_1_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_valueError_sel_HBS__bu4_epf_1","HBS__bu4_valueError_choice_HBS__bu4_epf_1",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_valueError_sel_HBS__bu4_epf_1","HBS__bu4_valueError_choice_HBS__bu4_epf_1",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_valueError_sel_HBS__bu4_epf_1","HBS__bu4_HBS__bu4_epf_1",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_HBS__bu4_epf_2_tmp","HBS__bu4_HBS__bu4_epf_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_HBS__bu4_epf_2_blocker","HBS__bu4_HBS__bu4_epf_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_HBS__bu4_epf_2_blocker","HBS__bu4_HBS__bu4_epf_2",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_epf_2_tmp","HBS__bu4_HBS__bu4_epf_2_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_epf_2_tmp","HBS__bu4_HBS__bu4_epf_2_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_epf_2_tmp","HBS__bu4_reset",1,0,'MARK(HBS__bu4_HBS__bu4_epf_2_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_epf_2_blocker","HBS__bu4_reset",1,0,'MARK(HBS__bu4_HBS__bu4_epf_2_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_HBS__bu4_torque__omission","HBS__bu4_HBS__bu4_epf_2_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_omissionError_sel_HBS__bu4_epf_2","HBS__bu4_omissionError_choice_HBS__bu4_epf_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_omissionError_sel_HBS__bu4_epf_2","HBS__bu4_omissionError_choice_HBS__bu4_epf_2",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_omissionError_sel_HBS__bu4_epf_2","HBS__bu4_HBS__bu4_epf_2",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__mechPedal_HBS__mechPedal_intprop_2_tmp","HBS__mechPedal_HBS__mechPedal_intprop_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__mechPedal_HBS__mechPedal_intprop_2_blocker","HBS__mechPedal_HBS__mechPedal_intprop_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__mechPedal_HBS__mechPedal_intprop_2_blocker","HBS__mechPedal_HBS__mechPedal_intprop_2",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__mechPedal_HBS__mechPedal_intprop_2_tmp","HBS__mechPedal_HBS__mechPedal_intprop_2_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__mechPedal_HBS__mechPedal_intprop_2_tmp","HBS__mechPedal_HBS__mechPedal_intprop_2_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__mechPedal_HBS__mechPedal_intprop_2_tmp","HBS__mechPedal_reset",1,0,'MARK(HBS__mechPedal_HBS__mechPedal_intprop_2_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__mechPedal_HBS__mechPedal_intprop_2_blocker","HBS__mechPedal_reset",1,0,'MARK(HBS__mechPedal_HBS__mechPedal_intprop_2_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__mechPedal_HBS__mechPedal_valueError","HBS__mechPedal_HBS__mechPedal_intprop_2_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__mechPedal_Choice1_sel_HBS__mechPedal_intprop_2","HBS__mechPedal_Choice1_choice_HBS__mechPedal_intprop_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__mechPedal_Choice1_sel_HBS__mechPedal_intprop_2","HBS__mechPedal_Choice1_choice_HBS__mechPedal_intprop_2",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__mechPedal_Choice1_sel_HBS__mechPedal_intprop_2","HBS__mechPedal_HBS__mechPedal_intprop_2",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__mechPedal_HBS__mechPedal_intprop_3_tmp","HBS__mechPedal_HBS__mechPedal_intprop_3",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__mechPedal_HBS__mechPedal_intprop_3_blocker","HBS__mechPedal_HBS__mechPedal_intprop_3",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__mechPedal_HBS__mechPedal_intprop_3_blocker","HBS__mechPedal_HBS__mechPedal_intprop_3",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__mechPedal_HBS__mechPedal_intprop_3_tmp","HBS__mechPedal_HBS__mechPedal_intprop_3_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__mechPedal_HBS__mechPedal_intprop_3_tmp","HBS__mechPedal_HBS__mechPedal_intprop_3_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__mechPedal_HBS__mechPedal_intprop_3_tmp","HBS__mechPedal_reset",1,0,'MARK(HBS__mechPedal_HBS__mechPedal_intprop_3_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__mechPedal_HBS__mechPedal_intprop_3_blocker","HBS__mechPedal_reset",1,0,'MARK(HBS__mechPedal_HBS__mechPedal_intprop_3_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__mechPedal_HBS__mechPedal_omissionError","HBS__mechPedal_HBS__mechPedal_intprop_3_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__mechPedal_Choice1_sel_HBS__mechPedal_intprop_3","HBS__mechPedal_Choice1_choice_HBS__mechPedal_intprop_3",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__mechPedal_Choice1_sel_HBS__mechPedal_intprop_3","HBS__mechPedal_Choice1_choice_HBS__mechPedal_intprop_3",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__mechPedal_Choice1_sel_HBS__mechPedal_intprop_3","HBS__mechPedal_HBS__mechPedal_intprop_3",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_HBS__elecPedal_intprop_2_tmp","HBS__elecPedal_HBS__elecPedal_intprop_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_HBS__elecPedal_intprop_2_blocker","HBS__elecPedal_HBS__elecPedal_intprop_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_HBS__elecPedal_intprop_2_blocker","HBS__elecPedal_HBS__elecPedal_intprop_2",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_intprop_2_tmp","HBS__elecPedal_HBS__elecPedal_intprop_2_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_intprop_2_tmp","HBS__elecPedal_HBS__elecPedal_intprop_2_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_intprop_2_tmp","HBS__elecPedal_reset",1,0,'MARK(HBS__elecPedal_HBS__elecPedal_intprop_2_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_intprop_2_blocker","HBS__elecPedal_reset",1,0,'MARK(HBS__elecPedal_HBS__elecPedal_intprop_2_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_HBS__elecPedal_valueError","HBS__elecPedal_HBS__elecPedal_intprop_2_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_Choice1_sel_HBS__elecPedal_intprop_2","HBS__elecPedal_Choice1_choice_HBS__elecPedal_intprop_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_Choice1_sel_HBS__elecPedal_intprop_2","HBS__elecPedal_Choice1_choice_HBS__elecPedal_intprop_2",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_Choice1_sel_HBS__elecPedal_intprop_2","HBS__elecPedal_HBS__elecPedal_intprop_2",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_HBS__elecPedal_intprop_3_tmp","HBS__elecPedal_HBS__elecPedal_intprop_3",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_HBS__elecPedal_intprop_3_blocker","HBS__elecPedal_HBS__elecPedal_intprop_3",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_HBS__elecPedal_intprop_3_blocker","HBS__elecPedal_HBS__elecPedal_intprop_3",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_intprop_3_tmp","HBS__elecPedal_HBS__elecPedal_intprop_3_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_intprop_3_tmp","HBS__elecPedal_HBS__elecPedal_intprop_3_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_intprop_3_tmp","HBS__elecPedal_reset",1,0,'MARK(HBS__elecPedal_HBS__elecPedal_intprop_3_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_intprop_3_blocker","HBS__elecPedal_reset",1,0,'MARK(HBS__elecPedal_HBS__elecPedal_intprop_3_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_HBS__elecPedal_omissionError","HBS__elecPedal_HBS__elecPedal_intprop_3_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_Choice1_sel_HBS__elecPedal_intprop_3","HBS__elecPedal_Choice1_choice_HBS__elecPedal_intprop_3",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_Choice1_sel_HBS__elecPedal_intprop_3","HBS__elecPedal_Choice1_choice_HBS__elecPedal_intprop_3",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_Choice1_sel_HBS__elecPedal_intprop_3","HBS__elecPedal_HBS__elecPedal_intprop_3",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_HBS__elecPedal_intprop_4_tmp","HBS__elecPedal_HBS__elecPedal_intprop_4",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_HBS__elecPedal_intprop_4_blocker","HBS__elecPedal_HBS__elecPedal_intprop_4",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_HBS__elecPedal_intprop_4_blocker","HBS__elecPedal_HBS__elecPedal_intprop_4",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_intprop_4_tmp","HBS__elecPedal_HBS__elecPedal_intprop_4_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_intprop_4_tmp","HBS__elecPedal_HBS__elecPedal_intprop_4_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_intprop_4_tmp","HBS__elecPedal_reset",1,0,'MARK(HBS__elecPedal_HBS__elecPedal_intprop_4_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_intprop_4_blocker","HBS__elecPedal_reset",1,0,'MARK(HBS__elecPedal_HBS__elecPedal_intprop_4_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_HBS__elecPedal_valueError","HBS__elecPedal_HBS__elecPedal_intprop_4_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_Choice2_sel_HBS__elecPedal_intprop_4","HBS__elecPedal_Choice2_choice_HBS__elecPedal_intprop_4",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_Choice2_sel_HBS__elecPedal_intprop_4","HBS__elecPedal_Choice2_choice_HBS__elecPedal_intprop_4",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_Choice2_sel_HBS__elecPedal_intprop_4","HBS__elecPedal_HBS__elecPedal_intprop_4",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_HBS__elecPedal_intprop_5_tmp","HBS__elecPedal_HBS__elecPedal_intprop_5",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_HBS__elecPedal_intprop_5_blocker","HBS__elecPedal_HBS__elecPedal_intprop_5",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_HBS__elecPedal_intprop_5_blocker","HBS__elecPedal_HBS__elecPedal_intprop_5",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_intprop_5_tmp","HBS__elecPedal_HBS__elecPedal_intprop_5_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_intprop_5_tmp","HBS__elecPedal_HBS__elecPedal_intprop_5_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_intprop_5_tmp","HBS__elecPedal_reset",1,0,'MARK(HBS__elecPedal_HBS__elecPedal_intprop_5_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_HBS__elecPedal_intprop_5_blocker","HBS__elecPedal_reset",1,0,'MARK(HBS__elecPedal_HBS__elecPedal_intprop_5_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_HBS__elecPedal_omissionError","HBS__elecPedal_HBS__elecPedal_intprop_5_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_Choice2_sel_HBS__elecPedal_intprop_5","HBS__elecPedal_Choice2_choice_HBS__elecPedal_intprop_5",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__elecPedal_Choice2_sel_HBS__elecPedal_intprop_5","HBS__elecPedal_Choice2_choice_HBS__elecPedal_intprop_5",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__elecPedal_Choice2_sel_HBS__elecPedal_intprop_5","HBS__elecPedal_HBS__elecPedal_intprop_5",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_HBS__commBus1_intprop_2_tmp","HBS__commBus1_HBS__commBus1_intprop_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_HBS__commBus1_intprop_2_blocker","HBS__commBus1_HBS__commBus1_intprop_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_HBS__commBus1_intprop_2_blocker","HBS__commBus1_HBS__commBus1_intprop_2",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_intprop_2_tmp","HBS__commBus1_HBS__commBus1_intprop_2_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_intprop_2_tmp","HBS__commBus1_HBS__commBus1_intprop_2_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_intprop_2_tmp","HBS__commBus1_reset",1,0,'MARK(HBS__commBus1_HBS__commBus1_intprop_2_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_intprop_2_blocker","HBS__commBus1_reset",1,0,'MARK(HBS__commBus1_HBS__commBus1_intprop_2_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_HBS__commBus1_valueError","HBS__commBus1_HBS__commBus1_intprop_2_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_C2_sel_HBS__commBus1_intprop_2","HBS__commBus1_C2_choice_HBS__commBus1_intprop_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_C2_sel_HBS__commBus1_intprop_2","HBS__commBus1_C2_choice_HBS__commBus1_intprop_2",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_C2_sel_HBS__commBus1_intprop_2","HBS__commBus1_HBS__commBus1_intprop_2",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_HBS__commBus1_intprop_3_tmp","HBS__commBus1_HBS__commBus1_intprop_3",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_HBS__commBus1_intprop_3_blocker","HBS__commBus1_HBS__commBus1_intprop_3",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_HBS__commBus1_intprop_3_blocker","HBS__commBus1_HBS__commBus1_intprop_3",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_intprop_3_tmp","HBS__commBus1_HBS__commBus1_intprop_3_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_intprop_3_tmp","HBS__commBus1_HBS__commBus1_intprop_3_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_intprop_3_tmp","HBS__commBus1_reset",1,0,'MARK(HBS__commBus1_HBS__commBus1_intprop_3_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_intprop_3_blocker","HBS__commBus1_reset",1,0,'MARK(HBS__commBus1_HBS__commBus1_intprop_3_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_HBS__commBus1_omissionError","HBS__commBus1_HBS__commBus1_intprop_3_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_C2_sel_HBS__commBus1_intprop_3","HBS__commBus1_C2_choice_HBS__commBus1_intprop_3",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_C2_sel_HBS__commBus1_intprop_3","HBS__commBus1_C2_choice_HBS__commBus1_intprop_3",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_C2_sel_HBS__commBus1_intprop_3","HBS__commBus1_HBS__commBus1_intprop_3",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_HBS__commBus1_intprop_4_tmp","HBS__commBus1_HBS__commBus1_intprop_4",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_HBS__commBus1_intprop_4_blocker","HBS__commBus1_HBS__commBus1_intprop_4",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_HBS__commBus1_intprop_4_blocker","HBS__commBus1_HBS__commBus1_intprop_4",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_intprop_4_tmp","HBS__commBus1_HBS__commBus1_intprop_4_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_intprop_4_tmp","HBS__commBus1_HBS__commBus1_intprop_4_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_intprop_4_tmp","HBS__commBus1_reset",1,0,'MARK(HBS__commBus1_HBS__commBus1_intprop_4_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_intprop_4_blocker","HBS__commBus1_reset",1,0,'MARK(HBS__commBus1_HBS__commBus1_intprop_4_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_HBS__commBus1_valueError","HBS__commBus1_HBS__commBus1_intprop_4_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_C1_sel_HBS__commBus1_intprop_4","HBS__commBus1_C1_choice_HBS__commBus1_intprop_4",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_C1_sel_HBS__commBus1_intprop_4","HBS__commBus1_C1_choice_HBS__commBus1_intprop_4",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_C1_sel_HBS__commBus1_intprop_4","HBS__commBus1_HBS__commBus1_intprop_4",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_HBS__commBus1_intprop_5_tmp","HBS__commBus1_HBS__commBus1_intprop_5",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_HBS__commBus1_intprop_5_blocker","HBS__commBus1_HBS__commBus1_intprop_5",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_HBS__commBus1_intprop_5_blocker","HBS__commBus1_HBS__commBus1_intprop_5",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_intprop_5_tmp","HBS__commBus1_HBS__commBus1_intprop_5_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_intprop_5_tmp","HBS__commBus1_HBS__commBus1_intprop_5_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_intprop_5_tmp","HBS__commBus1_reset",1,0,'MARK(HBS__commBus1_HBS__commBus1_intprop_5_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_HBS__commBus1_intprop_5_blocker","HBS__commBus1_reset",1,0,'MARK(HBS__commBus1_HBS__commBus1_intprop_5_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_HBS__commBus1_omissionError","HBS__commBus1_HBS__commBus1_intprop_5_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_C1_sel_HBS__commBus1_intprop_5","HBS__commBus1_C1_choice_HBS__commBus1_intprop_5",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus1_C1_sel_HBS__commBus1_intprop_5","HBS__commBus1_C1_choice_HBS__commBus1_intprop_5",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus1_C1_sel_HBS__commBus1_intprop_5","HBS__commBus1_HBS__commBus1_intprop_5",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_HBS__commBus2_intprop_2_tmp","HBS__commBus2_HBS__commBus2_intprop_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_HBS__commBus2_intprop_2_blocker","HBS__commBus2_HBS__commBus2_intprop_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_HBS__commBus2_intprop_2_blocker","HBS__commBus2_HBS__commBus2_intprop_2",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_intprop_2_tmp","HBS__commBus2_HBS__commBus2_intprop_2_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_intprop_2_tmp","HBS__commBus2_HBS__commBus2_intprop_2_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_intprop_2_tmp","HBS__commBus2_reset",1,0,'MARK(HBS__commBus2_HBS__commBus2_intprop_2_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_intprop_2_blocker","HBS__commBus2_reset",1,0,'MARK(HBS__commBus2_HBS__commBus2_intprop_2_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_HBS__commBus2_valueError","HBS__commBus2_HBS__commBus2_intprop_2_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_C2_sel_HBS__commBus2_intprop_2","HBS__commBus2_C2_choice_HBS__commBus2_intprop_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_C2_sel_HBS__commBus2_intprop_2","HBS__commBus2_C2_choice_HBS__commBus2_intprop_2",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_C2_sel_HBS__commBus2_intprop_2","HBS__commBus2_HBS__commBus2_intprop_2",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_HBS__commBus2_intprop_3_tmp","HBS__commBus2_HBS__commBus2_intprop_3",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_HBS__commBus2_intprop_3_blocker","HBS__commBus2_HBS__commBus2_intprop_3",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_HBS__commBus2_intprop_3_blocker","HBS__commBus2_HBS__commBus2_intprop_3",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_intprop_3_tmp","HBS__commBus2_HBS__commBus2_intprop_3_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_intprop_3_tmp","HBS__commBus2_HBS__commBus2_intprop_3_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_intprop_3_tmp","HBS__commBus2_reset",1,0,'MARK(HBS__commBus2_HBS__commBus2_intprop_3_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_intprop_3_blocker","HBS__commBus2_reset",1,0,'MARK(HBS__commBus2_HBS__commBus2_intprop_3_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_HBS__commBus2_omissionError","HBS__commBus2_HBS__commBus2_intprop_3_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_C2_sel_HBS__commBus2_intprop_3","HBS__commBus2_C2_choice_HBS__commBus2_intprop_3",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_C2_sel_HBS__commBus2_intprop_3","HBS__commBus2_C2_choice_HBS__commBus2_intprop_3",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_C2_sel_HBS__commBus2_intprop_3","HBS__commBus2_HBS__commBus2_intprop_3",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_HBS__commBus2_intprop_4_tmp","HBS__commBus2_HBS__commBus2_intprop_4",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_HBS__commBus2_intprop_4_blocker","HBS__commBus2_HBS__commBus2_intprop_4",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_HBS__commBus2_intprop_4_blocker","HBS__commBus2_HBS__commBus2_intprop_4",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_intprop_4_tmp","HBS__commBus2_HBS__commBus2_intprop_4_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_intprop_4_tmp","HBS__commBus2_HBS__commBus2_intprop_4_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_intprop_4_tmp","HBS__commBus2_reset",1,0,'MARK(HBS__commBus2_HBS__commBus2_intprop_4_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_intprop_4_blocker","HBS__commBus2_reset",1,0,'MARK(HBS__commBus2_HBS__commBus2_intprop_4_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_HBS__commBus2_valueError","HBS__commBus2_HBS__commBus2_intprop_4_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_C1_sel_HBS__commBus2_intprop_4","HBS__commBus2_C1_choice_HBS__commBus2_intprop_4",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_C1_sel_HBS__commBus2_intprop_4","HBS__commBus2_C1_choice_HBS__commBus2_intprop_4",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_C1_sel_HBS__commBus2_intprop_4","HBS__commBus2_HBS__commBus2_intprop_4",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_HBS__commBus2_intprop_5_tmp","HBS__commBus2_HBS__commBus2_intprop_5",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_HBS__commBus2_intprop_5_blocker","HBS__commBus2_HBS__commBus2_intprop_5",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_HBS__commBus2_intprop_5_blocker","HBS__commBus2_HBS__commBus2_intprop_5",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_intprop_5_tmp","HBS__commBus2_HBS__commBus2_intprop_5_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_intprop_5_tmp","HBS__commBus2_HBS__commBus2_intprop_5_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_intprop_5_tmp","HBS__commBus2_reset",1,0,'MARK(HBS__commBus2_HBS__commBus2_intprop_5_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_HBS__commBus2_intprop_5_blocker","HBS__commBus2_reset",1,0,'MARK(HBS__commBus2_HBS__commBus2_intprop_5_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_HBS__commBus2_omissionError","HBS__commBus2_HBS__commBus2_intprop_5_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_C1_sel_HBS__commBus2_intprop_5","HBS__commBus2_C1_choice_HBS__commBus2_intprop_5",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__commBus2_C1_sel_HBS__commBus2_intprop_5","HBS__commBus2_C1_choice_HBS__commBus2_intprop_5",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__commBus2_C1_sel_HBS__commBus2_intprop_5","HBS__commBus2_HBS__commBus2_intprop_5",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_HBS__bu1_intprop_2_tmp","HBS__bu1_HBS__bu1_intprop_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_HBS__bu1_intprop_2_blocker","HBS__bu1_HBS__bu1_intprop_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_HBS__bu1_intprop_2_blocker","HBS__bu1_HBS__bu1_intprop_2",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_intprop_2_tmp","HBS__bu1_HBS__bu1_intprop_2_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_intprop_2_tmp","HBS__bu1_HBS__bu1_intprop_2_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_intprop_2_tmp","HBS__bu1_reset",1,0,'MARK(HBS__bu1_HBS__bu1_intprop_2_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_intprop_2_blocker","HBS__bu1_reset",1,0,'MARK(HBS__bu1_HBS__bu1_intprop_2_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_HBS__bu1_valueError","HBS__bu1_HBS__bu1_intprop_2_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_Choice1_sel_HBS__bu1_intprop_2","HBS__bu1_Choice1_choice_HBS__bu1_intprop_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_Choice1_sel_HBS__bu1_intprop_2","HBS__bu1_Choice1_choice_HBS__bu1_intprop_2",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_Choice1_sel_HBS__bu1_intprop_2","HBS__bu1_HBS__bu1_intprop_2",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_HBS__bu1_intprop_3_tmp","HBS__bu1_HBS__bu1_intprop_3",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_HBS__bu1_intprop_3_blocker","HBS__bu1_HBS__bu1_intprop_3",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_HBS__bu1_intprop_3_blocker","HBS__bu1_HBS__bu1_intprop_3",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_intprop_3_tmp","HBS__bu1_HBS__bu1_intprop_3_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_intprop_3_tmp","HBS__bu1_HBS__bu1_intprop_3_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_intprop_3_tmp","HBS__bu1_reset",1,0,'MARK(HBS__bu1_HBS__bu1_intprop_3_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_intprop_3_blocker","HBS__bu1_reset",1,0,'MARK(HBS__bu1_HBS__bu1_intprop_3_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_HBS__bu1_omissionError","HBS__bu1_HBS__bu1_intprop_3_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_Choice1_sel_HBS__bu1_intprop_3","HBS__bu1_Choice1_choice_HBS__bu1_intprop_3",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_Choice1_sel_HBS__bu1_intprop_3","HBS__bu1_Choice1_choice_HBS__bu1_intprop_3",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_Choice1_sel_HBS__bu1_intprop_3","HBS__bu1_HBS__bu1_intprop_3",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_HBS__bu1_intprop_4_tmp","HBS__bu1_HBS__bu1_intprop_4",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_HBS__bu1_intprop_4_blocker","HBS__bu1_HBS__bu1_intprop_4",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_HBS__bu1_intprop_4_blocker","HBS__bu1_HBS__bu1_intprop_4",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_intprop_4_tmp","HBS__bu1_HBS__bu1_intprop_4_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_intprop_4_tmp","HBS__bu1_HBS__bu1_intprop_4_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_intprop_4_tmp","HBS__bu1_reset",1,0,'MARK(HBS__bu1_HBS__bu1_intprop_4_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_intprop_4_blocker","HBS__bu1_reset",1,0,'MARK(HBS__bu1_HBS__bu1_intprop_4_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_HBS__bu1_valueError","HBS__bu1_HBS__bu1_intprop_4_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_Choice2_sel_HBS__bu1_intprop_4","HBS__bu1_Choice2_choice_HBS__bu1_intprop_4",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_Choice2_sel_HBS__bu1_intprop_4","HBS__bu1_Choice2_choice_HBS__bu1_intprop_4",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_Choice2_sel_HBS__bu1_intprop_4","HBS__bu1_HBS__bu1_intprop_4",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_HBS__bu1_intprop_5_tmp","HBS__bu1_HBS__bu1_intprop_5",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_HBS__bu1_intprop_5_blocker","HBS__bu1_HBS__bu1_intprop_5",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_HBS__bu1_intprop_5_blocker","HBS__bu1_HBS__bu1_intprop_5",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_intprop_5_tmp","HBS__bu1_HBS__bu1_intprop_5_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_intprop_5_tmp","HBS__bu1_HBS__bu1_intprop_5_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_intprop_5_tmp","HBS__bu1_reset",1,0,'MARK(HBS__bu1_HBS__bu1_intprop_5_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_HBS__bu1_intprop_5_blocker","HBS__bu1_reset",1,0,'MARK(HBS__bu1_HBS__bu1_intprop_5_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_HBS__bu1_omissionError","HBS__bu1_HBS__bu1_intprop_5_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_Choice2_sel_HBS__bu1_intprop_5","HBS__bu1_Choice2_choice_HBS__bu1_intprop_5",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu1_Choice2_sel_HBS__bu1_intprop_5","HBS__bu1_Choice2_choice_HBS__bu1_intprop_5",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu1_Choice2_sel_HBS__bu1_intprop_5","HBS__bu1_HBS__bu1_intprop_5",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_HBS__bu3_intprop_2_tmp","HBS__bu3_HBS__bu3_intprop_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_HBS__bu3_intprop_2_blocker","HBS__bu3_HBS__bu3_intprop_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_HBS__bu3_intprop_2_blocker","HBS__bu3_HBS__bu3_intprop_2",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_intprop_2_tmp","HBS__bu3_HBS__bu3_intprop_2_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_intprop_2_tmp","HBS__bu3_HBS__bu3_intprop_2_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_intprop_2_tmp","HBS__bu3_reset",1,0,'MARK(HBS__bu3_HBS__bu3_intprop_2_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_intprop_2_blocker","HBS__bu3_reset",1,0,'MARK(HBS__bu3_HBS__bu3_intprop_2_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_HBS__bu3_valueError","HBS__bu3_HBS__bu3_intprop_2_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_Choice1_sel_HBS__bu3_intprop_2","HBS__bu3_Choice1_choice_HBS__bu3_intprop_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_Choice1_sel_HBS__bu3_intprop_2","HBS__bu3_Choice1_choice_HBS__bu3_intprop_2",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_Choice1_sel_HBS__bu3_intprop_2","HBS__bu3_HBS__bu3_intprop_2",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_HBS__bu3_intprop_3_tmp","HBS__bu3_HBS__bu3_intprop_3",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_HBS__bu3_intprop_3_blocker","HBS__bu3_HBS__bu3_intprop_3",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_HBS__bu3_intprop_3_blocker","HBS__bu3_HBS__bu3_intprop_3",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_intprop_3_tmp","HBS__bu3_HBS__bu3_intprop_3_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_intprop_3_tmp","HBS__bu3_HBS__bu3_intprop_3_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_intprop_3_tmp","HBS__bu3_reset",1,0,'MARK(HBS__bu3_HBS__bu3_intprop_3_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_intprop_3_blocker","HBS__bu3_reset",1,0,'MARK(HBS__bu3_HBS__bu3_intprop_3_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_HBS__bu3_omissionError","HBS__bu3_HBS__bu3_intprop_3_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_Choice1_sel_HBS__bu3_intprop_3","HBS__bu3_Choice1_choice_HBS__bu3_intprop_3",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_Choice1_sel_HBS__bu3_intprop_3","HBS__bu3_Choice1_choice_HBS__bu3_intprop_3",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_Choice1_sel_HBS__bu3_intprop_3","HBS__bu3_HBS__bu3_intprop_3",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_HBS__bu3_intprop_4_tmp","HBS__bu3_HBS__bu3_intprop_4",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_HBS__bu3_intprop_4_blocker","HBS__bu3_HBS__bu3_intprop_4",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_HBS__bu3_intprop_4_blocker","HBS__bu3_HBS__bu3_intprop_4",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_intprop_4_tmp","HBS__bu3_HBS__bu3_intprop_4_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_intprop_4_tmp","HBS__bu3_HBS__bu3_intprop_4_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_intprop_4_tmp","HBS__bu3_reset",1,0,'MARK(HBS__bu3_HBS__bu3_intprop_4_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_intprop_4_blocker","HBS__bu3_reset",1,0,'MARK(HBS__bu3_HBS__bu3_intprop_4_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_HBS__bu3_valueError","HBS__bu3_HBS__bu3_intprop_4_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_Choice2_sel_HBS__bu3_intprop_4","HBS__bu3_Choice2_choice_HBS__bu3_intprop_4",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_Choice2_sel_HBS__bu3_intprop_4","HBS__bu3_Choice2_choice_HBS__bu3_intprop_4",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_Choice2_sel_HBS__bu3_intprop_4","HBS__bu3_HBS__bu3_intprop_4",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_HBS__bu3_intprop_5_tmp","HBS__bu3_HBS__bu3_intprop_5",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_HBS__bu3_intprop_5_blocker","HBS__bu3_HBS__bu3_intprop_5",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_HBS__bu3_intprop_5_blocker","HBS__bu3_HBS__bu3_intprop_5",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_intprop_5_tmp","HBS__bu3_HBS__bu3_intprop_5_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_intprop_5_tmp","HBS__bu3_HBS__bu3_intprop_5_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_intprop_5_tmp","HBS__bu3_reset",1,0,'MARK(HBS__bu3_HBS__bu3_intprop_5_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_HBS__bu3_intprop_5_blocker","HBS__bu3_reset",1,0,'MARK(HBS__bu3_HBS__bu3_intprop_5_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_HBS__bu3_omissionError","HBS__bu3_HBS__bu3_intprop_5_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_Choice2_sel_HBS__bu3_intprop_5","HBS__bu3_Choice2_choice_HBS__bu3_intprop_5",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu3_Choice2_sel_HBS__bu3_intprop_5","HBS__bu3_Choice2_choice_HBS__bu3_intprop_5",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu3_Choice2_sel_HBS__bu3_intprop_5","HBS__bu3_HBS__bu3_intprop_5",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_HBS__bu2_intprop_2_tmp","HBS__bu2_HBS__bu2_intprop_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_HBS__bu2_intprop_2_blocker","HBS__bu2_HBS__bu2_intprop_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_HBS__bu2_intprop_2_blocker","HBS__bu2_HBS__bu2_intprop_2",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_intprop_2_tmp","HBS__bu2_HBS__bu2_intprop_2_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_intprop_2_tmp","HBS__bu2_HBS__bu2_intprop_2_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_intprop_2_tmp","HBS__bu2_reset",1,0,'MARK(HBS__bu2_HBS__bu2_intprop_2_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_intprop_2_blocker","HBS__bu2_reset",1,0,'MARK(HBS__bu2_HBS__bu2_intprop_2_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_HBS__bu2_valueError","HBS__bu2_HBS__bu2_intprop_2_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_Choice1_sel_HBS__bu2_intprop_2","HBS__bu2_Choice1_choice_HBS__bu2_intprop_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_Choice1_sel_HBS__bu2_intprop_2","HBS__bu2_Choice1_choice_HBS__bu2_intprop_2",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_Choice1_sel_HBS__bu2_intprop_2","HBS__bu2_HBS__bu2_intprop_2",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_HBS__bu2_intprop_3_tmp","HBS__bu2_HBS__bu2_intprop_3",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_HBS__bu2_intprop_3_blocker","HBS__bu2_HBS__bu2_intprop_3",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_HBS__bu2_intprop_3_blocker","HBS__bu2_HBS__bu2_intprop_3",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_intprop_3_tmp","HBS__bu2_HBS__bu2_intprop_3_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_intprop_3_tmp","HBS__bu2_HBS__bu2_intprop_3_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_intprop_3_tmp","HBS__bu2_reset",1,0,'MARK(HBS__bu2_HBS__bu2_intprop_3_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_intprop_3_blocker","HBS__bu2_reset",1,0,'MARK(HBS__bu2_HBS__bu2_intprop_3_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_HBS__bu2_omissionError","HBS__bu2_HBS__bu2_intprop_3_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_Choice1_sel_HBS__bu2_intprop_3","HBS__bu2_Choice1_choice_HBS__bu2_intprop_3",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_Choice1_sel_HBS__bu2_intprop_3","HBS__bu2_Choice1_choice_HBS__bu2_intprop_3",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_Choice1_sel_HBS__bu2_intprop_3","HBS__bu2_HBS__bu2_intprop_3",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_HBS__bu2_intprop_4_tmp","HBS__bu2_HBS__bu2_intprop_4",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_HBS__bu2_intprop_4_blocker","HBS__bu2_HBS__bu2_intprop_4",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_HBS__bu2_intprop_4_blocker","HBS__bu2_HBS__bu2_intprop_4",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_intprop_4_tmp","HBS__bu2_HBS__bu2_intprop_4_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_intprop_4_tmp","HBS__bu2_HBS__bu2_intprop_4_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_intprop_4_tmp","HBS__bu2_reset",1,0,'MARK(HBS__bu2_HBS__bu2_intprop_4_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_intprop_4_blocker","HBS__bu2_reset",1,0,'MARK(HBS__bu2_HBS__bu2_intprop_4_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_HBS__bu2_valueError","HBS__bu2_HBS__bu2_intprop_4_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_Choice2_sel_HBS__bu2_intprop_4","HBS__bu2_Choice2_choice_HBS__bu2_intprop_4",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_Choice2_sel_HBS__bu2_intprop_4","HBS__bu2_Choice2_choice_HBS__bu2_intprop_4",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_Choice2_sel_HBS__bu2_intprop_4","HBS__bu2_HBS__bu2_intprop_4",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_HBS__bu2_intprop_5_tmp","HBS__bu2_HBS__bu2_intprop_5",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_HBS__bu2_intprop_5_blocker","HBS__bu2_HBS__bu2_intprop_5",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_HBS__bu2_intprop_5_blocker","HBS__bu2_HBS__bu2_intprop_5",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_intprop_5_tmp","HBS__bu2_HBS__bu2_intprop_5_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_intprop_5_tmp","HBS__bu2_HBS__bu2_intprop_5_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_intprop_5_tmp","HBS__bu2_reset",1,0,'MARK(HBS__bu2_HBS__bu2_intprop_5_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_HBS__bu2_intprop_5_blocker","HBS__bu2_reset",1,0,'MARK(HBS__bu2_HBS__bu2_intprop_5_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_HBS__bu2_omissionError","HBS__bu2_HBS__bu2_intprop_5_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_Choice2_sel_HBS__bu2_intprop_5","HBS__bu2_Choice2_choice_HBS__bu2_intprop_5",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu2_Choice2_sel_HBS__bu2_intprop_5","HBS__bu2_Choice2_choice_HBS__bu2_intprop_5",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu2_Choice2_sel_HBS__bu2_intprop_5","HBS__bu2_HBS__bu2_intprop_5",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_HBS__bu4_intprop_2_tmp","HBS__bu4_HBS__bu4_intprop_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_HBS__bu4_intprop_2_blocker","HBS__bu4_HBS__bu4_intprop_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_HBS__bu4_intprop_2_blocker","HBS__bu4_HBS__bu4_intprop_2",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_intprop_2_tmp","HBS__bu4_HBS__bu4_intprop_2_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_intprop_2_tmp","HBS__bu4_HBS__bu4_intprop_2_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_intprop_2_tmp","HBS__bu4_reset",1,0,'MARK(HBS__bu4_HBS__bu4_intprop_2_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_intprop_2_blocker","HBS__bu4_reset",1,0,'MARK(HBS__bu4_HBS__bu4_intprop_2_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_HBS__bu4_valueError","HBS__bu4_HBS__bu4_intprop_2_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_Choice1_sel_HBS__bu4_intprop_2","HBS__bu4_Choice1_choice_HBS__bu4_intprop_2",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_Choice1_sel_HBS__bu4_intprop_2","HBS__bu4_Choice1_choice_HBS__bu4_intprop_2",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_Choice1_sel_HBS__bu4_intprop_2","HBS__bu4_HBS__bu4_intprop_2",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_HBS__bu4_intprop_3_tmp","HBS__bu4_HBS__bu4_intprop_3",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_HBS__bu4_intprop_3_blocker","HBS__bu4_HBS__bu4_intprop_3",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_HBS__bu4_intprop_3_blocker","HBS__bu4_HBS__bu4_intprop_3",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_intprop_3_tmp","HBS__bu4_HBS__bu4_intprop_3_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_intprop_3_tmp","HBS__bu4_HBS__bu4_intprop_3_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_intprop_3_tmp","HBS__bu4_reset",1,0,'MARK(HBS__bu4_HBS__bu4_intprop_3_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_intprop_3_blocker","HBS__bu4_reset",1,0,'MARK(HBS__bu4_HBS__bu4_intprop_3_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_HBS__bu4_omissionError","HBS__bu4_HBS__bu4_intprop_3_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_Choice1_sel_HBS__bu4_intprop_3","HBS__bu4_Choice1_choice_HBS__bu4_intprop_3",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_Choice1_sel_HBS__bu4_intprop_3","HBS__bu4_Choice1_choice_HBS__bu4_intprop_3",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_Choice1_sel_HBS__bu4_intprop_3","HBS__bu4_HBS__bu4_intprop_3",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_HBS__bu4_intprop_4_tmp","HBS__bu4_HBS__bu4_intprop_4",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_HBS__bu4_intprop_4_blocker","HBS__bu4_HBS__bu4_intprop_4",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_HBS__bu4_intprop_4_blocker","HBS__bu4_HBS__bu4_intprop_4",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_intprop_4_tmp","HBS__bu4_HBS__bu4_intprop_4_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_intprop_4_tmp","HBS__bu4_HBS__bu4_intprop_4_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_intprop_4_tmp","HBS__bu4_reset",1,0,'MARK(HBS__bu4_HBS__bu4_intprop_4_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_intprop_4_blocker","HBS__bu4_reset",1,0,'MARK(HBS__bu4_HBS__bu4_intprop_4_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_HBS__bu4_valueError","HBS__bu4_HBS__bu4_intprop_4_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_Choice2_sel_HBS__bu4_intprop_4","HBS__bu4_Choice2_choice_HBS__bu4_intprop_4",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_Choice2_sel_HBS__bu4_intprop_4","HBS__bu4_Choice2_choice_HBS__bu4_intprop_4",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_Choice2_sel_HBS__bu4_intprop_4","HBS__bu4_HBS__bu4_intprop_4",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_HBS__bu4_intprop_5_tmp","HBS__bu4_HBS__bu4_intprop_5",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_HBS__bu4_intprop_5_blocker","HBS__bu4_HBS__bu4_intprop_5",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_HBS__bu4_intprop_5_blocker","HBS__bu4_HBS__bu4_intprop_5",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_intprop_5_tmp","HBS__bu4_HBS__bu4_intprop_5_caseprop",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_intprop_5_tmp","HBS__bu4_HBS__bu4_intprop_5_caseskip",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_intprop_5_tmp","HBS__bu4_reset",1,0,'MARK(HBS__bu4_HBS__bu4_intprop_5_tmp)',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_HBS__bu4_intprop_5_blocker","HBS__bu4_reset",1,0,'MARK(HBS__bu4_HBS__bu4_intprop_5_blocker)',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_HBS__bu4_omissionError","HBS__bu4_HBS__bu4_intprop_5_caseprop",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_Choice2_sel_HBS__bu4_intprop_5","HBS__bu4_Choice2_choice_HBS__bu4_intprop_5",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"HBS__bu4_Choice2_sel_HBS__bu4_intprop_5","HBS__bu4_Choice2_choice_HBS__bu4_intprop_5",1,2,'',
+ (1500,1500,1500,1500),1;
+IARC:"HBS__bu4_Choice2_sel_HBS__bu4_intprop_5","HBS__bu4_HBS__bu4_intprop_5",1,0,'',
+ (1500,1500,1500,1500),1;
+OARC:"AWBOmissionAllBrakes_memory_pl","AWBOmissionAllBrakes_memory_tr",1,1,'',
+ (1500,1500,1500,1500),1;
+OARC:"AWBValueAllBrakes_memory_pl","AWBValueAllBrakes_memory_tr",1,1,'',
+ (1500,1500,1500,1500),1;
+IARC:"stopper1","HBS__mechPedal_HBS__mechPedal_intprop_2",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"stopper1","HBS__mechPedal_HBS__mechPedal_intprop_3",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"stopper2","HBS__elecPedal_HBS__elecPedal_intprop_2",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"stopper2","HBS__elecPedal_HBS__elecPedal_intprop_3",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"stopper3","HBS__elecPedal_HBS__elecPedal_intprop_4",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"stopper3","HBS__elecPedal_HBS__elecPedal_intprop_5",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"stopper4","HBS__commBus1_HBS__commBus1_intprop_2",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"stopper4","HBS__commBus1_HBS__commBus1_intprop_3",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"stopper5","HBS__commBus1_HBS__commBus1_intprop_4",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"stopper5","HBS__commBus1_HBS__commBus1_intprop_5",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"stopper6","HBS__commBus2_HBS__commBus2_intprop_2",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"stopper6","HBS__commBus2_HBS__commBus2_intprop_3",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"stopper7","HBS__commBus2_HBS__commBus2_intprop_4",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"stopper7","HBS__commBus2_HBS__commBus2_intprop_5",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"stopper8","HBS__bu1_HBS__bu1_intprop_2",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"stopper8","HBS__bu1_HBS__bu1_intprop_3",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"stopper9","HBS__bu1_HBS__bu1_intprop_4",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"stopper9","HBS__bu1_HBS__bu1_intprop_5",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"stopper10","HBS__bu3_HBS__bu3_intprop_2",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"stopper10","HBS__bu3_HBS__bu3_intprop_3",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"stopper11","HBS__bu3_HBS__bu3_intprop_4",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"stopper11","HBS__bu3_HBS__bu3_intprop_5",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"stopper12","HBS__bu2_HBS__bu2_intprop_2",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"stopper12","HBS__bu2_HBS__bu2_intprop_3",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"stopper13","HBS__bu2_HBS__bu2_intprop_4",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"stopper13","HBS__bu2_HBS__bu2_intprop_5",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"stopper14","HBS__bu4_HBS__bu4_intprop_2",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"stopper14","HBS__bu4_HBS__bu4_intprop_3",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"stopper15","HBS__bu4_HBS__bu4_intprop_4",1,0,'',
+ (1500,1500,1500,1500),1;
+IARC:"stopper15","HBS__bu4_HBS__bu4_intprop_5",1,0,'',
+ (1500,1500,1500,1500),1;
+
+RES_FUNC:"AWBOmissionAllBrakes",'IF(MARK(AWBOmissionAllBrakes_memory_pl)=0.0)THEN(1.0)ELSE(0.0)',0;
+RES_FUNC:"AWBValueAllBrakes",'IF(MARK(AWBValueAllBrakes_memory_pl)=0.0)THEN(1.0)ELSE(0.0)',0;
+

@@ -1,0 +1,98 @@
+	
+MODULE main
+	VAR
+		mechPedal : MechanicalPedal;
+		elecPedal : ElectronicPedal(mechPedal.out1);
+		commBus1 : CommunicationBus(elecPedal.out1,elecPedal.out2);
+		commBus2 : CommunicationBus(elecPedal.out1,elecPedal.out2);
+		bu1 : BrakeUnit(commBus1.out1,commBus2.out1);
+		bu3 : BrakeUnit(commBus1.out1,commBus2.out1);
+		bu2 : BrakeUnit(commBus1.out1,commBus2.out1);
+		bu4 : BrakeUnit(commBus1.out1,commBus2.out1);
+		haz : {OmissionAllBrakes,none};
+	IVAR	
+
+	
+-- END MODULE HBS --
+	
+MODULE MechanicalPedal()
+	VAR
+		state : {omission,value,normal};
+	IVAR	
+
+		nominal_event : boolean;
+	TRANS
+    	nominal_event = FALSE;
+	
+	ASSIGN
+	next(state) :=
+		case
+			TRUE:normal;
+
+		esac;	
+	ASSIGN
+		init(state) := normal;
+-- END MODULE MechanicalPedal --
+
+	
+MODULE ElectronicPedal(in1)
+	VAR
+		state : {omission,value,normal};
+	IVAR	
+
+		nominal_event : boolean;
+	TRANS
+    	nominal_event = FALSE;
+	
+	ASSIGN
+	next(state) :=
+		case
+			TRUE:normal;
+
+		esac;	
+	ASSIGN
+		init(state) := normal;
+-- END MODULE ElectronicPedal --
+
+	
+MODULE CommunicationBus(in1,in2)
+	VAR
+		state : {omission,value,normal};
+	IVAR	
+
+		nominal_event : boolean;
+	TRANS
+    	nominal_event = FALSE;
+	
+	ASSIGN
+	next(state) :=
+		case
+			TRUE:normal;
+
+		esac;	
+	ASSIGN
+		init(state) := normal;
+-- END MODULE CommunicationBus --
+
+	
+MODULE BrakeUnit(in1,in2)
+	VAR
+		state : {omission,value,normal};
+	IVAR	
+
+		nominal_event : boolean;
+	TRANS
+    	nominal_event = FALSE;
+	
+	ASSIGN
+	next(state) :=
+		case
+			TRUE:normal;
+TRUE:{normal,omission,value};
+
+		esac;	
+	ASSIGN
+		init(state) := normal;
+-- END MODULE BrakeUnit --
+
+

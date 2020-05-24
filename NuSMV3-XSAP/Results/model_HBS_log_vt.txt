@@ -1,0 +1,2 @@
+INFO:root:Searching for suitable gates file
+ERROR:root:No gates file found in output dir 'C:/Users/Lucas/Documents/Mario2/HBS(EDCC2020-BASE)/NuSMV3-XSAP/Temp'. Specify explicitly

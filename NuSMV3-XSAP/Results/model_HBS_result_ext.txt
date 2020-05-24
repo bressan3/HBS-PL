@@ -1,0 +1,14 @@
+<fault_mode enabled="yes">
+              <user_info>
+                <name>valueError</name>
+                <desc/>
+              </user_info>
+              <local_dynamics_model name="Permanent" desc="">
+                <events>
+                  <event type="output" name="failure" connected="yes" binds=""/>
+                </events>
+              </local_dynamics_model>
+            </fault_mode>
+            
+
+<Element fault_mode at 0x23b7f08> ./effects_model

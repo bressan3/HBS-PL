@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Sistema xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://if.dsi.unifi.it/Modeling/DIM" Name="HBS_instSpec">
+  <components Name="HBS.mechPedal">
+    <FailureModes Name="HBS.mechPedal_out1.value"/>
+    <FailureModes Name="HBS.mechPedal_out1.omission"/>
+    <Errors Name="HBS.mechPedal_valueError"/>
+    <Errors Name="HBS.mechPedal_omissionError"/>
+    <Errors Name="HBS.mechPedal_Choice1"/>
+    <Faults xsi:type="InternalFault" Name="HBS.mechPedal_ift_1" PermanentProbability="1.0">
+      <Occurrence xsi:type="Exponential" Rate="1.0E-6"/>
+      <TransientDuration xsi:type="Deterministic"/>
+    </Faults>
+    <FaultsGeneratesErrors Source="HBS.mechPedal_ift_1" Destination="HBS.mechPedal_Choice1" PropagationProbability="1.0" PropagationLogicStringFormat="HBS.mechPedal_ift_1" Name="HBS.mechPedal_fge_1">
+      <ActivationDelay xsi:type="Deterministic"/>
+      <PropagationLogic xsi:type="FaultsExpressionFaultNode" faultsGenerateErrors="//@components.0/@FaultsGeneratesErrors.0" Fault="HBS.mechPedal_ift_1"/>
+    </FaultsGeneratesErrors>
+    <InternalPropagation Name="HBS.mechPedal_intprop_2" PropagationLogicStringFormat="HBS.mechPedal_Choice1" Source="HBS.mechPedal_Choice1" Destination="HBS.mechPedal_valueError" PropagationProbability="1.0" Weight="0.9">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.0/@InternalPropagation.0" Error="HBS.mechPedal_Choice1"/>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </InternalPropagation>
+    <InternalPropagation Name="HBS.mechPedal_intprop_3" PropagationLogicStringFormat="HBS.mechPedal_Choice1" Source="HBS.mechPedal_Choice1" Destination="HBS.mechPedal_omissionError" PropagationProbability="1.0" Weight="0.1">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.0/@InternalPropagation.1" Error="HBS.mechPedal_Choice1"/>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </InternalPropagation>
+    <ErrorsGeneratesFailures Name="HBS.mechPedal_epf_1" PropagationLogicStringFormat="HBS.mechPedal_valueError" Source="HBS.mechPedal_valueError" Destination="HBS.mechPedal_out1.value">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.0/@ErrorsGeneratesFailures.0" Error="HBS.mechPedal_valueError"/>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </ErrorsGeneratesFailures>
+    <ErrorsGeneratesFailures Name="HBS.mechPedal_epf_2" PropagationLogicStringFormat="HBS.mechPedal_omissionError" Source="HBS.mechPedal_omissionError" Destination="HBS.mechPedal_out1.omission">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.0/@ErrorsGeneratesFailures.1" Error="HBS.mechPedal_omissionError"/>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </ErrorsGeneratesFailures>
+  </components>
+  <components Name="HBS.elecPedal">
+    <FailureModes Name="HBS.elecPedal_out1.value"/>
+    <FailureModes Name="HBS.elecPedal_out2.value"/>
+    <FailureModes Name="HBS.elecPedal_out1.omission"/>
+    <FailureModes Name="HBS.elecPedal_out2.omission"/>
+    <Errors Name="HBS.elecPedal_valueError"/>
+    <Errors Name="HBS.elecPedal_omissionError"/>
+    <Errors Name="HBS.elecPedal_Choice1"/>
+    <Errors Name="HBS.elecPedal_Choice2"/>
+    <Faults xsi:type="InternalFault" Name="HBS.elecPedal_ift_1" PermanentProbability="1.0">
+      <Occurrence xsi:type="Exponential" Rate="5.0E-6"/>
+      <TransientDuration xsi:type="Deterministic"/>
+    </Faults>
+    <Faults xsi:type="ExternalFault" Name="HBS.elecPedal_xft_in1.value" Source="HBS.mechPedal_out1.value"/>
+    <Faults xsi:type="ExternalFault" Name="HBS.elecPedal_xft_in1.omission" Source="HBS.mechPedal_out1.omission"/>
+    <FaultsGeneratesErrors Source="HBS.elecPedal_ift_1" Destination="HBS.elecPedal_Choice1" PropagationProbability="1.0" PropagationLogicStringFormat="HBS.elecPedal_ift_1" Name="HBS.elecPedal_fge_1">
+      <ActivationDelay xsi:type="Deterministic"/>
+      <PropagationLogic xsi:type="FaultsExpressionFaultNode" faultsGenerateErrors="//@components.1/@FaultsGeneratesErrors.0" Fault="HBS.elecPedal_ift_1"/>
+    </FaultsGeneratesErrors>
+    <InternalPropagation Name="HBS.elecPedal_intprop_2" PropagationLogicStringFormat="HBS.elecPedal_Choice1" Source="HBS.elecPedal_Choice1" Destination="HBS.elecPedal_valueError" PropagationProbability="1.0" Weight="0.95">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.1/@InternalPropagation.0" Error="HBS.elecPedal_Choice1"/>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </InternalPropagation>
+    <InternalPropagation Name="HBS.elecPedal_intprop_3" PropagationLogicStringFormat="HBS.elecPedal_Choice1" Source="HBS.elecPedal_Choice1" Destination="HBS.elecPedal_omissionError" PropagationProbability="1.0" Weight="0.05">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.1/@InternalPropagation.1" Error="HBS.elecPedal_Choice1"/>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </InternalPropagation>
+    <InternalPropagation Name="HBS.elecPedal_intprop_4" PropagationLogicStringFormat="HBS.elecPedal_Choice2" Source="HBS.elecPedal_Choice2" Destination="HBS.elecPedal_valueError" PropagationProbability="1.0">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.1/@InternalPropagation.2" Error="HBS.elecPedal_Choice2"/>
+      <FaultGuard xsi:type="FaultsExpressionFaultNode" Fault="HBS.elecPedal_xft_in1.value"/>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </InternalPropagation>
+    <InternalPropagation Name="HBS.elecPedal_intprop_5" PropagationLogicStringFormat="HBS.elecPedal_Choice2" Source="HBS.elecPedal_Choice2" Destination="HBS.elecPedal_omissionError" PropagationProbability="1.0">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.1/@InternalPropagation.3" Error="HBS.elecPedal_Choice2"/>
+      <FaultGuard xsi:type="FaultsExpressionFaultNode" Fault="HBS.elecPedal_xft_in1.omission"/>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </InternalPropagation>
+    <ErrorsGeneratesFailures Name="HBS.elecPedal_epf_1" PropagationLogicStringFormat="HBS.elecPedal_valueError" Source="HBS.elecPedal_valueError" Destination="HBS.elecPedal_out1.value HBS.elecPedal_out2.value">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.1/@ErrorsGeneratesFailures.0" Error="HBS.elecPedal_valueError"/>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </ErrorsGeneratesFailures>
+    <ErrorsGeneratesFailures Name="HBS.elecPedal_epf_2" PropagationLogicStringFormat="HBS.elecPedal_omissionError" Source="HBS.elecPedal_omissionError" Destination="HBS.elecPedal_out1.omission HBS.elecPedal_out2.omission">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.1/@ErrorsGeneratesFailures.1" Error="HBS.elecPedal_omissionError"/>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </ErrorsGeneratesFailures>
+  </components>
+  <components Name="HBS.commBus1">
+    <FailureModes Name="HBS.commBus1_out1.value"/>
+    <FailureModes Name="HBS.commBus1_out1.omission"/>
+    <Errors Name="HBS.commBus1_valueError"/>
+    <Errors Name="HBS.commBus1_omissionError"/>
+    <Errors Name="HBS.commBus1_C2"/>
+    <Errors Name="HBS.commBus1_C1"/>
+    <Faults xsi:type="InternalFault" Name="HBS.commBus1_ift_1" PermanentProbability="1.0">
+      <Occurrence xsi:type="Exponential" Rate="5.0E-10"/>
+      <TransientDuration xsi:type="Deterministic"/>
+    </Faults>
+    <Faults xsi:type="ExternalFault" Name="HBS.commBus1_xft_in1.value" Source="HBS.elecPedal_out1.value"/>
+    <Faults xsi:type="ExternalFault" Name="HBS.commBus1_xft_in1.omission" Source="HBS.elecPedal_out1.omission"/>
+    <Faults xsi:type="ExternalFault" Name="HBS.commBus1_xft_in2.value" Source="HBS.elecPedal_out2.value"/>
+    <Faults xsi:type="ExternalFault" Name="HBS.commBus1_xft_in2.omission" Source="HBS.elecPedal_out2.omission"/>
+    <FaultsGeneratesErrors Source="HBS.commBus1_ift_1" Destination="HBS.commBus1_C2" PropagationProbability="1.0" PropagationLogicStringFormat="HBS.commBus1_ift_1" Name="HBS.commBus1_fge_1">
+      <ActivationDelay xsi:type="Deterministic"/>
+      <PropagationLogic xsi:type="FaultsExpressionFaultNode" faultsGenerateErrors="//@components.2/@FaultsGeneratesErrors.0" Fault="HBS.commBus1_ift_1"/>
+    </FaultsGeneratesErrors>
+    <InternalPropagation Name="HBS.commBus1_intprop_2" PropagationLogicStringFormat="HBS.commBus1_C2" Source="HBS.commBus1_C2" Destination="HBS.commBus1_valueError" PropagationProbability="1.0" Weight="0.95">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.2/@InternalPropagation.0" Error="HBS.commBus1_C2"/>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </InternalPropagation>
+    <InternalPropagation Name="HBS.commBus1_intprop_3" PropagationLogicStringFormat="HBS.commBus1_C2" Source="HBS.commBus1_C2" Destination="HBS.commBus1_omissionError" PropagationProbability="1.0" Weight="0.05">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.2/@InternalPropagation.1" Error="HBS.commBus1_C2"/>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </InternalPropagation>
+    <InternalPropagation Name="HBS.commBus1_intprop_4" PropagationLogicStringFormat="HBS.commBus1_C1" Source="HBS.commBus1_C1" Destination="HBS.commBus1_valueError" PropagationProbability="1.0">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.2/@InternalPropagation.2" Error="HBS.commBus1_C1"/>
+      <FaultGuard xsi:type="FaultsExpressionAndNode">
+        <FaultsExpression1 xsi:type="FaultsExpressionFaultNode" Fault="HBS.commBus1_xft_in1.value"/>
+        <FaultsExpression2 xsi:type="FaultsExpressionFaultNode" Fault="HBS.commBus1_xft_in2.value"/>
+      </FaultGuard>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </InternalPropagation>
+    <InternalPropagation Name="HBS.commBus1_intprop_5" PropagationLogicStringFormat="HBS.commBus1_C1" Source="HBS.commBus1_C1" Destination="HBS.commBus1_omissionError" PropagationProbability="1.0">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.2/@InternalPropagation.3" Error="HBS.commBus1_C1"/>
+      <FaultGuard xsi:type="FaultsExpressionAndNode">
+        <FaultsExpression1 xsi:type="FaultsExpressionFaultNode" Fault="HBS.commBus1_xft_in1.value"/>
+        <FaultsExpression2 xsi:type="FaultsExpressionFaultNode" Fault="HBS.commBus1_xft_in2.value"/>
+      </FaultGuard>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </InternalPropagation>
+    <ErrorsGeneratesFailures Name="HBS.commBus1_epf_1" PropagationLogicStringFormat="HBS.commBus1_valueError" Source="HBS.commBus1_valueError" Destination="HBS.commBus1_out1.value">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.2/@ErrorsGeneratesFailures.0" Error="HBS.commBus1_valueError"/>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </ErrorsGeneratesFailures>
+    <ErrorsGeneratesFailures Name="HBS.commBus1_epf_2" PropagationLogicStringFormat="HBS.commBus1_omissionError" Source="HBS.commBus1_omissionError" Destination="HBS.commBus1_out1.omission">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.2/@ErrorsGeneratesFailures.1" Error="HBS.commBus1_omissionError"/>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </ErrorsGeneratesFailures>
+  </components>
+  <components Name="HBS.commBus2">
+    <FailureModes Name="HBS.commBus2_out1.value"/>
+    <FailureModes Name="HBS.commBus2_out1.omission"/>
+    <Errors Name="HBS.commBus2_valueError"/>
+    <Errors Name="HBS.commBus2_omissionError"/>
+    <Errors Name="HBS.commBus2_C2"/>
+    <Errors Name="HBS.commBus2_C1"/>
+    <Faults xsi:type="InternalFault" Name="HBS.commBus2_ift_1" PermanentProbability="1.0">
+      <Occurrence xsi:type="Exponential" Rate="5.0E-10"/>
+      <TransientDuration xsi:type="Deterministic"/>
+    </Faults>
+    <Faults xsi:type="ExternalFault" Name="HBS.commBus2_xft_in1.value" Source="HBS.elecPedal_out1.value"/>
+    <Faults xsi:type="ExternalFault" Name="HBS.commBus2_xft_in1.omission" Source="HBS.elecPedal_out1.omission"/>
+    <Faults xsi:type="ExternalFault" Name="HBS.commBus2_xft_in2.value" Source="HBS.elecPedal_out2.value"/>
+    <Faults xsi:type="ExternalFault" Name="HBS.commBus2_xft_in2.omission" Source="HBS.elecPedal_out2.omission"/>
+    <FaultsGeneratesErrors Source="HBS.commBus2_ift_1" Destination="HBS.commBus2_C2" PropagationProbability="1.0" PropagationLogicStringFormat="HBS.commBus2_ift_1" Name="HBS.commBus2_fge_1">
+      <ActivationDelay xsi:type="Deterministic"/>
+      <PropagationLogic xsi:type="FaultsExpressionFaultNode" faultsGenerateErrors="//@components.3/@FaultsGeneratesErrors.0" Fault="HBS.commBus2_ift_1"/>
+    </FaultsGeneratesErrors>
+    <InternalPropagation Name="HBS.commBus2_intprop_2" PropagationLogicStringFormat="HBS.commBus2_C2" Source="HBS.commBus2_C2" Destination="HBS.commBus2_valueError" PropagationProbability="1.0" Weight="0.95">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.3/@InternalPropagation.0" Error="HBS.commBus2_C2"/>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </InternalPropagation>
+    <InternalPropagation Name="HBS.commBus2_intprop_3" PropagationLogicStringFormat="HBS.commBus2_C2" Source="HBS.commBus2_C2" Destination="HBS.commBus2_omissionError" PropagationProbability="1.0" Weight="0.05">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.3/@InternalPropagation.1" Error="HBS.commBus2_C2"/>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </InternalPropagation>
+    <InternalPropagation Name="HBS.commBus2_intprop_4" PropagationLogicStringFormat="HBS.commBus2_C1" Source="HBS.commBus2_C1" Destination="HBS.commBus2_valueError" PropagationProbability="1.0">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.3/@InternalPropagation.2" Error="HBS.commBus2_C1"/>
+      <FaultGuard xsi:type="FaultsExpressionAndNode">
+        <FaultsExpression1 xsi:type="FaultsExpressionFaultNode" Fault="HBS.commBus2_xft_in1.value"/>
+        <FaultsExpression2 xsi:type="FaultsExpressionFaultNode" Fault="HBS.commBus2_xft_in2.value"/>
+      </FaultGuard>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </InternalPropagation>
+    <InternalPropagation Name="HBS.commBus2_intprop_5" PropagationLogicStringFormat="HBS.commBus2_C1" Source="HBS.commBus2_C1" Destination="HBS.commBus2_omissionError" PropagationProbability="1.0">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.3/@InternalPropagation.3" Error="HBS.commBus2_C1"/>
+      <FaultGuard xsi:type="FaultsExpressionAndNode">
+        <FaultsExpression1 xsi:type="FaultsExpressionFaultNode" Fault="HBS.commBus2_xft_in1.value"/>
+        <FaultsExpression2 xsi:type="FaultsExpressionFaultNode" Fault="HBS.commBus2_xft_in2.value"/>
+      </FaultGuard>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </InternalPropagation>
+    <ErrorsGeneratesFailures Name="HBS.commBus2_epf_1" PropagationLogicStringFormat="HBS.commBus2_valueError" Source="HBS.commBus2_valueError" Destination="HBS.commBus2_out1.value">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.3/@ErrorsGeneratesFailures.0" Error="HBS.commBus2_valueError"/>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </ErrorsGeneratesFailures>
+    <ErrorsGeneratesFailures Name="HBS.commBus2_epf_2" PropagationLogicStringFormat="HBS.commBus2_omissionError" Source="HBS.commBus2_omissionError" Destination="HBS.commBus2_out1.omission">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.3/@ErrorsGeneratesFailures.1" Error="HBS.commBus2_omissionError"/>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </ErrorsGeneratesFailures>
+  </components>
+  <components Name="HBS.bu1">
+    <FailureModes Name="HBS.bu1_torque.value"/>
+    <FailureModes Name="HBS.bu1_torque.omission"/>
+    <Errors Name="HBS.bu1_valueError"/>
+    <Errors Name="HBS.bu1_omissionError"/>
+    <Errors Name="HBS.bu1_Choice1"/>
+    <Errors Name="HBS.bu1_Choice2"/>
+    <Faults xsi:type="InternalFault" Name="HBS.bu1_ift_1" PermanentProbability="1.0">
+      <Occurrence xsi:type="Exponential" Rate="5.0E-6"/>
+      <TransientDuration xsi:type="Deterministic"/>
+    </Faults>
+    <Faults xsi:type="ExternalFault" Name="HBS.bu1_xft_in1.value" Source="HBS.commBus1_out1.value"/>
+    <Faults xsi:type="ExternalFault" Name="HBS.bu1_xft_in1.omission" Source="HBS.commBus1_out1.omission"/>
+    <Faults xsi:type="ExternalFault" Name="HBS.bu1_xft_in2.value" Source="HBS.commBus2_out1.value"/>
+    <Faults xsi:type="ExternalFault" Name="HBS.bu1_xft_in2.omission" Source="HBS.commBus2_out1.omission"/>
+    <FaultsGeneratesErrors Source="HBS.bu1_ift_1" Destination="HBS.bu1_Choice1" PropagationProbability="1.0" PropagationLogicStringFormat="HBS.bu1_ift_1" Name="HBS.bu1_fge_1">
+      <ActivationDelay xsi:type="Deterministic"/>
+      <PropagationLogic xsi:type="FaultsExpressionFaultNode" faultsGenerateErrors="//@components.4/@FaultsGeneratesErrors.0" Fault="HBS.bu1_ift_1"/>
+    </FaultsGeneratesErrors>
+    <InternalPropagation Name="HBS.bu1_intprop_2" PropagationLogicStringFormat="HBS.bu1_Choice1" Source="HBS.bu1_Choice1" Destination="HBS.bu1_valueError" PropagationProbability="1.0" Weight="0.95">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.4/@InternalPropagation.0" Error="HBS.bu1_Choice1"/>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </InternalPropagation>
+    <InternalPropagation Name="HBS.bu1_intprop_3" PropagationLogicStringFormat="HBS.bu1_Choice1" Source="HBS.bu1_Choice1" Destination="HBS.bu1_omissionError" PropagationProbability="1.0" Weight="0.05">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.4/@InternalPropagation.1" Error="HBS.bu1_Choice1"/>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </InternalPropagation>
+    <InternalPropagation Name="HBS.bu1_intprop_4" PropagationLogicStringFormat="HBS.bu1_Choice2" Source="HBS.bu1_Choice2" Destination="HBS.bu1_valueError" PropagationProbability="1.0">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.4/@InternalPropagation.2" Error="HBS.bu1_Choice2"/>
+      <FaultGuard xsi:type="FaultsExpressionAndNode">
+        <FaultsExpression1 xsi:type="FaultsExpressionFaultNode" Fault="HBS.bu1_xft_in1.value"/>
+        <FaultsExpression2 xsi:type="FaultsExpressionFaultNode" Fault="HBS.bu1_xft_in2.value"/>
+      </FaultGuard>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </InternalPropagation>
+    <InternalPropagation Name="HBS.bu1_intprop_5" PropagationLogicStringFormat="HBS.bu1_Choice2" Source="HBS.bu1_Choice2" Destination="HBS.bu1_omissionError" PropagationProbability="1.0">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.4/@InternalPropagation.3" Error="HBS.bu1_Choice2"/>
+      <FaultGuard xsi:type="FaultsExpressionAndNode">
+        <FaultsExpression1 xsi:type="FaultsExpressionFaultNode" Fault="HBS.bu1_xft_in1.omission"/>
+        <FaultsExpression2 xsi:type="FaultsExpressionFaultNode" Fault="HBS.bu1_xft_in2.omission"/>
+      </FaultGuard>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </InternalPropagation>
+    <ErrorsGeneratesFailures Name="HBS.bu1_epf_1" PropagationLogicStringFormat="HBS.bu1_valueError" Source="HBS.bu1_valueError" Destination="HBS.bu1_torque.value">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.4/@ErrorsGeneratesFailures.0" Error="HBS.bu1_valueError"/>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </ErrorsGeneratesFailures>
+    <ErrorsGeneratesFailures Name="HBS.bu1_epf_2" PropagationLogicStringFormat="HBS.bu1_omissionError" Source="HBS.bu1_omissionError" Destination="HBS.bu1_torque.omission">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.4/@ErrorsGeneratesFailures.1" Error="HBS.bu1_omissionError"/>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </ErrorsGeneratesFailures>
+  </components>
+  <components Name="HBS.bu3">
+    <FailureModes Name="HBS.bu3_torque.value"/>
+    <FailureModes Name="HBS.bu3_torque.omission"/>
+    <Errors Name="HBS.bu3_valueError"/>
+    <Errors Name="HBS.bu3_omissionError"/>
+    <Errors Name="HBS.bu3_Choice1"/>
+    <Errors Name="HBS.bu3_Choice2"/>
+    <Faults xsi:type="InternalFault" Name="HBS.bu3_ift_1" PermanentProbability="1.0">
+      <Occurrence xsi:type="Exponential" Rate="5.0E-6"/>
+      <TransientDuration xsi:type="Deterministic"/>
+    </Faults>
+    <Faults xsi:type="ExternalFault" Name="HBS.bu3_xft_in1.value" Source="HBS.commBus1_out1.value"/>
+    <Faults xsi:type="ExternalFault" Name="HBS.bu3_xft_in1.omission" Source="HBS.commBus1_out1.omission"/>
+    <Faults xsi:type="ExternalFault" Name="HBS.bu3_xft_in2.value" Source="HBS.commBus2_out1.value"/>
+    <Faults xsi:type="ExternalFault" Name="HBS.bu3_xft_in2.omission" Source="HBS.commBus2_out1.omission"/>
+    <FaultsGeneratesErrors Source="HBS.bu3_ift_1" Destination="HBS.bu3_Choice1" PropagationProbability="1.0" PropagationLogicStringFormat="HBS.bu3_ift_1" Name="HBS.bu3_fge_1">
+      <ActivationDelay xsi:type="Deterministic"/>
+      <PropagationLogic xsi:type="FaultsExpressionFaultNode" faultsGenerateErrors="//@components.5/@FaultsGeneratesErrors.0" Fault="HBS.bu3_ift_1"/>
+    </FaultsGeneratesErrors>
+    <InternalPropagation Name="HBS.bu3_intprop_2" PropagationLogicStringFormat="HBS.bu3_Choice1" Source="HBS.bu3_Choice1" Destination="HBS.bu3_valueError" PropagationProbability="1.0" Weight="0.95">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.5/@InternalPropagation.0" Error="HBS.bu3_Choice1"/>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </InternalPropagation>
+    <InternalPropagation Name="HBS.bu3_intprop_3" PropagationLogicStringFormat="HBS.bu3_Choice1" Source="HBS.bu3_Choice1" Destination="HBS.bu3_omissionError" PropagationProbability="1.0" Weight="0.05">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.5/@InternalPropagation.1" Error="HBS.bu3_Choice1"/>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </InternalPropagation>
+    <InternalPropagation Name="HBS.bu3_intprop_4" PropagationLogicStringFormat="HBS.bu3_Choice2" Source="HBS.bu3_Choice2" Destination="HBS.bu3_valueError" PropagationProbability="1.0">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.5/@InternalPropagation.2" Error="HBS.bu3_Choice2"/>
+      <FaultGuard xsi:type="FaultsExpressionAndNode">
+        <FaultsExpression1 xsi:type="FaultsExpressionFaultNode" Fault="HBS.bu3_xft_in1.value"/>
+        <FaultsExpression2 xsi:type="FaultsExpressionFaultNode" Fault="HBS.bu3_xft_in2.value"/>
+      </FaultGuard>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </InternalPropagation>
+    <InternalPropagation Name="HBS.bu3_intprop_5" PropagationLogicStringFormat="HBS.bu3_Choice2" Source="HBS.bu3_Choice2" Destination="HBS.bu3_omissionError" PropagationProbability="1.0">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.5/@InternalPropagation.3" Error="HBS.bu3_Choice2"/>
+      <FaultGuard xsi:type="FaultsExpressionAndNode">
+        <FaultsExpression1 xsi:type="FaultsExpressionFaultNode" Fault="HBS.bu3_xft_in1.omission"/>
+        <FaultsExpression2 xsi:type="FaultsExpressionFaultNode" Fault="HBS.bu3_xft_in2.omission"/>
+      </FaultGuard>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </InternalPropagation>
+    <ErrorsGeneratesFailures Name="HBS.bu3_epf_1" PropagationLogicStringFormat="HBS.bu3_valueError" Source="HBS.bu3_valueError" Destination="HBS.bu3_torque.value">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.5/@ErrorsGeneratesFailures.0" Error="HBS.bu3_valueError"/>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </ErrorsGeneratesFailures>
+    <ErrorsGeneratesFailures Name="HBS.bu3_epf_2" PropagationLogicStringFormat="HBS.bu3_omissionError" Source="HBS.bu3_omissionError" Destination="HBS.bu3_torque.omission">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.5/@ErrorsGeneratesFailures.1" Error="HBS.bu3_omissionError"/>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </ErrorsGeneratesFailures>
+  </components>
+  <components Name="HBS.bu2">
+    <FailureModes Name="HBS.bu2_torque.value"/>
+    <FailureModes Name="HBS.bu2_torque.omission"/>
+    <Errors Name="HBS.bu2_valueError"/>
+    <Errors Name="HBS.bu2_omissionError"/>
+    <Errors Name="HBS.bu2_Choice1"/>
+    <Errors Name="HBS.bu2_Choice2"/>
+    <Faults xsi:type="InternalFault" Name="HBS.bu2_ift_1" PermanentProbability="1.0">
+      <Occurrence xsi:type="Exponential" Rate="5.0E-6"/>
+      <TransientDuration xsi:type="Deterministic"/>
+    </Faults>
+    <Faults xsi:type="ExternalFault" Name="HBS.bu2_xft_in1.value" Source="HBS.commBus1_out1.value"/>
+    <Faults xsi:type="ExternalFault" Name="HBS.bu2_xft_in1.omission" Source="HBS.commBus1_out1.omission"/>
+    <Faults xsi:type="ExternalFault" Name="HBS.bu2_xft_in2.value" Source="HBS.commBus2_out1.value"/>
+    <Faults xsi:type="ExternalFault" Name="HBS.bu2_xft_in2.omission" Source="HBS.commBus2_out1.omission"/>
+    <FaultsGeneratesErrors Source="HBS.bu2_ift_1" Destination="HBS.bu2_Choice1" PropagationProbability="1.0" PropagationLogicStringFormat="HBS.bu2_ift_1" Name="HBS.bu2_fge_1">
+      <ActivationDelay xsi:type="Deterministic"/>
+      <PropagationLogic xsi:type="FaultsExpressionFaultNode" faultsGenerateErrors="//@components.6/@FaultsGeneratesErrors.0" Fault="HBS.bu2_ift_1"/>
+    </FaultsGeneratesErrors>
+    <InternalPropagation Name="HBS.bu2_intprop_2" PropagationLogicStringFormat="HBS.bu2_Choice1" Source="HBS.bu2_Choice1" Destination="HBS.bu2_valueError" PropagationProbability="1.0" Weight="0.95">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.6/@InternalPropagation.0" Error="HBS.bu2_Choice1"/>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </InternalPropagation>
+    <InternalPropagation Name="HBS.bu2_intprop_3" PropagationLogicStringFormat="HBS.bu2_Choice1" Source="HBS.bu2_Choice1" Destination="HBS.bu2_omissionError" PropagationProbability="1.0" Weight="0.05">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.6/@InternalPropagation.1" Error="HBS.bu2_Choice1"/>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </InternalPropagation>
+    <InternalPropagation Name="HBS.bu2_intprop_4" PropagationLogicStringFormat="HBS.bu2_Choice2" Source="HBS.bu2_Choice2" Destination="HBS.bu2_valueError" PropagationProbability="1.0">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.6/@InternalPropagation.2" Error="HBS.bu2_Choice2"/>
+      <FaultGuard xsi:type="FaultsExpressionAndNode">
+        <FaultsExpression1 xsi:type="FaultsExpressionFaultNode" Fault="HBS.bu2_xft_in1.value"/>
+        <FaultsExpression2 xsi:type="FaultsExpressionFaultNode" Fault="HBS.bu2_xft_in2.value"/>
+      </FaultGuard>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </InternalPropagation>
+    <InternalPropagation Name="HBS.bu2_intprop_5" PropagationLogicStringFormat="HBS.bu2_Choice2" Source="HBS.bu2_Choice2" Destination="HBS.bu2_omissionError" PropagationProbability="1.0">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.6/@InternalPropagation.3" Error="HBS.bu2_Choice2"/>
+      <FaultGuard xsi:type="FaultsExpressionAndNode">
+        <FaultsExpression1 xsi:type="FaultsExpressionFaultNode" Fault="HBS.bu2_xft_in1.omission"/>
+        <FaultsExpression2 xsi:type="FaultsExpressionFaultNode" Fault="HBS.bu2_xft_in2.omission"/>
+      </FaultGuard>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </InternalPropagation>
+    <ErrorsGeneratesFailures Name="HBS.bu2_epf_1" PropagationLogicStringFormat="HBS.bu2_valueError" Source="HBS.bu2_valueError" Destination="HBS.bu2_torque.value">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.6/@ErrorsGeneratesFailures.0" Error="HBS.bu2_valueError"/>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </ErrorsGeneratesFailures>
+    <ErrorsGeneratesFailures Name="HBS.bu2_epf_2" PropagationLogicStringFormat="HBS.bu2_omissionError" Source="HBS.bu2_omissionError" Destination="HBS.bu2_torque.omission">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.6/@ErrorsGeneratesFailures.1" Error="HBS.bu2_omissionError"/>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </ErrorsGeneratesFailures>
+  </components>
+  <components Name="HBS.bu4">
+    <FailureModes Name="HBS.bu4_torque.value"/>
+    <FailureModes Name="HBS.bu4_torque.omission"/>
+    <Errors Name="HBS.bu4_valueError"/>
+    <Errors Name="HBS.bu4_omissionError"/>
+    <Errors Name="HBS.bu4_Choice1"/>
+    <Errors Name="HBS.bu4_Choice2"/>
+    <Faults xsi:type="InternalFault" Name="HBS.bu4_ift_1" PermanentProbability="1.0">
+      <Occurrence xsi:type="Exponential" Rate="5.0E-6"/>
+      <TransientDuration xsi:type="Deterministic"/>
+    </Faults>
+    <Faults xsi:type="ExternalFault" Name="HBS.bu4_xft_in1.value" Source="HBS.commBus1_out1.value"/>
+    <Faults xsi:type="ExternalFault" Name="HBS.bu4_xft_in1.omission" Source="HBS.commBus1_out1.omission"/>
+    <Faults xsi:type="ExternalFault" Name="HBS.bu4_xft_in2.value" Source="HBS.commBus2_out1.value"/>
+    <Faults xsi:type="ExternalFault" Name="HBS.bu4_xft_in2.omission" Source="HBS.commBus2_out1.omission"/>
+    <FaultsGeneratesErrors Source="HBS.bu4_ift_1" Destination="HBS.bu4_Choice1" PropagationProbability="1.0" PropagationLogicStringFormat="HBS.bu4_ift_1" Name="HBS.bu4_fge_1">
+      <ActivationDelay xsi:type="Deterministic"/>
+      <PropagationLogic xsi:type="FaultsExpressionFaultNode" faultsGenerateErrors="//@components.7/@FaultsGeneratesErrors.0" Fault="HBS.bu4_ift_1"/>
+    </FaultsGeneratesErrors>
+    <InternalPropagation Name="HBS.bu4_intprop_2" PropagationLogicStringFormat="HBS.bu4_Choice1" Source="HBS.bu4_Choice1" Destination="HBS.bu4_valueError" PropagationProbability="1.0" Weight="0.95">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.7/@InternalPropagation.0" Error="HBS.bu4_Choice1"/>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </InternalPropagation>
+    <InternalPropagation Name="HBS.bu4_intprop_3" PropagationLogicStringFormat="HBS.bu4_Choice1" Source="HBS.bu4_Choice1" Destination="HBS.bu4_omissionError" PropagationProbability="1.0" Weight="0.05">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.7/@InternalPropagation.1" Error="HBS.bu4_Choice1"/>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </InternalPropagation>
+    <InternalPropagation Name="HBS.bu4_intprop_4" PropagationLogicStringFormat="HBS.bu4_Choice2" Source="HBS.bu4_Choice2" Destination="HBS.bu4_valueError" PropagationProbability="1.0">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.7/@InternalPropagation.2" Error="HBS.bu4_Choice2"/>
+      <FaultGuard xsi:type="FaultsExpressionAndNode">
+        <FaultsExpression1 xsi:type="FaultsExpressionFaultNode" Fault="HBS.bu4_xft_in1.value"/>
+        <FaultsExpression2 xsi:type="FaultsExpressionFaultNode" Fault="HBS.bu4_xft_in2.value"/>
+      </FaultGuard>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </InternalPropagation>
+    <InternalPropagation Name="HBS.bu4_intprop_5" PropagationLogicStringFormat="HBS.bu4_Choice2" Source="HBS.bu4_Choice2" Destination="HBS.bu4_omissionError" PropagationProbability="1.0">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.7/@InternalPropagation.3" Error="HBS.bu4_Choice2"/>
+      <FaultGuard xsi:type="FaultsExpressionAndNode">
+        <FaultsExpression1 xsi:type="FaultsExpressionFaultNode" Fault="HBS.bu4_xft_in1.omission"/>
+        <FaultsExpression2 xsi:type="FaultsExpressionFaultNode" Fault="HBS.bu4_xft_in2.omission"/>
+      </FaultGuard>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </InternalPropagation>
+    <ErrorsGeneratesFailures Name="HBS.bu4_epf_1" PropagationLogicStringFormat="HBS.bu4_valueError" Source="HBS.bu4_valueError" Destination="HBS.bu4_torque.value">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.7/@ErrorsGeneratesFailures.0" Error="HBS.bu4_valueError"/>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </ErrorsGeneratesFailures>
+    <ErrorsGeneratesFailures Name="HBS.bu4_epf_2" PropagationLogicStringFormat="HBS.bu4_omissionError" Source="HBS.bu4_omissionError" Destination="HBS.bu4_torque.omission">
+      <PropagationLogic xsi:type="ErrorsExpressionErrorNode" errorPropagation="//@components.7/@ErrorsGeneratesFailures.1" Error="HBS.bu4_omissionError"/>
+      <PropagationDelay xsi:type="Deterministic"/>
+    </ErrorsGeneratesFailures>
+  </components>
+  <measures xsi:type="Reliability" Name="AWBOmissionAllBrakes" target="HBS.bu2_torque.omission HBS.bu3_torque.omission HBS.bu1_torque.omission HBS.bu4_torque.omission">
+    <evaluations xsi:type="InstantOfTime" timePoint="8760.0"/>
+  </measures>
+  <measures xsi:type="Reliability" Name="AWBValueAllBrakes" target="HBS.bu4_torque.value HBS.bu1_torque.value HBS.bu3_torque.value HBS.bu2_torque.value">
+    <evaluations xsi:type="InstantOfTime" timePoint="8760.0"/>
+  </measures>
+</Sistema>
