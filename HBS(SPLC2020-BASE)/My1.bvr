@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bvr:BVRModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bvr="http:///bvr.ecore/2.0.0" name="HBS_PL">
+  <packageElement xsi:type="bvr:ReplacementFragmentType" name="Empty">
+    <replacementBoundaryElement xsi:type="bvr:ToReplacement" name="NULL" insideBoundaryElement="//@packageElement.0/@sourceObject.0" outsideBoundaryElement="//@packageElement.0/@sourceObject.0"/>
+    <sourceObject/>
+  </packageElement>
+  <variabilityModel xsi:type="bvr:Choice" name="HBS_PL" target="//@variabilityModel/@ownedTargets.0" isImpliedByParent="true">
+    <member xsi:type="bvr:Choice" name="WheelBraking" target="//@variabilityModel/@ownedTargets.1" isImpliedByParent="true">
+      <groupMultiplicity upper="1" lower="1"/>
+      <member xsi:type="bvr:Choice" name="FourWB" target="//@variabilityModel/@ownedTargets.3" isImpliedByParent="true">
+        <note name="comment" kind="comment" expr=""/>
+      </member>
+      <member xsi:type="bvr:Choice" name="TwoWB" target="//@variabilityModel/@ownedTargets.8" isImpliedByParent="true">
+        <groupMultiplicity upper="1" lower="1"/>
+        <member xsi:type="bvr:Choice" name="FWB" target="//@variabilityModel/@ownedTargets.4" isImpliedByParent="true">
+          <note name="comment" kind="comment" expr=""/>
+        </member>
+        <member xsi:type="bvr:Choice" name="RWB" target="//@variabilityModel/@ownedTargets.5" isImpliedByParent="true">
+          <note name="comment" kind="comment" expr=""/>
+        </member>
+        <note name="comment" kind="comment" expr=""/>
+      </member>
+      <note name="comment" kind="comment" expr=""/>
+    </member>
+    <member xsi:type="bvr:Choice" name="Vehicle" target="//@variabilityModel/@ownedTargets.2" isImpliedByParent="true">
+      <groupMultiplicity upper="1" lower="1"/>
+      <member xsi:type="bvr:Choice" name="Road" target="//@variabilityModel/@ownedTargets.6" isImpliedByParent="true">
+        <note name="comment" kind="comment" expr=""/>
+      </member>
+      <member xsi:type="bvr:Choice" name="Military" target="//@variabilityModel/@ownedTargets.7" isImpliedByParent="true">
+        <ownedConstraint xsi:type="bvr:BCLConstraint" name="Constraint2">
+          <expression xsi:type="bvr:OperationCallExp" operation="logImplies">
+            <argument xsi:type="bvr:TargetRef" target="//@variabilityModel/@ownedTargets.7"/>
+            <argument xsi:type="bvr:TargetRef" target="//@variabilityModel/@ownedTargets.3"/>
+          </expression>
+        </ownedConstraint>
+        <note name="comment" kind="comment" expr=""/>
+      </member>
+      <note name="comment" kind="comment" expr=""/>
+    </member>
+    <ownedTargets name="HBS_PL"/>
+    <ownedTargets name="WheelBraking"/>
+    <ownedTargets name="Vehicle"/>
+    <ownedTargets name="FourWB"/>
+    <ownedTargets name="FWB"/>
+    <ownedTargets name="RWB"/>
+    <ownedTargets name="Road"/>
+    <ownedTargets name="Military"/>
+    <ownedTargets name="TwoWB"/>
+    <ownedTargets name="Choice1"/>
+    <ownedTargets name="Choice2"/>
+    <note name="comment" kind="comment" expr=""/>
+  </variabilityModel>
+  <resolutionModels xsi:type="bvr:PosResolution" name="RWBRoad" resolvedVSpec="//@variabilityModel" resolvedChoice="//@variabilityModel">
+    <members xsi:type="bvr:PosResolution" name="WheelBraking" resolvedVSpec="//@variabilityModel/@member.0" resolvedChoice="//@variabilityModel/@member.0">
+      <members xsi:type="bvr:PosResolution" name="FourWB" resolvedVSpec="//@variabilityModel/@member.0/@member.0" resolvedChoice="//@variabilityModel/@member.0/@member.0"/>
+      <members xsi:type="bvr:PosResolution" name="TwoWB" resolvedVSpec="//@variabilityModel/@member.0/@member.1" resolvedChoice="//@variabilityModel/@member.0/@member.1">
+        <members xsi:type="bvr:PosResolution" name="FWB" resolvedVSpec="//@variabilityModel/@member.0/@member.1/@member.0" resolvedChoice="//@variabilityModel/@member.0/@member.1/@member.0"/>
+        <members xsi:type="bvr:NegResolution" name="RWB" resolvedVSpec="//@variabilityModel/@member.0/@member.1/@member.1" resolvedChoice="//@variabilityModel/@member.0/@member.1/@member.1"/>
+      </members>
+    </members>
+    <members xsi:type="bvr:PosResolution" name="Vehicle" resolvedVSpec="//@variabilityModel/@member.1" resolvedChoice="//@variabilityModel/@member.1">
+      <members xsi:type="bvr:NegResolution" name="Road" resolvedVSpec="//@variabilityModel/@member.1/@member.0" resolvedChoice="//@variabilityModel/@member.1/@member.0"/>
+      <members xsi:type="bvr:PosResolution" name="Military" resolvedVSpec="//@variabilityModel/@member.1/@member.1" resolvedChoice="//@variabilityModel/@member.1/@member.1"/>
+    </members>
+  </resolutionModels>
+  <resolutionModels xsi:type="bvr:PosResolution" name="FWBRoad" resolvedVSpec="//@variabilityModel" resolvedChoice="//@variabilityModel">
+    <members xsi:type="bvr:PosResolution" name="WheelBraking" resolvedVSpec="//@variabilityModel/@member.0" resolvedChoice="//@variabilityModel/@member.0">
+      <members xsi:type="bvr:PosResolution" name="FourWB" resolvedVSpec="//@variabilityModel/@member.0/@member.0" resolvedChoice="//@variabilityModel/@member.0/@member.0"/>
+      <members xsi:type="bvr:PosResolution" name="TwoWB" resolvedVSpec="//@variabilityModel/@member.0/@member.1" resolvedChoice="//@variabilityModel/@member.0/@member.1">
+        <members xsi:type="bvr:NegResolution" name="FWB" resolvedVSpec="//@variabilityModel/@member.0/@member.1/@member.0" resolvedChoice="//@variabilityModel/@member.0/@member.1/@member.0"/>
+        <members xsi:type="bvr:PosResolution" name="RWB" resolvedVSpec="//@variabilityModel/@member.0/@member.1/@member.1" resolvedChoice="//@variabilityModel/@member.0/@member.1/@member.1"/>
+      </members>
+    </members>
+    <members xsi:type="bvr:PosResolution" name="Vehicle" resolvedVSpec="//@variabilityModel/@member.1" resolvedChoice="//@variabilityModel/@member.1">
+      <members xsi:type="bvr:NegResolution" name="Road" resolvedVSpec="//@variabilityModel/@member.1/@member.0" resolvedChoice="//@variabilityModel/@member.1/@member.0"/>
+      <members xsi:type="bvr:PosResolution" name="Military" resolvedVSpec="//@variabilityModel/@member.1/@member.1" resolvedChoice="//@variabilityModel/@member.1/@member.1"/>
+    </members>
+  </resolutionModels>
+  <resolutionModels xsi:type="bvr:PosResolution" name="AWBRoad" resolvedVSpec="//@variabilityModel" resolvedChoice="//@variabilityModel">
+    <members xsi:type="bvr:PosResolution" name="WheelBraking" resolvedVSpec="//@variabilityModel/@member.0" resolvedChoice="//@variabilityModel/@member.0">
+      <members xsi:type="bvr:NegResolution" name="FourWB" resolvedVSpec="//@variabilityModel/@member.0/@member.0" resolvedChoice="//@variabilityModel/@member.0/@member.0"/>
+      <members xsi:type="bvr:PosResolution" name="TwoWB" resolvedVSpec="//@variabilityModel/@member.0/@member.1" resolvedChoice="//@variabilityModel/@member.0/@member.1">
+        <members xsi:type="bvr:NegResolution" name="FWB" resolvedVSpec="//@variabilityModel/@member.0/@member.1/@member.0" resolvedChoice="//@variabilityModel/@member.0/@member.1/@member.0"/>
+        <members xsi:type="bvr:NegResolution" name="RWB" resolvedVSpec="//@variabilityModel/@member.0/@member.1/@member.1" resolvedChoice="//@variabilityModel/@member.0/@member.1/@member.1"/>
+      </members>
+    </members>
+    <members xsi:type="bvr:PosResolution" name="Vehicle" resolvedVSpec="//@variabilityModel/@member.1" resolvedChoice="//@variabilityModel/@member.1">
+      <members xsi:type="bvr:NegResolution" name="Road" resolvedVSpec="//@variabilityModel/@member.1/@member.0" resolvedChoice="//@variabilityModel/@member.1/@member.0"/>
+      <members xsi:type="bvr:PosResolution" name="Military" resolvedVSpec="//@variabilityModel/@member.1/@member.1" resolvedChoice="//@variabilityModel/@member.1/@member.1"/>
+    </members>
+  </resolutionModels>
+  <realizationModel xsi:type="bvr:PlacementFragment" name="CommBus_err_2WB">
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((InternalFault) 'EClassImpl').&lt;Transition>base_Transition" propertyName="base_Transition" insideBoundaryElement="//@realizationModel.0/@sourceObject.0" outsideBoundaryElement="//@realizationModel.0/@sourceObject.1"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((Region) Region1).&lt;Transition>transition" propertyName="transition" insideBoundaryElement="//@realizationModel.0/@sourceObject.0" outsideBoundaryElement="//@realizationModel.0/@sourceObject.2"/>
+    <placementBoundaryElement xsi:type="bvr:FromPlacement" name="((Transition) null).&lt;Vertex>source[1]={C1}" outsideBoundaryElement="//@realizationModel.0/@sourceObject.3" insideBoundaryElement="//@realizationModel.0/@sourceObject.0"/>
+    <placementBoundaryElement xsi:type="bvr:FromPlacement" name="((Transition) null).&lt;Vertex>target[1]={C2}" outsideBoundaryElement="//@realizationModel.0/@sourceObject.4" insideBoundaryElement="//@realizationModel.0/@sourceObject.0"/>
+    <placementBoundaryElement xsi:type="bvr:FromPlacement" name="((Transition) null).&lt;Region>container[1]={Region1}" outsideBoundaryElement="//@realizationModel.0/@sourceObject.2" insideBoundaryElement="//@realizationModel.0/@sourceObject.0"/>
+    <placementBoundaryElement xsi:type="bvr:FromPlacement" name="NULL" outsideBoundaryElement="//@realizationModel.0/@sourceObject.5" insideBoundaryElement="//@realizationModel.0/@sourceObject.5"/>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfVVZoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfW95oJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfVTJoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfVWpoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfVV5oJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject/>
+  </realizationModel>
+  <realizationModel xsi:type="bvr:PlacementFragment" name="CommBus_err_4WB">
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((InternalFault) 'EClassImpl').&lt;Transition>base_Transition" propertyName="base_Transition" insideBoundaryElement="//@realizationModel.1/@sourceObject.0" outsideBoundaryElement="//@realizationModel.1/@sourceObject.1"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((Region) Region1).&lt;Transition>transition" propertyName="transition" insideBoundaryElement="//@realizationModel.1/@sourceObject.0" outsideBoundaryElement="//@realizationModel.1/@sourceObject.2"/>
+    <placementBoundaryElement xsi:type="bvr:FromPlacement" name="((Transition) null).&lt;Vertex>source[1]={C1}" outsideBoundaryElement="//@realizationModel.1/@sourceObject.3" insideBoundaryElement="//@realizationModel.1/@sourceObject.0"/>
+    <placementBoundaryElement xsi:type="bvr:FromPlacement" name="((Transition) null).&lt;Vertex>target[1]={C2}" outsideBoundaryElement="//@realizationModel.1/@sourceObject.4" insideBoundaryElement="//@realizationModel.1/@sourceObject.0"/>
+    <placementBoundaryElement xsi:type="bvr:FromPlacement" name="((Transition) null).&lt;Region>container[1]={Region1}" outsideBoundaryElement="//@realizationModel.1/@sourceObject.2" insideBoundaryElement="//@realizationModel.1/@sourceObject.0"/>
+    <placementBoundaryElement xsi:type="bvr:FromPlacement" name="NULL" outsideBoundaryElement="//@realizationModel.1/@sourceObject.5" insideBoundaryElement="//@realizationModel.1/@sourceObject.5"/>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfVTZoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfW1poJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfVTJoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfVWpoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfVV5oJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject/>
+  </realizationModel>
+  <realizationModel xsi:type="bvr:PlacementFragment" name="FWB_BrakeUnits">
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((Slot) 'EClassImpl').&lt;StructuralFeature>definingFeature" propertyName="definingFeature" insideBoundaryElement="//@realizationModel.2/@sourceObject.0" outsideBoundaryElement="//@realizationModel.2/@sourceObject.1"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((ConnectorEnd) 'EClassImpl').&lt;Property>partWithPort" propertyName="partWithPort" insideBoundaryElement="//@realizationModel.2/@sourceObject.0" outsideBoundaryElement="//@realizationModel.2/@sourceObject.2"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((ConnectorEnd) 'EClassImpl').&lt;Property>partWithPort" propertyName="partWithPort" insideBoundaryElement="//@realizationModel.2/@sourceObject.0" outsideBoundaryElement="//@realizationModel.2/@sourceObject.3"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((Association) Association8).&lt;Property>memberEnd" propertyName="memberEnd" insideBoundaryElement="//@realizationModel.2/@sourceObject.0" outsideBoundaryElement="//@realizationModel.2/@sourceObject.4"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((Class) HBS).&lt;Property>ownedAttribute" propertyName="ownedAttribute" insideBoundaryElement="//@realizationModel.2/@sourceObject.0 //@realizationModel.2/@sourceObject.8 //@realizationModel.2/@sourceObject.15 //@realizationModel.2/@sourceObject.20" outsideBoundaryElement="//@realizationModel.2/@sourceObject.5"/>
+    <placementBoundaryElement xsi:type="bvr:FromPlacement" name="((Property) bu2).&lt;Type>type[1]={BrakeUnit}" outsideBoundaryElement="//@realizationModel.2/@sourceObject.6" insideBoundaryElement="//@realizationModel.2/@sourceObject.0"/>
+    <placementBoundaryElement xsi:type="bvr:FromPlacement" name="((Property) bu2).&lt;Association>association[1]={Association8}" outsideBoundaryElement="//@realizationModel.2/@sourceObject.4" insideBoundaryElement="//@realizationModel.2/@sourceObject.0"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((Class) HBS).&lt;Connector>ownedConnector" propertyName="ownedConnector" insideBoundaryElement="//@realizationModel.2/@sourceObject.7 //@realizationModel.2/@sourceObject.24" outsideBoundaryElement="//@realizationModel.2/@sourceObject.5"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((Slot) 'EClassImpl').&lt;StructuralFeature>definingFeature" propertyName="definingFeature" insideBoundaryElement="//@realizationModel.2/@sourceObject.8" outsideBoundaryElement="//@realizationModel.2/@sourceObject.9"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((Slot) 'EClassImpl').&lt;StructuralFeature>definingFeature" propertyName="definingFeature" insideBoundaryElement="//@realizationModel.2/@sourceObject.8" outsideBoundaryElement="//@realizationModel.2/@sourceObject.10"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((FlowPort) 'EClassImpl').&lt;Port>base_Port" propertyName="base_Port" insideBoundaryElement="//@realizationModel.2/@sourceObject.8" outsideBoundaryElement="//@realizationModel.2/@sourceObject.11"/>
+    <placementBoundaryElement xsi:type="bvr:FromPlacement" name="((Port) t2).&lt;Type>type[1]={Integer}" outsideBoundaryElement="//@realizationModel.2/@sourceObject.12" insideBoundaryElement="//@realizationModel.2/@sourceObject.8"/>
+    <placementBoundaryElement xsi:type="bvr:FromPlacement" name="((ConnectorEnd) 'EClassImpl').&lt;ConnectableElement>role[1]={torque}" outsideBoundaryElement="//@realizationModel.2/@sourceObject.13" insideBoundaryElement="//@realizationModel.2/@sourceObject.14"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((Slot) 'EClassImpl').&lt;StructuralFeature>definingFeature" propertyName="definingFeature" insideBoundaryElement="//@realizationModel.2/@sourceObject.15" outsideBoundaryElement="//@realizationModel.2/@sourceObject.16"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((ConnectorEnd) 'EClassImpl').&lt;Property>partWithPort" propertyName="partWithPort" insideBoundaryElement="//@realizationModel.2/@sourceObject.15" outsideBoundaryElement="//@realizationModel.2/@sourceObject.17"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((ConnectorEnd) 'EClassImpl').&lt;Property>partWithPort" propertyName="partWithPort" insideBoundaryElement="//@realizationModel.2/@sourceObject.15" outsideBoundaryElement="//@realizationModel.2/@sourceObject.18"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((Association) Association5).&lt;Property>memberEnd" propertyName="memberEnd" insideBoundaryElement="//@realizationModel.2/@sourceObject.15" outsideBoundaryElement="//@realizationModel.2/@sourceObject.19"/>
+    <placementBoundaryElement xsi:type="bvr:FromPlacement" name="((Property) bu1).&lt;Type>type[1]={BrakeUnit}" outsideBoundaryElement="//@realizationModel.2/@sourceObject.6" insideBoundaryElement="//@realizationModel.2/@sourceObject.15"/>
+    <placementBoundaryElement xsi:type="bvr:FromPlacement" name="((Property) bu1).&lt;Association>association[1]={Association5}" outsideBoundaryElement="//@realizationModel.2/@sourceObject.19" insideBoundaryElement="//@realizationModel.2/@sourceObject.15"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((Slot) 'EClassImpl').&lt;StructuralFeature>definingFeature" propertyName="definingFeature" insideBoundaryElement="//@realizationModel.2/@sourceObject.20" outsideBoundaryElement="//@realizationModel.2/@sourceObject.21"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((Slot) 'EClassImpl').&lt;StructuralFeature>definingFeature" propertyName="definingFeature" insideBoundaryElement="//@realizationModel.2/@sourceObject.20" outsideBoundaryElement="//@realizationModel.2/@sourceObject.22"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((FlowPort) 'EClassImpl').&lt;Port>base_Port" propertyName="base_Port" insideBoundaryElement="//@realizationModel.2/@sourceObject.20" outsideBoundaryElement="//@realizationModel.2/@sourceObject.23"/>
+    <placementBoundaryElement xsi:type="bvr:FromPlacement" name="((Port) t1).&lt;Type>type[1]={Integer}" outsideBoundaryElement="//@realizationModel.2/@sourceObject.12" insideBoundaryElement="//@realizationModel.2/@sourceObject.20"/>
+    <placementBoundaryElement xsi:type="bvr:FromPlacement" name="((ConnectorEnd) 'EClassImpl').&lt;ConnectableElement>role[1]={torque}" outsideBoundaryElement="//@realizationModel.2/@sourceObject.13" insideBoundaryElement="//@realizationModel.2/@sourceObject.25"/>
+    <placementBoundaryElement xsi:type="bvr:FromPlacement" name="NULL" outsideBoundaryElement="//@realizationModel.2/@sourceObject.26" insideBoundaryElement="//@realizationModel.2/@sourceObject.26"/>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfU15oJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugetyZoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfVCpoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfVDZoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfVq5oJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfUzJoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfVY5oJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfVBZoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfUzpoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugetupoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfUwJoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfWrpoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfVZpoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfVBpoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfU1ZoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugetxZoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfU75oJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfU8poJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfVo5oJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfUzZoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugetuZoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugeuB5oJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfWrZoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfU6poJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfU65oJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject/>
+  </realizationModel>
+  <realizationModel xsi:type="bvr:PlacementFragment" name="RWB_BrakeUnits">
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((Slot) 'EClassImpl').&lt;StructuralFeature>definingFeature" propertyName="definingFeature" insideBoundaryElement="//@realizationModel.3/@sourceObject.0" outsideBoundaryElement="//@realizationModel.3/@sourceObject.1"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((ConnectorEnd) 'EClassImpl').&lt;Property>partWithPort" propertyName="partWithPort" insideBoundaryElement="//@realizationModel.3/@sourceObject.0" outsideBoundaryElement="//@realizationModel.3/@sourceObject.2"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((ConnectorEnd) 'EClassImpl').&lt;Property>partWithPort" propertyName="partWithPort" insideBoundaryElement="//@realizationModel.3/@sourceObject.0" outsideBoundaryElement="//@realizationModel.3/@sourceObject.3"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((ConnectorEnd) 'EClassImpl').&lt;Property>partWithPort" propertyName="partWithPort" insideBoundaryElement="//@realizationModel.3/@sourceObject.0" outsideBoundaryElement="//@realizationModel.3/@sourceObject.4"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((Association) Association9).&lt;Property>memberEnd" propertyName="memberEnd" insideBoundaryElement="//@realizationModel.3/@sourceObject.0" outsideBoundaryElement="//@realizationModel.3/@sourceObject.5"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((Class) HBS).&lt;Property>ownedAttribute" propertyName="ownedAttribute" insideBoundaryElement="//@realizationModel.3/@sourceObject.0 //@realizationModel.3/@sourceObject.14 //@realizationModel.3/@sourceObject.19 //@realizationModel.3/@sourceObject.24" outsideBoundaryElement="//@realizationModel.3/@sourceObject.6"/>
+    <placementBoundaryElement xsi:type="bvr:FromPlacement" name="((Property) bu4).&lt;Type>type[1]={BrakeUnit}" outsideBoundaryElement="//@realizationModel.3/@sourceObject.7" insideBoundaryElement="//@realizationModel.3/@sourceObject.0"/>
+    <placementBoundaryElement xsi:type="bvr:FromPlacement" name="((Property) bu4).&lt;Association>association[1]={Association9}" outsideBoundaryElement="//@realizationModel.3/@sourceObject.5" insideBoundaryElement="//@realizationModel.3/@sourceObject.0"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((ConnectorEnd) 'EClassImpl').&lt;ConnectableElement>role" propertyName="role" insideBoundaryElement="//@realizationModel.3/@sourceObject.8" outsideBoundaryElement="//@realizationModel.3/@sourceObject.2"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((FlowPort) 'EClassImpl').&lt;Port>base_Port" propertyName="base_Port" insideBoundaryElement="//@realizationModel.3/@sourceObject.8" outsideBoundaryElement="//@realizationModel.3/@sourceObject.9"/>
+    <placementBoundaryElement xsi:type="bvr:FromPlacement" name="((Port) torque).&lt;Type>type[1]={Integer}" outsideBoundaryElement="//@realizationModel.3/@sourceObject.10" insideBoundaryElement="//@realizationModel.3/@sourceObject.8"/>
+    <placementBoundaryElement xsi:type="bvr:FromPlacement" name="((ConnectorEnd) 'EClassImpl').&lt;ConnectableElement>role[1]={torque}" outsideBoundaryElement="//@realizationModel.3/@sourceObject.11" insideBoundaryElement="//@realizationModel.3/@sourceObject.12"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((Class) HBS).&lt;Connector>ownedConnector" propertyName="ownedConnector" insideBoundaryElement="//@realizationModel.3/@sourceObject.13" outsideBoundaryElement="//@realizationModel.3/@sourceObject.6"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((Slot) 'EClassImpl').&lt;StructuralFeature>definingFeature" propertyName="definingFeature" insideBoundaryElement="//@realizationModel.3/@sourceObject.14" outsideBoundaryElement="//@realizationModel.3/@sourceObject.15"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((Slot) 'EClassImpl').&lt;StructuralFeature>definingFeature" propertyName="definingFeature" insideBoundaryElement="//@realizationModel.3/@sourceObject.14" outsideBoundaryElement="//@realizationModel.3/@sourceObject.16"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((ConnectorEnd) 'EClassImpl').&lt;ConnectableElement>role" propertyName="role" insideBoundaryElement="//@realizationModel.3/@sourceObject.14" outsideBoundaryElement="//@realizationModel.3/@sourceObject.17"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((FlowPort) 'EClassImpl').&lt;Port>base_Port" propertyName="base_Port" insideBoundaryElement="//@realizationModel.3/@sourceObject.14" outsideBoundaryElement="//@realizationModel.3/@sourceObject.18"/>
+    <placementBoundaryElement xsi:type="bvr:FromPlacement" name="((Port) t4).&lt;Type>type[1]={Integer}" outsideBoundaryElement="//@realizationModel.3/@sourceObject.10" insideBoundaryElement="//@realizationModel.3/@sourceObject.14"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((Slot) 'EClassImpl').&lt;StructuralFeature>definingFeature" propertyName="definingFeature" insideBoundaryElement="//@realizationModel.3/@sourceObject.19" outsideBoundaryElement="//@realizationModel.3/@sourceObject.20"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((ConnectorEnd) 'EClassImpl').&lt;Property>partWithPort" propertyName="partWithPort" insideBoundaryElement="//@realizationModel.3/@sourceObject.19" outsideBoundaryElement="//@realizationModel.3/@sourceObject.21"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((ConnectorEnd) 'EClassImpl').&lt;Property>partWithPort" propertyName="partWithPort" insideBoundaryElement="//@realizationModel.3/@sourceObject.19" outsideBoundaryElement="//@realizationModel.3/@sourceObject.22"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((Association) Association7).&lt;Property>memberEnd" propertyName="memberEnd" insideBoundaryElement="//@realizationModel.3/@sourceObject.19" outsideBoundaryElement="//@realizationModel.3/@sourceObject.23"/>
+    <placementBoundaryElement xsi:type="bvr:FromPlacement" name="((Property) bu3).&lt;Type>type[1]={BrakeUnit}" outsideBoundaryElement="//@realizationModel.3/@sourceObject.7" insideBoundaryElement="//@realizationModel.3/@sourceObject.19"/>
+    <placementBoundaryElement xsi:type="bvr:FromPlacement" name="((Property) bu3).&lt;Association>association[1]={Association7}" outsideBoundaryElement="//@realizationModel.3/@sourceObject.23" insideBoundaryElement="//@realizationModel.3/@sourceObject.19"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((Slot) 'EClassImpl').&lt;StructuralFeature>definingFeature" propertyName="definingFeature" insideBoundaryElement="//@realizationModel.3/@sourceObject.24" outsideBoundaryElement="//@realizationModel.3/@sourceObject.25"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((Slot) 'EClassImpl').&lt;StructuralFeature>definingFeature" propertyName="definingFeature" insideBoundaryElement="//@realizationModel.3/@sourceObject.24" outsideBoundaryElement="//@realizationModel.3/@sourceObject.26"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((FlowPort) 'EClassImpl').&lt;Port>base_Port" propertyName="base_Port" insideBoundaryElement="//@realizationModel.3/@sourceObject.24" outsideBoundaryElement="//@realizationModel.3/@sourceObject.27"/>
+    <placementBoundaryElement xsi:type="bvr:FromPlacement" name="((Port) t3).&lt;Type>type[1]={Integer}" outsideBoundaryElement="//@realizationModel.3/@sourceObject.10" insideBoundaryElement="//@realizationModel.3/@sourceObject.24"/>
+    <placementBoundaryElement xsi:type="bvr:FromPlacement" name="NULL" outsideBoundaryElement="//@realizationModel.3/@sourceObject.28" insideBoundaryElement="//@realizationModel.3/@sourceObject.28"/>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfU2JoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugety5oJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfU_ZoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfVAZoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfVBJoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfVr5oJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfUzJoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfVY5oJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ASxOwJ6YEeqPoqfTUPYQvw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_AS6_wJ6YEeqPoqfTUPYQvw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfVZpoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfU9JoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfU85oJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfU0JoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugetvJoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugeuJZoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfU_poJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfWsJoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfU1poJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugetx5oJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfU-JoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfU-5oJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfVp5oJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfUz5oJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugetu5oJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugeuFpoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfWr5oJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject/>
+  </realizationModel>
+  <realizationModel xsi:type="bvr:PlacementFragment" name="AWBAnalysis">
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((StateBasedAnalysis) 'EClassImpl').&lt;StructuredClassifier>base_StructuredClassifier" propertyName="base_StructuredClassifier" insideBoundaryElement="//@realizationModel.4/@sourceObject.0" outsideBoundaryElement="//@realizationModel.4/@sourceObject.1"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((StateBasedAnalysis) 'EClassImpl').&lt;NamedElement>base_NamedElement" propertyName="base_NamedElement" insideBoundaryElement="//@realizationModel.4/@sourceObject.0" outsideBoundaryElement="//@realizationModel.4/@sourceObject.1"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((Package) modelDependabilityAnalysisView).&lt;PackageableElement>packagedElement" propertyName="packagedElement" insideBoundaryElement="//@realizationModel.4/@sourceObject.0 //@realizationModel.4/@sourceObject.3 //@realizationModel.4/@sourceObject.5 //@realizationModel.4/@sourceObject.7" outsideBoundaryElement="//@realizationModel.4/@sourceObject.2"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((GaAnalysisContext) 'EClassImpl').&lt;StructuredClassifier>base_StructuredClassifier" propertyName="base_StructuredClassifier" insideBoundaryElement="//@realizationModel.4/@sourceObject.3" outsideBoundaryElement="//@realizationModel.4/@sourceObject.4"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((GaAnalysisContext) 'EClassImpl').&lt;NamedElement>base_NamedElement" propertyName="base_NamedElement" insideBoundaryElement="//@realizationModel.4/@sourceObject.3" outsideBoundaryElement="//@realizationModel.4/@sourceObject.4"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((StateBasedAnalysis) 'EClassImpl').&lt;StructuredClassifier>base_StructuredClassifier" propertyName="base_StructuredClassifier" insideBoundaryElement="//@realizationModel.4/@sourceObject.5" outsideBoundaryElement="//@realizationModel.4/@sourceObject.6"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((StateBasedAnalysis) 'EClassImpl').&lt;NamedElement>base_NamedElement" propertyName="base_NamedElement" insideBoundaryElement="//@realizationModel.4/@sourceObject.5" outsideBoundaryElement="//@realizationModel.4/@sourceObject.6"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((GaAnalysisContext) 'EClassImpl').&lt;StructuredClassifier>base_StructuredClassifier" propertyName="base_StructuredClassifier" insideBoundaryElement="//@realizationModel.4/@sourceObject.7" outsideBoundaryElement="//@realizationModel.4/@sourceObject.8"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((GaAnalysisContext) 'EClassImpl').&lt;NamedElement>base_NamedElement" propertyName="base_NamedElement" insideBoundaryElement="//@realizationModel.4/@sourceObject.7" outsideBoundaryElement="//@realizationModel.4/@sourceObject.8"/>
+    <placementBoundaryElement xsi:type="bvr:FromPlacement" name="NULL" outsideBoundaryElement="//@realizationModel.4/@sourceObject.9" insideBoundaryElement="//@realizationModel.4/@sourceObject.9"/>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfWK5oJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfW6ZoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfWKpoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_FrQoUJ6WEeqPoqfTUPYQvw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_FraZUJ6WEeqPoqfTUPYQvw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfWLZoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfW-JoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfWLJoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfW9poJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject/>
+  </realizationModel>
+  <realizationModel xsi:type="bvr:PlacementFragment" name="FWBAnalysis">
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((GaAnalysisContext) 'EClassImpl').&lt;StructuredClassifier>base_StructuredClassifier" propertyName="base_StructuredClassifier" insideBoundaryElement="//@realizationModel.5/@sourceObject.0" outsideBoundaryElement="//@realizationModel.5/@sourceObject.1"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((GaAnalysisContext) 'EClassImpl').&lt;NamedElement>base_NamedElement" propertyName="base_NamedElement" insideBoundaryElement="//@realizationModel.5/@sourceObject.0" outsideBoundaryElement="//@realizationModel.5/@sourceObject.1"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((Package) modelDependabilityAnalysisView).&lt;PackageableElement>packagedElement" propertyName="packagedElement" insideBoundaryElement="//@realizationModel.5/@sourceObject.0 //@realizationModel.5/@sourceObject.3 //@realizationModel.5/@sourceObject.5 //@realizationModel.5/@sourceObject.7" outsideBoundaryElement="//@realizationModel.5/@sourceObject.2"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((StateBasedAnalysis) 'EClassImpl').&lt;StructuredClassifier>base_StructuredClassifier" propertyName="base_StructuredClassifier" insideBoundaryElement="//@realizationModel.5/@sourceObject.3" outsideBoundaryElement="//@realizationModel.5/@sourceObject.4"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((StateBasedAnalysis) 'EClassImpl').&lt;NamedElement>base_NamedElement" propertyName="base_NamedElement" insideBoundaryElement="//@realizationModel.5/@sourceObject.3" outsideBoundaryElement="//@realizationModel.5/@sourceObject.4"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((StateBasedAnalysis) 'EClassImpl').&lt;StructuredClassifier>base_StructuredClassifier" propertyName="base_StructuredClassifier" insideBoundaryElement="//@realizationModel.5/@sourceObject.5" outsideBoundaryElement="//@realizationModel.5/@sourceObject.6"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((StateBasedAnalysis) 'EClassImpl').&lt;NamedElement>base_NamedElement" propertyName="base_NamedElement" insideBoundaryElement="//@realizationModel.5/@sourceObject.5" outsideBoundaryElement="//@realizationModel.5/@sourceObject.6"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((GaAnalysisContext) 'EClassImpl').&lt;StructuredClassifier>base_StructuredClassifier" propertyName="base_StructuredClassifier" insideBoundaryElement="//@realizationModel.5/@sourceObject.7" outsideBoundaryElement="//@realizationModel.5/@sourceObject.8"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((GaAnalysisContext) 'EClassImpl').&lt;NamedElement>base_NamedElement" propertyName="base_NamedElement" insideBoundaryElement="//@realizationModel.5/@sourceObject.7" outsideBoundaryElement="//@realizationModel.5/@sourceObject.8"/>
+    <placementBoundaryElement xsi:type="bvr:FromPlacement" name="NULL" outsideBoundaryElement="//@realizationModel.5/@sourceObject.9" insideBoundaryElement="//@realizationModel.5/@sourceObject.9"/>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_PZiEcJ6WEeqPoqfTUPYQvw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_PZr1pJ6WEeqPoqfTUPYQvw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfWKpoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_fFJMQJ6XEeqPoqfTUPYQvw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_fFJMkZ6XEeqPoqfTUPYQvw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfWLpoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfW-ZoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_NAw2QJ6WEeqPoqfTUPYQvw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_NAw2dZ6WEeqPoqfTUPYQvw"/>
+    </sourceObject>
+    <sourceObject/>
+  </realizationModel>
+  <realizationModel xsi:type="bvr:PlacementFragment" name="RWBAnalysis">
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((StateBasedAnalysis) 'EClassImpl').&lt;StructuredClassifier>base_StructuredClassifier" propertyName="base_StructuredClassifier" insideBoundaryElement="//@realizationModel.6/@sourceObject.0" outsideBoundaryElement="//@realizationModel.6/@sourceObject.1"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((StateBasedAnalysis) 'EClassImpl').&lt;NamedElement>base_NamedElement" propertyName="base_NamedElement" insideBoundaryElement="//@realizationModel.6/@sourceObject.0" outsideBoundaryElement="//@realizationModel.6/@sourceObject.1"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((Package) modelDependabilityAnalysisView).&lt;PackageableElement>packagedElement" propertyName="packagedElement" insideBoundaryElement="//@realizationModel.6/@sourceObject.0 //@realizationModel.6/@sourceObject.3 //@realizationModel.6/@sourceObject.5 //@realizationModel.6/@sourceObject.7" outsideBoundaryElement="//@realizationModel.6/@sourceObject.2"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((GaAnalysisContext) 'EClassImpl').&lt;StructuredClassifier>base_StructuredClassifier" propertyName="base_StructuredClassifier" insideBoundaryElement="//@realizationModel.6/@sourceObject.3" outsideBoundaryElement="//@realizationModel.6/@sourceObject.4"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((GaAnalysisContext) 'EClassImpl').&lt;NamedElement>base_NamedElement" propertyName="base_NamedElement" insideBoundaryElement="//@realizationModel.6/@sourceObject.3" outsideBoundaryElement="//@realizationModel.6/@sourceObject.4"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((GaAnalysisContext) 'EClassImpl').&lt;StructuredClassifier>base_StructuredClassifier" propertyName="base_StructuredClassifier" insideBoundaryElement="//@realizationModel.6/@sourceObject.5" outsideBoundaryElement="//@realizationModel.6/@sourceObject.6"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((GaAnalysisContext) 'EClassImpl').&lt;NamedElement>base_NamedElement" propertyName="base_NamedElement" insideBoundaryElement="//@realizationModel.6/@sourceObject.5" outsideBoundaryElement="//@realizationModel.6/@sourceObject.6"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((StateBasedAnalysis) 'EClassImpl').&lt;StructuredClassifier>base_StructuredClassifier" propertyName="base_StructuredClassifier" insideBoundaryElement="//@realizationModel.6/@sourceObject.7" outsideBoundaryElement="//@realizationModel.6/@sourceObject.8"/>
+    <placementBoundaryElement xsi:type="bvr:ToPlacement" name="((StateBasedAnalysis) 'EClassImpl').&lt;NamedElement>base_NamedElement" propertyName="base_NamedElement" insideBoundaryElement="//@realizationModel.6/@sourceObject.7" outsideBoundaryElement="//@realizationModel.6/@sourceObject.8"/>
+    <placementBoundaryElement xsi:type="bvr:FromPlacement" name="NULL" outsideBoundaryElement="//@realizationModel.6/@sourceObject.9" insideBoundaryElement="//@realizationModel.6/@sourceObject.9"/>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_jVVPEJ6XEeqPoqfTUPYQvw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_jVfnIJ6XEeqPoqfTUPYQvw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_ugfWKpoJEeqb49ti4z2GFw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_qOf7wJ6WEeqPoqfTUPYQvw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_qOpswJ6WEeqPoqfTUPYQvw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_g_0lsJ6WEeqPoqfTUPYQvw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_g_0l5Z6WEeqPoqfTUPYQvw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_a3zpIJ6XEeqPoqfTUPYQvw"/>
+    </sourceObject>
+    <sourceObject>
+      <MOFRef href="HBS%20(BASE).uml#_a39acJ6XEeqPoqfTUPYQvw"/>
+    </sourceObject>
+    <sourceObject/>
+  </realizationModel>
+  <realizationModel xsi:type="bvr:FragmentSubstitution" name="CommBus_err_2WB_FWB" bindingVSpec="//@variabilityModel/@member.0/@member.1/@member.0" placement="//@realizationModel.0" replacement="//@packageElement.0">
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.0/@placementBoundaryElement.0" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.0/@placementBoundaryElement.1" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+  </realizationModel>
+  <realizationModel xsi:type="bvr:FragmentSubstitution" name="FWB_BrakeUnits" bindingVSpec="//@variabilityModel/@member.0/@member.1/@member.0" placement="//@realizationModel.2" replacement="//@packageElement.0">
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.2/@placementBoundaryElement.0" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.2/@placementBoundaryElement.1" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.2/@placementBoundaryElement.2" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.2/@placementBoundaryElement.3" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.2/@placementBoundaryElement.4" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.2/@placementBoundaryElement.7" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.2/@placementBoundaryElement.8" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.2/@placementBoundaryElement.9" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.2/@placementBoundaryElement.10" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.2/@placementBoundaryElement.13" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.2/@placementBoundaryElement.14" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.2/@placementBoundaryElement.15" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.2/@placementBoundaryElement.16" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.2/@placementBoundaryElement.19" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.2/@placementBoundaryElement.20" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.2/@placementBoundaryElement.21" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+  </realizationModel>
+  <realizationModel xsi:type="bvr:FragmentSubstitution" name="FWB_Analysis" bindingVSpec="//@variabilityModel/@member.0/@member.1/@member.0" placement="//@realizationModel.5" replacement="//@packageElement.0">
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.5/@placementBoundaryElement.0" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.5/@placementBoundaryElement.1" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.5/@placementBoundaryElement.2" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.5/@placementBoundaryElement.3" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.5/@placementBoundaryElement.4" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.5/@placementBoundaryElement.5" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.5/@placementBoundaryElement.6" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.5/@placementBoundaryElement.7" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.5/@placementBoundaryElement.8" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+  </realizationModel>
+  <realizationModel xsi:type="bvr:FragmentSubstitution" name="CommBus_err_4WB" bindingVSpec="//@variabilityModel/@member.0/@member.0" placement="//@realizationModel.1" replacement="//@packageElement.0">
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.1/@placementBoundaryElement.0" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.1/@placementBoundaryElement.1" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+  </realizationModel>
+  <realizationModel xsi:type="bvr:FragmentSubstitution" name="AWBAnalysis" bindingVSpec="//@variabilityModel/@member.0/@member.0" placement="//@realizationModel.4" replacement="//@packageElement.0">
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.4/@placementBoundaryElement.0" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.4/@placementBoundaryElement.1" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.4/@placementBoundaryElement.2" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.4/@placementBoundaryElement.3" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.4/@placementBoundaryElement.4" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.4/@placementBoundaryElement.5" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.4/@placementBoundaryElement.6" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.4/@placementBoundaryElement.7" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.4/@placementBoundaryElement.8" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+  </realizationModel>
+  <realizationModel xsi:type="bvr:FragmentSubstitution" name="RWB_BrakeUnits" bindingVSpec="//@variabilityModel/@member.0/@member.1/@member.1" placement="//@realizationModel.3" replacement="//@packageElement.0">
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.3/@placementBoundaryElement.0" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.3/@placementBoundaryElement.1" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.3/@placementBoundaryElement.2" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.3/@placementBoundaryElement.3" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.3/@placementBoundaryElement.4" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.3/@placementBoundaryElement.5" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.3/@placementBoundaryElement.8" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.3/@placementBoundaryElement.9" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.3/@placementBoundaryElement.12" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.3/@placementBoundaryElement.13" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.3/@placementBoundaryElement.14" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.3/@placementBoundaryElement.15" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.3/@placementBoundaryElement.16" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.3/@placementBoundaryElement.18" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.3/@placementBoundaryElement.19" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.3/@placementBoundaryElement.20" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.3/@placementBoundaryElement.21" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.3/@placementBoundaryElement.24" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.3/@placementBoundaryElement.25" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.3/@placementBoundaryElement.26" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+  </realizationModel>
+  <realizationModel xsi:type="bvr:FragmentSubstitution" name="RWB_Analysis" bindingVSpec="//@variabilityModel/@member.0/@member.1/@member.1" placement="//@realizationModel.6" replacement="//@packageElement.0">
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.6/@placementBoundaryElement.0" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.6/@placementBoundaryElement.1" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.6/@placementBoundaryElement.2" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.6/@placementBoundaryElement.3" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.6/@placementBoundaryElement.4" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.6/@placementBoundaryElement.5" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.6/@placementBoundaryElement.6" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.6/@placementBoundaryElement.7" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.6/@placementBoundaryElement.8" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+  </realizationModel>
+  <realizationModel xsi:type="bvr:FragmentSubstitution" name="CommBus_err_2WB_RWB" bindingVSpec="//@variabilityModel/@member.0/@member.1/@member.1" placement="//@realizationModel.0" replacement="//@packageElement.0">
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.0/@placementBoundaryElement.0" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+    <boundaryElementBinding xsi:type="bvr:ToBinding" toPlacement="//@realizationModel.0/@placementBoundaryElement.1" toReplacement="//@packageElement.0/@replacementBoundaryElement.0"/>
+  </realizationModel>
+</bvr:BVRModel>
